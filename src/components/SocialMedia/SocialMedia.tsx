@@ -12,12 +12,7 @@ const SocialMedia: FunctionComponent = () => {
       <Container className="container-wrapper">
         <Row className="justify-content-center">
           <Col xl={4}>
-            <a
-              href={instagramLink}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="instagram daria niewójt nototrip"
-            >
+            <a href={instagramLink} target="_blank" rel="noreferrer noopener">
               <div role="img" className="instagram-logo">
                 <i className="icon-instagram" />
                 <img
