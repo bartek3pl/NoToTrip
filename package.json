@@ -1,0 +1,60 @@
+{
+  "name": "nototrip",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
+    "bootstrap": "^4.3.1",
+    "disqus-react": "^1.0.7",
+    "eslint-plugin-jest": "^23.0.5",
+    "mdbreact": "^4.22.1",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-animations": "^1.0.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "3.2.0",
+    "react-scroll": "^1.7.14",
+    "react-snap": "^1.23.0",
+    "react-spinners": "^0.8.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "postbuild": "react-snap",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "format": "prettier \"src/**/*.{js, html}\" --write"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/reach__router": "^1.2.6",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-scroll": "^1.5.4",
+    "eslint": "^6.7.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "1.19.1",
+    "typescript": "^3.7.4"
+  }
+}

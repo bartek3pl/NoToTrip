@@ -1,0 +1,102 @@
+.newest-articles {
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  z-index: 0;
+
+  header {
+    position: relative;
+
+    p {
+      margin-top: 1rem;
+      font-size: 3rem;
+      font-weight: lighter;
+      text-align: center;
+      text-shadow: 1px 1px 50px #000;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/images/grafitti.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+}
+
+.img-article-overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: #000;
+}
+
+@media screen and (max-width: 1700px) {
+  .article p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .article p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .article p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .newest-articles {
+    padding-top: 4rem;
+  }
+
+  .article p {
+    font-size: 1.2rem;
+  }
+
+  .newest-articles h2 {
+    font-size: 4rem;
+  }
+
+  .newest-articles header p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .article {
+    display: none;
+  }
+
+  .newest-articles h2 {
+    font-size: 4rem;
+  }
+
+  .newest-articles header p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .newest-articles h2 {
+    word-spacing: 99999999px;
+  }
+}

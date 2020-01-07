@@ -1,0 +1,125 @@
+.img-authors-mobile {
+  position: relative;
+  display: none;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  border: 2px #00c1a7 solid;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+
+  -webkit-box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+}
+
+.mobile-description-block {
+  display: none;
+  z-index: 1;
+  margin: 2rem 1rem;
+  text-align: center;
+  border: 1px #fff solid;
+  border-radius: 1rem;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(
+    to top,
+    var(--main-bg-color-1),
+    var(--main-bg-color-2)
+  );
+
+  -webkit-box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+
+  .author-header {
+    font-weight: 700;
+  }
+}
+
+.mobile-description {
+  border-top: 1px #fff solid;
+  padding-top: 1rem;
+}
+
+.icon-cancel {
+  position: relative;
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+}
+
+/*
+.img-bg-authors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 150%;
+  opacity: 0.4;
+  overflow: hidden;
+}
+*/
+
+@media screen and (max-width: 680px) {
+  .img-authors-mobile {
+    display: block;
+  }
+
+  .authors.authors-mobile-click #daria {
+    display: none;
+  }
+
+  .authors.authors-mobile-click #bart {
+    display: none;
+  }
+
+  .authors.authors-mobile-click .img-bg-authors {
+    display: none;
+  }
+
+  .authors.authors-mobile-click2 #daria {
+    display: none;
+  }
+
+  .authors.authors-mobile-click2 #bart {
+    display: none;
+  }
+
+  .authors.authors-mobile-click2 .img-bg-authors {
+    display: none;
+  }
+
+  .authors.authors-mobile-click #daria-description {
+    display: block;
+  }
+
+  .authors.authors-mobile-click2 #bart-description {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .authors p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .authors p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .authors p {
+    font-size: 1.5rem;
+  }
+
+  .authors h2 {
+    font-size: 4rem;
+  }
+
+  .authors header p {
+    font-size: 2rem;
+  }
+}

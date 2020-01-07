@@ -1,0 +1,84 @@
+figure {
+  margin-top: 3rem;
+  transition: all 0.3s ease;
+
+  img {
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 103px -27px rgba(0, 0, 0, 1);
+  }
+}
+
+figcaption {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.img-overlay-mobile {
+  .img-link-mobile {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #11c1b7;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    p {
+      text-transform: none;
+      font-size: 5rem;
+      font-weight: 400;
+      text-align: center;
+      font-family: 'Krub', sans-serif;
+      margin-top: 6rem;
+      letter-spacing: 0.2rem;
+      margin-left: 1rem;
+      margin-bottom: 0;
+      z-index: 1;
+    }
+  }
+}
+
+.img-article-mobile {
+  height: 100%;
+  opacity: 1;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  border: 2px #11c1b7 solid;
+}
+
+@media screen and (max-width: 680px) {
+  .newest-articles-figure {
+    margin-top: 1rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .img-overlay-mobile {
+    display: block;
+  }
+
+  .img-article-mobile {
+    display: block;
+  }
+
+  .fig-mobile {
+    display: block;
+  }
+}

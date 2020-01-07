@@ -1,0 +1,226 @@
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import { Link as ReachLink } from '@reach/router';
+import '../ArticleContainer.scss';
+
+import mapa from '../../assets/images/wierchy/mapa.jpg';
+import wierchy1 from '../../assets/images/wierchy/wierchyii.slider.1.2.jpg';
+import wierchy2 from '../../assets/images/wierchy/wierchyii.slider.1.4.jpg';
+import wierchy3 from '../../assets/images/wierchy/wierchyii.slider.1.5.jpg';
+import wierchy4 from '../../assets/images/wierchy/wierchyii.slider.2.1.jpg';
+import wierchy5 from '../../assets/images/wierchy/wierchyii.slider.2.3.jpg';
+import wierchy6 from '../../assets/images/wierchy/wierchyii.slider.2.4.jpg';
+import wierchy7 from '../../assets/images/wierchy/wierchyii.slider.3.1.jpg';
+import wierchy8 from '../../assets/images/wierchy/wierchyii.slider.3.2.jpg';
+import wierchy9 from '../../assets/images/wierchy/wierchyii.slider.3.3.jpg';
+import wierchy10 from '../../assets/images/wierchy/wierchyii.slider.3.4.jpg';
+import wierchy11 from '../../assets/images/wierchy/wierchyii.slider.3.5.jpg';
+import wierchy12 from '../../assets/images/wierchy/wierchyii.slider.3.6.jpg';
+
+const CzerwoneWierchy2 = () => {
+  return (
+    <>
+      <h3>
+        Drugi dzień był o wiele ciekawszy i było nieco więcej natury, niż na
+        Krupówkach. Wybraliśmy się w góry. Wiele osób ostrzega przed wędrówkami
+        w listopadzie, bo już leży śnieg, jest zimniej, bardziej ślisko i często
+        słyszy się, że już ktoś zamarzł… No cóż, Nas to nie przekonało do
+        pozostania w domu… Norwegia nauczyła nas więcej pokory wobec gór. Poza
+        tym przecież zawsze można jeszcze zawrócić na szlaku.. Warto chociaż
+        spróbować swoich sił :).
+      </h3>
+
+      <p>
+        Trasą zainspirowaliśmy się z{' '}
+        <a
+          href="http://natatry.pl/tatry-zachodnie/okolice-giewontu/czerwone-wierchy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          tej strony
+        </a>
+        .
+      </p>
+
+      <figure className="article-figure">
+        <img
+          src={mapa}
+          style={{ width: '30%', margin: '0 auto', display: 'block' }}
+          alt="czerwone wierchy mapa"
+        />
+        <figcaption className="article-figcaption">
+          Trasa przez Czerwone Wierchy
+        </figcaption>
+      </figure>
+
+      <p>
+        W trasę wyruszyliśmy koło 9 rano. Zaparkowaliśmy na parkingu w Groniku
+        (cena 10 zł). Najpierw jakieś 20 minut szliśmy lasem do Przysłopu
+        Miętusiego.
+      </p>
+
+      <p>
+        Na przysłopie stoją ławki i stoliki, więc można coś zjeść i odpocząć.
+        Tutaj drogi rozwidlają się na szlak czarny, niebieski i czerwony. Więc
+        jest jeszcze możliwość na zmienienie zdania i pójścia na przykład na
+        Giewont, jakby ktoś poczuł, że ma dość sił. Zaczyna się tu piękny
+        krajobraz, widać też kawałek gór po prawej stronie, które wyglądają jak
+        zniszczone przez stopę trolla, wędrującego z Norwegii aż do Tatr.
+      </p>
+
+      <figure className="article-figure">
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy1}
+              alt="Czerwone Wierchy"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy2}
+              alt="Czerwone Wierchy"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy3}
+              alt="Czerwone Wierchy"
+            />
+          </Carousel.Item>
+        </Carousel>
+        <figcaption className="article-figcaption">
+          Przez las w stronę Przysłopu Miętusiego
+        </figcaption>
+      </figure>
+
+      <p>
+        Następnie od Małołączniaka dzieliły Nas jakieś 4 kilometry dość męczącej
+        drogi, w większości skalistej i mocno pod górę. Dla przeciętnych osób
+        (takich jak ja) oceniłabym ten odcinek na średniozaawansowany. Ale na
+        pocieszenie dodam, że na początku idzie się ładnym laskiem po płaskim
+        terenie. Później jest spory odcinek dosyć stromej drogi, gdzie kawałek
+        idzie się skałami, trzymając łańcucha… Jak na{' '}
+        <ReachLink to="/norwegia/golden-hour-na-kjeragbolten">
+          Kjeragbolten
+        </ReachLink>{' '}
+        :).
+      </p>
+
+      <figure className="article-figure">
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy4}
+              alt="Czerwone Wierchy"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy5}
+              alt="Czerwone Wierchy"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy6}
+              alt="Czerwone Wierchy Małołączniak"
+            />
+          </Carousel.Item>
+        </Carousel>
+        <figcaption className="article-figcaption">
+          Wspinaczka na szczyt Małołączniaka
+        </figcaption>
+      </figure>
+
+      <p>
+        I wreszcie, pierwszy szczyt - Małołączniak (2 096 m.n.p.m), po jakiś
+        trzech godzinach drogi zaliczony! Na ostatnim zdjęciu widać Giewont.
+        Następnie na Krzesanicę (2 122 m.n.p.m) znów podchodzi się lekko pod
+        górę, ale droga była łatwiejsza i o wiele krótsza.
+      </p>
+
+      <p>
+        Ostatnim szczytem był Ciemniak (2 096 m). Stąd widoki podobały mi się
+        najbardziej. Masywy górskie przypominały scenerię z “Władcy Pierścieni”.
+        Widok jak najbardziej wart zobaczenia.
+      </p>
+
+      <p>
+        Później z Ciemniaka zeszliśmy do Chudej Przełęczy i stamtąd do Kir.
+        Zejście zajęło nam około 3 godziny i mieliśmy mało czasu. Niestety
+        ostatnie pół godziny trasy musieliśmy pokonywać po ciemku. W Kirach
+        byliśmy około 17 i tam wybraliśmy się do karczmy na obiad. Zamówiliśmy
+        spagetti bolognese i ogórkową. Jedzenie było raczej przeciętne, ale w
+        dobrej cenie, a poza tym po górach wszystko smakuje dobrze. Po jedzeniu
+        czekała nas jeszcze godzinna droga do samochodu… A następnie 5 godzin w
+        aucie w drodze do Wrocławia.
+      </p>
+
+      <figure className="article-figure">
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy7}
+              alt="Czerwone Wierchy"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy8}
+              alt="Czerwone Wierchy Giewont"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy9}
+              alt="Czerwone Wierchy Kopa Kondracka"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy10}
+              alt="Czerwone Wierchy Krzesanica"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy11}
+              alt="Czerwone Wierchy Krzesanica"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={wierchy12}
+              alt="Czerwone Wierchy Małołączniak"
+            />
+          </Carousel.Item>
+        </Carousel>
+        <figcaption className="article-figcaption">
+          Widoki z trzech szczytów
+        </figcaption>
+      </figure>
+
+      <p>
+        Ogólnie trasa jak najbardziej warta przejścia, a widoki warte
+        zobaczenia. Jedynym minusem wycieczki było to, że wyliczyliśmy sobie, że
+        przejdziemy ją w 7 godzin, a przeszliśmy w ponad 8 i musieliśmy kawałek
+        iść po ciemku.
+      </p>
+    </>
+  );
+};
+
+export default CzerwoneWierchy2;

@@ -1,0 +1,93 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background: linear-gradient(
+    to top,
+    var(--main-bg-color-1),
+    var(--main-bg-color-2)
+  );
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+
+  .footer-rights {
+    cursor: default;
+    width: 32%;
+    text-align: center;
+
+    a {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+
+  .footer-menu {
+    width: 65%;
+    text-align: center;
+  }
+
+  .footer-menu-li {
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    min-width: 5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .footer-menu-li {
+    min-width: 4rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .footer-menu-li {
+    min-width: 3rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .footer-menu-li {
+    min-width: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer-block {
+    margin-top: 2rem;
+
+    .footer-rights {
+      width: 100%;
+    }
+
+    .footer-menu {
+      display: none;
+    }
+  }
+}

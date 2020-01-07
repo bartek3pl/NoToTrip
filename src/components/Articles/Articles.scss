@@ -1,0 +1,78 @@
+#podroze {
+  p {
+    font-style: italic;
+  }
+}
+
+.trips {
+  position: relative;
+  padding-bottom: 8rem;
+  z-index: 0;
+  overflow: hidden;
+  border-bottom: 2px #33f4d9 solid;
+  border-top: 2px #33f4d9 solid;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../../assets/images/wodospad.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  header {
+    position: relative;
+  }
+
+  h2 {
+    padding-top: 8rem;
+    font-size: 5.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 1px 1px 50px #000;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 1px 1px 50px #000;
+  }
+}
+
+.img-trips-overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: #3c9499;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .trips {
+    padding-bottom: 0;
+
+    h2 {
+      padding-top: 4rem;
+      font-size: 4.5rem;
+    }
+
+    header p {
+      font-size: 2rem;
+    }
+  }
+}
