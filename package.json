@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bartek3pl.github.io/NoToTrip",
   "name": "nototrip",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,7 @@
     "bootstrap": "^4.3.1",
     "disqus-react": "^1.0.7",
     "eslint-plugin-jest": "^23.0.5",
+    "gh-pages": "^2.2.0",
     "mdbreact": "^4.22.1",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
@@ -28,7 +30,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "format": "prettier \"src/**/*.{js, html}\" --write"
+    "format": "prettier \"src/**/*.{js, html}\" --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
