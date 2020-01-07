@@ -16,14 +16,14 @@ const SocialMedia: FunctionComponent = () => {
               href={instagramLink}
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="instagram nototrip daria niewójt"
+              aria-label="instagram daria niewójt nototrip"
             >
               <div role="img" className="instagram-logo">
                 <i className="icon-instagram" />
                 <img
                   src={instagramLogo}
                   className="instagram-logo-img"
-                  alt="instagram nototrip daria niewójt"
+                  alt="instagram daria niewójt nototrip"
                 />
               </div>
             </a>
