@@ -1,9 +1,10 @@
 .article-container {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
+  max-width: 64%;
 }
 
 .article-figure {
-  margin-top: 5rem !important;
+  margin-top: 4rem !important;
   width: 100%;
   margin: 0 auto;
   transition: color 0.2s ease;
@@ -26,39 +27,39 @@
 
   h3 {
     color: #000;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin: 0 10rem;
-    padding-top: 10rem;
-    padding-bottom: 1rem;
+    margin: 0 8rem;
+    padding-top: 8rem;
+    padding-bottom: 0.8rem;
     text-align: left;
   }
 
   h4 {
     color: #000;
-    font-size: 2.1rem;
+    font-size: 1.7rem;
     font-weight: 700;
-    margin: 0 10rem;
-    padding-top: 4rem;
+    margin: 0 8rem;
+    padding-top: 3.2rem;
     text-align: left;
   }
 
   p {
     color: #000;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    margin-top: 2rem !important;
-    margin: 0 10rem;
+    margin-top: 1.6rem !important;
+    margin: 0 8rem;
     text-align: left;
     text-shadow: none;
   }
 
   &:last-child {
-    margin-bottom: 10rem !important;
+    margin-bottom: 8rem !important;
   }
 
   .link {
-    margin-top: 1rem !important;
+    margin-top: 0.8rem !important;
     font-weight: 300;
     color: #00a0a4;
     transition: color 0.2s ease;
@@ -69,11 +70,11 @@
   }
 
   .point {
-    margin-top: 1rem !important;
+    margin-top: 0.8rem !important;
   }
 
   .first {
-    margin-top: 2rem !important;
+    margin-top: 1.6rem !important;
   }
 
   a {
@@ -88,9 +89,9 @@
 
 .article-figcaption {
   color: #000;
-  margin-top: 2rem !important;
-  margin-bottom: 3rem !important;
-  font-size: 2.2rem;
+  margin-top: 1.6rem !important;
+  margin-bottom: 2.4rem !important;
+  font-size: 1.8rem;
   text-align: center;
   font-weight: 300;
 
@@ -102,7 +103,7 @@
 .advert {
   background-color: #000;
   width: 100%;
-  height: 50rem;
+  height: 40rem;
   opacity: 0;
 }
 
@@ -114,7 +115,7 @@
 
   &:nth-child(3),
   &:nth-child(4) {
-    margin-bottom: 2rem !important;
+    margin-bottom: 1.6rem !important;
   }
 }
 
@@ -127,7 +128,7 @@
     width: 100%;
     background-color: #00c1a7;
     bottom: 0;
-    left: 0.25rem;
+    left: 0.2rem;
     opacity: 0;
     transition: opacity 0.2s ease;
 
@@ -138,21 +139,21 @@
 
     .title {
       width: 100%;
-      margin-top: 12rem !important;
+      margin-top: 9.6rem !important;
       margin-bottom: 0;
       margin-left: 0;
       text-transform: uppercase;
       font-style: normal;
-      font-size: 6.2rem;
+      font-size: 5rem;
       font-weight: 700;
       text-align: center;
-      letter-spacing: 2rem;
+      letter-spacing: 1.6rem;
       opacity: 1;
       text-shadow: none;
     }
 
     .two-line {
-      margin-top: 10rem !important;
+      margin-top: 8rem !important;
     }
   }
 }
@@ -162,7 +163,7 @@
   float: left;
   border-left: 0.1rem #fff solid;
   border-right: 0.1rem #fff solid;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1.6rem !important;
 }
 
 .four-img {
@@ -170,7 +171,7 @@
   float: left;
   border-left: 0.1rem #fff solid;
   border-right: 0.1rem #fff solid;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1.6rem !important;
 }
 
 .article-img-overlay .article-img-link {
@@ -185,9 +186,9 @@
 .up {
   position: fixed;
   color: var(--main-font-color);
-  font-size: 9rem;
-  top: 20rem;
-  left: 20rem;
+  font-size: 7.2rem;
+  top: 16rem;
+  left: 16rem;
   opacity: 0;
   transition: transform 0.2s ease;
 
@@ -197,9 +198,9 @@
 }
 
 .gmap {
-  margin-top: 5rem !important;
+  margin-top: 4rem !important;
   border: 0.1rem #00a0a4 solid;
-  height: 60rem;
+  height: 48rem;
   width: 100%;
 }
 
@@ -208,7 +209,7 @@
 }
 
 .angle-down::before {
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #00a0a4;
   display: block;
   height: 0rem;
@@ -218,85 +219,38 @@
 }
 
 .link-to-article {
-  margin-top: 3rem !important;
+  margin-top: 2.4rem !important;
   text-align: right !important;
 }
 
 @media screen and (max-width: 992px) {
   .article-bg h3 {
-    font-size: 2.2rem;
-    margin: 0 8rem;
-    padding-top: 8rem;
-    padding-bottom: 1rem;
-  }
-
-  .article-bg h4 {
-    font-size: 1.9rem;
-    margin: 0 8rem;
-    padding-top: 2rem;
-  }
-
-  .article-bg p {
     font-size: 1.8rem;
-    margin-top: 2rem !important;
-    margin: 0 8rem;
-  }
-
-  .article-figure {
-    margin-top: 3rem !important;
-  }
-
-  .article-figcaption {
-    margin-top: 1.8rem !important;
-    margin-bottom: 2.5rem !important;
-    font-size: 2rem;
-  }
-
-  .article-bg:last-child {
-    margin-bottom: 8rem;
-  }
-
-  .article-bg .point {
-    margin-top: 1rem !important;
-  }
-
-  .article-bg a {
-    font-size: 1.8rem;
-  }
-
-  .gmap {
-    height: 50rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .article-bg h3 {
-    font-size: 1.7rem;
     margin: 0 6rem;
     padding-top: 6rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
   }
 
   .article-bg h4 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin: 0 6rem;
-    padding-top: 1.5rem;
+    padding-top: 1.6rem;
   }
 
   .article-bg p {
-    font-size: 1.8rem;
-    margin-top: 2rem !important;
+    font-size: 1.4rem;
+    margin-top: 1.6rem !important;
     margin: 0 6rem;
   }
 
   .article-figure {
-    margin-top: 2rem !important;
+    margin-top: 2.4rem !important;
   }
 
   .article-figcaption {
-    margin-top: 1.6rem !important;
-    margin-bottom: 2.2rem !important;
-    font-size: 1.8rem;
+    margin-top: 1.4rem !important;
+    margin-bottom: 2rem !important;
+    font-size: 1.6rem;
   }
 
   .article-bg:last-child {
@@ -304,15 +258,62 @@
   }
 
   .article-bg .point {
-    margin-top: 0.5rem;
+    margin-top: 0.8rem !important;
   }
 
   .article-bg a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .gmap {
     height: 40rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .article-bg h3 {
+    font-size: 1.4rem;
+    margin: 0 4.8rem;
+    padding-top: 4.8rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .article-bg h4 {
+    font-size: 1.4rem;
+    margin: 0 4.8rem;
+    padding-top: 1.2rem;
+  }
+
+  .article-bg p {
+    font-size: 1.4rem;
+    margin-top: 1.6rem !important;
+    margin: 0 4.8rem;
+  }
+
+  .article-figure {
+    margin-top: 1.6rem !important;
+  }
+
+  .article-figcaption {
+    margin-top: 1.3rem !important;
+    margin-bottom: 2rem !important;
+    font-size: 1.4rem;
+  }
+
+  .article-bg:last-child {
+    margin-bottom: 4.8rem;
+  }
+
+  .article-bg .point {
+    margin-top: 0.4rem;
+  }
+
+  .article-bg a {
+    font-size: 1.3rem;
+  }
+
+  .gmap {
+    height: 32rem;
   }
 }
 
@@ -324,140 +325,140 @@
   }
 
   .article-bg h3 {
-    font-size: 1.5rem;
-    margin: 0 1rem;
-    padding-top: 4rem;
-    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin: 0 0.8rem;
+    padding-top: 3.2rem;
+    padding-bottom: 0.4rem;
   }
 
   .article-bg h4 {
-    font-size: 1.4rem;
-    margin: 0 1rem;
-    padding-top: 1rem;
+    font-size: 1.1rem;
+    margin: 0 0.8rem;
+    padding-top: 0.8rem;
   }
 
   .article-bg p {
-    font-size: 1.3rem;
-    margin-top: 1rem;
-    margin: 0 1rem;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin: 0 0.8rem;
   }
 
   .article-figure {
-    margin-top: 1rem !important;
+    margin-top: 0.8rem !important;
   }
 
   .article-figcaption {
-    margin-top: 1.5rem !important;
-    margin-bottom: 2rem !important;
-    font-size: 1rem;
+    margin-top: 1.2rem !important;
+    margin-bottom: 1.6rem !important;
+    font-size: 0.8rem;
   }
 
   .article-bg:last-child {
-    margin-bottom: 4rem;
+    margin-bottom: 3.2rem;
   }
 
   .article-bg .point {
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
   }
 
   .article-bg a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .gmap {
-    height: 30rem;
+    height: 24rem;
   }
 }
 
 @media screen and (max-width: 1700px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 5rem;
-    margin-top: 11rem;
+    font-size: 4rem;
+    margin-top: 8.8rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 9rem;
+    margin-top: 7.2rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 5rem;
-    margin-top: 11rem;
+    font-size: 4rem;
+    margin-top: 8.8rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 9rem;
+    margin-top: 7.2rem;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 4rem;
-    margin-top: 10rem;
+    font-size: 3.2rem;
+    margin-top: 8rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
 }
 
 @media screen and (max-width: 1300px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 3rem;
-    margin-top: 9rem;
+    font-size: 2.4rem;
+    margin-top: 7.2rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 7rem;
+    margin-top: 5.6rem;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 2rem;
-    margin-top: 8rem;
-    letter-spacing: 1.5rem;
+    font-size: 1.6rem;
+    margin-top: 6rem;
+    letter-spacing: 1.2rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 6rem;
+    margin-top: 4.8rem;
   }
 }
 
 @media screen and (max-width: 900px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 2rem;
-    margin-top: 6rem;
-    letter-spacing: 1rem;
+    font-size: 1.6rem;
+    margin-top: 4.8rem;
+    letter-spacing: 0.8rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 1.4rem;
-    margin-top: 5rem;
-    letter-spacing: 0.7rem;
+    font-size: 1.1rem;
+    margin-top: 4rem;
+    letter-spacing: 0.5rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 4rem;
+    margin-top: 3.2rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 1.2rem;
-    margin-top: 4rem;
-    letter-spacing: 0.6rem;
+    font-size: 1rem;
+    margin-top: 3.2rem;
+    letter-spacing: 0.5rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 3rem;
+    margin-top: 2.4rem;
   }
 
   .up {
@@ -471,23 +472,23 @@
 
 @media screen and (max-width: 380px) {
   .icon-angle-right {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-left: 0.2rem;
   }
 
   .link-to-article a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   .article-img-overlay .article-img-link .title {
-    font-size: 1.1rem;
-    margin-top: 2.25rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
     letter-spacing: 0.4rem;
   }
 
   .article-img-overlay .article-img-link .two-line {
-    margin-top: 2rem;
+    margin-top: 1.6rem;
   }
 }

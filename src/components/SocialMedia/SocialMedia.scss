@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   background-image: linear-gradient(to top, #00b0a6, #22d2c8);
-  max-height: 40rem;
+  max-height: 32rem;
   width: 100%;
   border-bottom: 0.2rem #33f4d9 solid;
   border-top: 0.2rem #33f4d9 solid;
@@ -29,8 +29,8 @@
 .instagram-logo {
   position: relative;
   display: block;
-  margin-left: 14rem;
-  margin-top: 2rem;
+  margin-left: 11.2rem;
+  margin-top: 1.6rem;
 
   &:hover .instagram-logo-img,
   &:focus .instagram-logo-img {
@@ -39,27 +39,27 @@
 }
 
 .icon-instagram {
-  font-size: 24rem;
+  font-size: 19.2rem;
   color: #33f4d9;
   opacity: 1;
 }
 
 .icon-arrow {
   transform: rotate(-35deg);
-  max-width: 45rem;
-  padding-bottom: 10rem;
-  padding-left: 5rem;
+  max-width: 36rem;
+  padding-bottom: 8rem;
+  padding-left: 4rem;
 }
 
 .social-media-text {
   display: block;
   max-width: 100%;
   height: 100%;
-  padding-top: 8rem;
-  padding-left: 2rem;
+  padding-top: 6.4rem;
+  padding-left: 1.6rem;
 
   p {
-    font-size: 8rem;
+    font-size: 6.4rem;
     text-align: left;
     font-family: 'Gloria Hallelujah', cursive;
     color: #33f4d9;
@@ -79,10 +79,10 @@
   display: none;
   opacity: 0;
   transition: all 0.3s ease;
-  top: 3.55rem;
-  left: 2.2rem;
-  width: 29.28rem;
-  height: 29.28rem;
+  top: 2.84rem;
+  left: 1.76rem;
+  width: 23.42rem;
+  height: 23.42rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -100,23 +100,23 @@
   }
 
   .social-media-page {
-    height: 24rem;
+    height: 19.2rem;
   }
 
   .icon-instagram {
     display: block;
-    font-size: 16rem;
+    font-size: 12.8rem;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
   .social-media-page {
-    height: 17rem;
+    height: 13.6rem;
   }
 
   .icon-instagram {
-    font-size: 11rem;
+    font-size: 8.8rem;
   }
 
   /*

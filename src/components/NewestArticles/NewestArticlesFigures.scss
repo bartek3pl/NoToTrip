@@ -1,8 +1,8 @@
 .article {
   position: relative;
-  height: 15rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  height: 12rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
   border: 0.2rem #11c1b7 solid;
   border-radius: 0.5rem;
   background: linear-gradient(
@@ -46,10 +46,10 @@
   }
 
   p {
-    font-size: 1.8rem;
-    margin-left: 19.4rem;
-    margin-right: 1rem;
-    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    margin-left: 15.5rem;
+    margin-right: 0.8rem;
+    margin-top: 0.6rem;
     font-weight: 400;
 
     .article-header {
@@ -65,7 +65,7 @@
     border-right: 0.2rem #00c1a7 solid;
 
     .img-article {
-      width: 18rem;
+      width: 14.4rem;
       float: left;
       height: 100%;
       transition: transform 0.2s ease;

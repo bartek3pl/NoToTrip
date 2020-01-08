@@ -3,14 +3,14 @@
 
   #welcome-1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 14rem;
+    font-size: 11.2rem;
     font-weight: 700;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.6rem;
   }
 
   #welcome-2 {
     font-family: 'Amatic SC', cursive;
-    font-size: 10.5rem;
+    font-size: 8.4rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
   }
@@ -20,20 +20,20 @@
   position: absolute;
   right: 0;
   left: 0;
-  top: 20rem;
+  top: 16rem;
   bottom: 0;
-  font-size: 8rem;
+  font-size: 6.4rem;
   text-align: center;
   font-weight: 400;
   padding-top: 6rem;
-  text-shadow: 0.6rem 0.6rem 8rem #000;
+  text-shadow: 0.5rem 0.5rem 6.4rem #000;
   z-index: -1;
 }
 
 .snd {
-  margin-top: 20rem;
+  margin-top: 16rem;
   padding-top: 0;
-  text-shadow: 0.5rem 0.5rem 5rem #000;
+  text-shadow: 0.4rem 0.4rem 4rem #000;
 }
 
 .btn {
@@ -48,10 +48,10 @@
 
   border-color: #11d2b8;
   border-radius: 3rem;
-  width: 15rem;
-  height: 6rem;
+  width: 12rem;
+  height: 4.8rem;
   margin: 0 auto;
-  margin-top: 45rem;
+  margin-top: 36rem;
   outline: none;
   transition: background-color 2.2s ease, border-color 0.2s ease,
     transform 0.2s ease;
@@ -102,7 +102,7 @@
 
   p {
     font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     letter-spacing: -0.05rem;
     font-weight: 400;
     text-align: center;
@@ -113,17 +113,17 @@
 
 .icon-down-open {
   cursor: pointer;
-  font-size: 4rem;
+  font-size: 3.2rem;
   display: block;
-  width: 10rem;
+  width: 8rem;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
+  margin-top: 4rem;
   color: var(--main-font-color);
   transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
   opacity: 0;
-  text-shadow: 0.2rem 0.2rem 4rem #000;
+  text-shadow: 0.2rem 0.2rem 3.2rem #000;
 
   -webkit-animation: arrowDownMove 5s infinite, arrowStartUpMove 1s ease;
   animation: arrowDownMove 5s infinite, arrowStartUpMove 1s ease;
@@ -155,17 +155,17 @@
     opacity: 1;
   }
   50% {
-    transform: translateY(2.5rem);
+    transform: translateY(2rem);
     color: #11c1b7;
     opacity: 1;
   }
   75% {
-    transform: translateY(17rem);
+    transform: translateY(14rem);
     color: #11c1b7;
     opacity: 0;
   }
   100% {
-    transform: translateY(17rem);
+    transform: translateY(14rem);
     color: #11c1b7;
     opacity: 0;
   }
@@ -228,68 +228,68 @@
 @media screen and (max-width: 767px) {
   .entry-page-header {
     #welcome-1 {
-      font-size: 9rem;
-      letter-spacing: 0.5rem;
+      font-size: 7.2rem;
+      letter-spacing: 0.4rem;
     }
 
     #welcome-2 {
-      font-size: 7.5rem;
+      font-size: 6rem;
     }
   }
 
   .welcome {
-    padding-top: 4rem;
-    font-size: 6rem;
+    padding-top: 3.2rem;
+    font-size: 4.8rem;
   }
 
   .snd {
-    font-size: 4rem;
+    font-size: 3.2rem;
     padding-top: 0rem;
-    margin-top: 12rem;
+    margin-top: 9.6rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .entry-page-header {
     #welcome-1 {
-      font-size: 6rem;
+      font-size: 4.8rem;
     }
 
     #welcome-2 {
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 
   .welcome {
-    padding-top: 1rem;
-    font-size: 4rem;
+    padding-top: 0.8rem;
+    font-size: 3.2rem;
   }
 
   .snd {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-top: 0rem;
-    margin-top: 7rem;
+    margin-top: 5.6rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   .entry-page-header {
     #welcome-1 {
-      font-size: 4.5rem;
+      font-size: 3.6rem;
     }
 
     #welcome-2 {
-      font-size: 3.5rem;
+      font-size: 2.8rem;
     }
   }
 }
 
 @media screen and (max-width: 318px) {
   .welcome {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 
   .snd {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }

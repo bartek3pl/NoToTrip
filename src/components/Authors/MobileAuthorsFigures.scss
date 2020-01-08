@@ -1,8 +1,8 @@
 .img-authors-mobile {
   position: relative;
   display: none;
-  height: 12rem;
-  width: 12rem;
+  height: 9.6rem;
+  width: 9.6rem;
   border-radius: 50%;
   border: 0.2rem #00c1a7 solid;
   transition: all 0.2s ease;
@@ -16,11 +16,11 @@
 .mobile-description-block {
   display: none;
   z-index: 1;
-  margin: 2rem 1rem;
+  margin: 1.6rem 0.8rem;
   text-align: center;
   border: 0.1rem #fff solid;
   border-radius: 1rem;
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1rem;
   background: linear-gradient(
     to top,
     var(--main-bg-color-1),
@@ -38,13 +38,13 @@
 
 .mobile-description {
   border-top: 0.1rem #fff solid;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
 }
 
 .icon-cancel {
   position: relative;
   display: block;
-  font-size: 4rem;
+  font-size: 3.2rem;
   text-align: center;
 }
 
@@ -100,26 +100,26 @@
 
 @media screen and (max-width: 1700px) {
   .authors p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 1500px) {
   .authors p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 800px) {
   .authors p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .authors h2 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   .authors header p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }

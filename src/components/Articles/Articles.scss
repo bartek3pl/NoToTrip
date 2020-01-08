@@ -6,7 +6,7 @@
 
 .trips {
   position: relative;
-  padding-bottom: 8rem;
+  padding-bottom: 6.4rem;
   z-index: 0;
   overflow: hidden;
   border-bottom: 0.2rem #33f4d9 solid;
@@ -34,19 +34,19 @@
   }
 
   h2 {
-    padding-top: 8rem;
-    font-size: 5.5rem;
+    padding-top: 6.4rem;
+    font-size: 4.4rem;
     font-weight: 400;
     text-align: center;
-    text-shadow: 0.1rem 0.1rem 5rem #000;
+    text-shadow: 0.1rem 0.1rem 4rem #000;
   }
 
   p {
-    margin-top: 1rem;
-    font-size: 3rem;
+    margin-top: 0.8rem;
+    font-size: 2.4rem;
     font-weight: lighter;
     text-align: center;
-    text-shadow: 0.1rem 0.1rem 5rem #000;
+    text-shadow: 0.1rem 0.1rem 4rem #000;
   }
 }
 
@@ -67,12 +67,12 @@
     padding-bottom: 0;
 
     h2 {
-      padding-top: 4rem;
-      font-size: 4.5rem;
+      padding-top: 3.2rem;
+      font-size: 3.6rem;
     }
 
     header p {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 }

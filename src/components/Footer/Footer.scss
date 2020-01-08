@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   background: linear-gradient(
     to top,
     var(--main-bg-color-1),
@@ -26,8 +26,8 @@
 .footer-block {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
-  padding-bottom: 1rem;
+  margin-top: 3.2rem;
+  padding-bottom: 0.8rem;
 
   .footer-rights {
     cursor: default;
@@ -36,7 +36,7 @@
 
     a {
       font-family: 'Lato', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 400;
     }
   }
@@ -50,37 +50,37 @@
     cursor: pointer;
     display: inline-block;
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
-    margin-right: 2rem;
-    min-width: 5rem;
+    font-size: 1.2rem;
+    margin-right: 1.6rem;
+    min-width: 4rem;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 1800px) {
   .footer-menu-li {
-    min-width: 4rem;
-    font-size: 1.4rem;
+    min-width: 3.2rem;
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .footer-menu-li {
-    min-width: 3rem;
-    font-size: 1.3rem;
+    min-width: 2.4rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .footer-menu-li {
-    min-width: 2rem;
-    font-size: 1rem;
+    min-width: 1.6rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 800px) {
   .footer-block {
-    margin-top: 2rem;
+    margin-top: 1.6rem;
 
     .footer-rights {
       width: 100%;

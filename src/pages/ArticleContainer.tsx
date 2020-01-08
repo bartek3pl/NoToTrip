@@ -47,11 +47,11 @@ const componentsMap = {
   Czechy1,
 };
 
-function subtitlesMap(articlesData) {
+function subtitlesMap(articlesData): Map<string, FunctionComponent> {
   const subtitlesMap = new Map();
   let i = 1;
 
-  for (let article of articlesData.articles) {
+  for (const article of articlesData.articles) {
     const articleComponentName = `${removeSpaces(articlesData.title)}${i}`;
     subtitlesMap.set(
       convertToUrl(article.subtitle),
@@ -63,13 +63,17 @@ function subtitlesMap(articlesData) {
   return subtitlesMap;
 }
 
-function subtitleToComponent(article: string, articlesData: any) {
+function subtitleToComponent(
+  article: string,
+  articlesData: any
+): FunctionComponent {
   const subtitles = subtitlesMap(articlesData);
+  const getArticle = subtitles.get(article);
 
-  if (subtitles.get(article)) {
-    return subtitles.get(article);
+  if (getArticle) {
+    return getArticle;
   } else {
-    return '';
+    return Londyn1;
   }
 }
 

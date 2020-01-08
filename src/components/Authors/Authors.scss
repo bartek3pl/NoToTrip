@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 1.6rem;
   z-index: 0;
 
   &::before {
@@ -24,21 +24,21 @@
     position: relative;
 
     p {
-      margin-top: 1rem;
-      font-size: 3rem;
+      margin-top: 0.8rem;
+      font-size: 2.4rem;
       font-weight: lighter;
       text-align: center;
-      text-shadow: 0.1rem 0.1rem 5rem #000;
+      text-shadow: 0.1rem 0.1rem 4rem #000;
     }
   }
 
   h2 {
-    padding-top: 8rem;
-    text-shadow: 0.1rem 0.1rem 5rem #000;
+    padding-top: 6rem;
+    text-shadow: 0.1rem 0.1rem 4rem #000;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: justify;
   }
 }
@@ -58,7 +58,7 @@
 @media screen and (max-width: 800px) {
   .authors {
     h2 {
-      padding-top: 4rem;
+      padding-top: 3.2rem;
     }
   }
 }
