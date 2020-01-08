@@ -124,8 +124,10 @@ const Norway3 = () => {
         Ten dzień zakończyliśmy rozbijając namiot w lesie, który napotkaliśmy po
         drodze jadąc w kierunku Języka Trolla. Był to kolejny punkt naszej
         wycieczki. Jeżeli jesteście ciekawi naszej wspinaczki na{' '}
-        <ReachLink to="/norwegia/trolltunga">Trolltungę</ReachLink>, to
-        zapraszam do wpisu.
+        <ReachLink to="/norwegia/trolltunga-spotkanie-z-trollem">
+          Trolltungę
+        </ReachLink>
+        , to zapraszam do wpisu.
       </p>
 
       <figure className="article-figure">

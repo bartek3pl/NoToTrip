@@ -174,9 +174,11 @@ const Norway2 = () => {
         Wspinaczka na Preikestolen była dosyć ekstremalna, ale nie pod względem
         samej trasy, lecz pod względem pogody. Jeśli chcecie zapoznać się z
         kolejną ekstremalną trasą to zapraszam na wpis dotyczący on naszej{' '}
-        <ReachLink to="/norwegia/trolltunga">wyprawy na Trolltungę</ReachLink>.
-        Jest to słynny Język trolla, czyli najpopularniejszy punkt turystyczny w
-        Norwegii.
+        <ReachLink to="/norwegia/trolltunga-spotkanie-z-trollem">
+          wyprawy na Trolltungę
+        </ReachLink>
+        . Jest to słynny Język trolla, czyli najpopularniejszy punkt turystyczny
+        w Norwegii.
       </p>
 
       <iframe

@@ -207,7 +207,7 @@ const Norway6 = () => {
       </p>
 
       <p>
-        <ReachLink to="/norwegia/plan">
+        <ReachLink to="/norwegia/calkowity-koszt-wyjazdu-do-norwegii-co-ze-soba-zabrac-i-trasa">
           O całościowym planie naszej trasy przeczytasz w tym wpisie. Zapraszam!
         </ReachLink>
       </p>
