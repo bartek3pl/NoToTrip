@@ -1,23 +1,23 @@
-import londyn from '../assets/images/londyn/westminster.jpg';
-import londyn1 from '../assets/images/londyn/london-img-1.jpg';
-import londyn2 from '../assets/images/londyn/london-img-2.jpg';
-import londyn3 from '../assets/images/londyn/london-img-3.jpg';
+import londyn from '../assets/images/londyn/min/rsz_westminster.jpg';
+import londyn1 from '../assets/images/londyn/min/rsz_london-img-1.jpg';
+import londyn2 from '../assets/images/londyn/min/rsz_london-img-2.jpg';
+import londyn3 from '../assets/images/londyn/min/rsz_london-img-3.jpg';
 
-import norwegia from '../assets/images/norwegia/aurland.slider.1.4.jpg';
-import norwegia1 from '../assets/images/norwegia/kjerag.min.jpg';
-import norwegia2 from '../assets/images/norwegia/preikestolen.min.jpg';
-import norwegia3 from '../assets/images/norwegia/hardengervidda.min.jpg';
-import norwegia4 from '../assets/images/norwegia/trolltunga.min.jpg';
-import norwegia5 from '../assets/images/norwegia/lodowiec.min.jpg';
-import norwegia6 from '../assets/images/norwegia/drogatrolli.min.jpg';
-import norwegia7 from '../assets/images/norwegia/aurland.min.jpg';
-import norwegia8 from '../assets/images/norwegia/jostedals.min.jpg';
+import norwegia from '../assets/images/norwegia/min/rsz_aurlandslider14.jpg';
+import norwegia1 from '../assets/images/norwegia/min/rsz_kjeragmin.jpg';
+import norwegia2 from '../assets/images/norwegia/min/rsz_preikestolenmin.jpg';
+import norwegia3 from '../assets/images/norwegia/min/rsz_hardengerviddamin.jpg';
+import norwegia4 from '../assets/images/norwegia/min/rsz_trolltungamin.jpg';
+import norwegia5 from '../assets/images/norwegia/min/rsz_lodowiecmin.jpg';
+import norwegia6 from '../assets/images/norwegia/min/rsz_drogatrollimin.jpg';
+import norwegia7 from '../assets/images/norwegia/min/rsz_aurlandmin.jpg';
+import norwegia8 from '../assets/images/norwegia/min/rsz_jostedalsmin.jpg';
 
-import wierchy from '../assets/images/czerwone-wierchy.jpg';
-import wierchy1 from '../assets/images/wierchy/krupówki-pupa.jpg';
-import wierchy2 from '../assets/images/wierchy/wierchy-szlak.jpg';
+import wierchy from '../assets/images/wierchy/min/rsz_czerwone-wierchy.jpg';
+import wierchy1 from '../assets/images/wierchy/min/rsz_krupówki-pupa.jpg';
+import wierchy2 from '../assets/images/wierchy/min/rsz_wierchy-szlak.jpg';
 
-import czechy from '../assets/images/harrachov/benecko3.1.jpg';
+import czechy from '../assets/images/harrachov/min/rsz_benecko31.jpg';
 
 const articlesData = [
   {
