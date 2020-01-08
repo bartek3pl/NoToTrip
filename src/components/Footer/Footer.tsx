@@ -10,7 +10,7 @@ const Footer: FunctionComponent = () => {
 
   return (
     <footer className="footer">
-      <Container className="container-wrapper" style={{ marginBottom: '2rem' }}>
+      <Container className="container-wrapper container-footer">
         <Row className="justify-content-center">
           <Col md={10} lg={8}>
             <div className="footer-block">

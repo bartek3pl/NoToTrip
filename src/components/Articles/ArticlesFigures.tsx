@@ -44,7 +44,7 @@ const ArticlesFigures: FunctionComponent<IProps> = ({
             </div>
           </ReachLink>
         </div>
-        <figcaption>{caption}</figcaption>
+        <figcaption className="trips-figcaption">{caption}</figcaption>
       </figure>
     </Col>
   );

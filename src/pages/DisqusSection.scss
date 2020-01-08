@@ -6,3 +6,9 @@
   margin: 0 auto;
   margin-top: 4rem;
 }
+
+@media screen and (max-width: 391px) {
+  .disqus {
+    padding: 1.6rem 0.7rem;
+  }
+}

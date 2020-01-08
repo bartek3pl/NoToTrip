@@ -5,20 +5,22 @@ figure {
   img {
     height: 100%;
     width: 100%;
-    -webkit-box-shadow: 1rem 1rem 10.3rem -2.7rem rgba(0, 0, 0, 1);
-    -moz-box-shadow: 1rem 1rem 10.3rem -2.7rem rgba(0, 0, 0, 1);
-    box-shadow: 1rem 1rem 10.3rem -2.7rem rgba(0, 0, 0, 1);
   }
 }
 
 figcaption {
-  margin-top: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
   font-size: 1.6rem;
   text-align: center;
   font-weight: 300;
 }
 
 .img-overlay-mobile {
+  -webkit-box-shadow: 1rem 1rem 10.3rem -2.7rem rgba(0, 0, 0, 1);
+  -moz-box-shadow: 1rem 1rem 10.3rem -2.7rem rgba(0, 0, 0, 1);
+  box-shadow: 1rem 1rem 10.3rem -2.7rem rgba(0, 0, 0, 1);
+
   .img-link-mobile {
     position: absolute;
     height: 100%;
