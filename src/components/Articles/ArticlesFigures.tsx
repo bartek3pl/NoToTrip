@@ -32,7 +32,7 @@ const ArticlesFigures: FunctionComponent<IProps> = ({
             src={img}
             className="reg img-fluid rounded d-block m-1"
             alt={title}
-            onLoad={() => setLoaded(true)}
+            onLoad={(): void => setLoaded(true)}
           />
           <ReachLink
             to={`/${convertToUrl(title)}`}

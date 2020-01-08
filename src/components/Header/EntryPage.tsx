@@ -27,8 +27,8 @@ const EntryPage: FunctionComponent = () => {
           className="btn animated bounceInUp"
           aria-label="Przejdź do sekcji podróże"
           aria-pressed={isButtonPressed}
-          onClick={() => setIsButtonPressed(!isButtonPressed)}
-          onKeyDown={() => setIsButtonPressed(!isButtonPressed)}
+          onClick={(): void => setIsButtonPressed(!isButtonPressed)}
+          onKeyDown={(): void => setIsButtonPressed(!isButtonPressed)}
         >
           <p>Wejdź</p>
         </button>

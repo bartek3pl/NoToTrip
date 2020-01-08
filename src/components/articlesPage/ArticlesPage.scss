@@ -44,12 +44,11 @@
 }
 
 .articles-background {
-  position: absolute;
+  position: fixed;
   display: block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -67,11 +66,21 @@
   .articles-trips header p {
     font-size: 1.6rem;
   }
+
+  .articles-trips .articles-header {
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .trips .container {
     max-width: 100%;
     padding: 1.2rem;
+  }
+
+  .articles-trips .articles-header {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
   }
 }

@@ -20,6 +20,8 @@ const Authors: FunctionComponent = () => {
       <header id="header-click">
         <Fade cascade bottom>
           <h2>Autorzy</h2>
+        </Fade>
+        <Fade bottom>
           <p>Dowiedz się o nas więcej</p>
         </Fade>
       </header>

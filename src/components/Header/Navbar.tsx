@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { Link as ReachLink } from '@reach/router';
@@ -7,7 +7,7 @@ import TripsList from './TripsList';
 import NavbarMobile from './NavbarMobile';
 import './Navbar.scss';
 
-function handleTripsList(action: string) {
+function handleTripsList(action: string): void {
   const tripsListWrapper = document.querySelector(
     '.navbar-brand .navbar-li .trips-list-wrapper'
   ) as HTMLElement;
@@ -27,14 +27,14 @@ function handleTripsList(action: string) {
   }
 }
 
-const Navbar: FunctionComponent = () => {
-  const handleMobileMenu = () => {
-    const home = document.querySelector('#home');
-    if (home) {
-      home.classList.toggle('nav-opened');
-    }
-  };
+function handleMobileMenu(): void {
+  const home = document.querySelector('#home');
+  if (home) {
+    home.classList.toggle('nav-opened');
+  }
+}
 
+const Navbar: FunctionComponent = () => {
   return (
     <Container className="container-wrapper container-wrapper-navbar">
       <span role="img" className="entry-page-header" />
@@ -50,14 +50,14 @@ const Navbar: FunctionComponent = () => {
               <i
                 className="icon-menu"
                 aria-label="Menu"
-                onClick={() => handleMobileMenu()}
+                onClick={(): void => handleMobileMenu()}
               />
 
               <i
                 className="icon-cancel"
                 id="menu-cancel"
                 aria-label="Anuluj"
-                onClick={() => handleMobileMenu()}
+                onClick={(): void => handleMobileMenu()}
               />
             </div>
           </div>
@@ -79,10 +79,10 @@ const Navbar: FunctionComponent = () => {
                 className="navbar-li"
                 aria-label="Przejdź do sekcji podróże"
                 tabIndex={0}
-                onMouseEnter={() => handleTripsList('show')}
-                onFocus={() => handleTripsList('show')}
-                onMouseLeave={() => handleTripsList('hide')}
-                onBlur={() => handleTripsList('hide')}
+                onMouseEnter={(): void => handleTripsList('show')}
+                onFocus={(): void => handleTripsList('show')}
+                onMouseLeave={(): void => handleTripsList('hide')}
+                onBlur={(): void => handleTripsList('hide')}
               >
                 <li className="trips-list-wrapper">
                   Podróże

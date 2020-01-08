@@ -32,7 +32,7 @@ const MobileNewestArticlesFigures: FunctionComponent<IProps> = ({
             src={img}
             className="img-article-mobile rounded"
             alt={title}
-            onLoad={() => setLoaded(true)}
+            onLoad={(): void => setLoaded(true)}
           />
         </ReachLink>
       </div>

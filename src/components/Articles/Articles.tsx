@@ -15,6 +15,8 @@ const Articles: FunctionComponent = () => {
       <header id="podroze">
         <Fade bottom cascade>
           <h2>Podróże</h2>
+        </Fade>
+        <Fade bottom>
           <p>„Ten kto żyje widzi dużo, ten kto podróżuje widzi więcej.”</p>
         </Fade>
       </header>

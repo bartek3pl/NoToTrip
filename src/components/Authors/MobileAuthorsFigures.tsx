@@ -10,12 +10,12 @@ interface IProps {
   img: string;
 }
 
-function getNameOfAuthor(index: number) {
+function getNameOfAuthor(index: number): string {
   if (index < authorsData.length) return authorsData[index].name;
   return authorsData[0].name;
 }
 
-function handleOnClick(name: string) {
+function handleOnClick(name: string): void {
   const authors = document.querySelector('.authors');
   const firstAuthor = getNameOfAuthor(0);
   const secondAuthor = getNameOfAuthor(1);
@@ -46,12 +46,12 @@ const MobileAuthorsFigures: FunctionComponent<IProps> = ({
         className="img-authors-mobile"
         id={name}
         alt={fullname}
-        onClick={() => {
+        onClick={(): void => {
           setOpen(!open);
           handleOnClick(name);
         }}
         style={{ opacity: loaded ? '1' : '0' }}
-        onLoad={() => setLoaded(true)}
+        onLoad={(): void => setLoaded(true)}
       />
 
       <Fade in={open}>
@@ -59,7 +59,7 @@ const MobileAuthorsFigures: FunctionComponent<IProps> = ({
           <i
             className="icon-cancel"
             id={`icon-${name}`}
-            onClick={() => {
+            onClick={(): void => {
               setOpen(!open);
               handleOnClick(name);
             }}
