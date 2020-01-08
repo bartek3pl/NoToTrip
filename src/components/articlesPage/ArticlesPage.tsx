@@ -52,6 +52,7 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
   const { location, distance, fly, drive } = articlesData[index].numbers;
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     addEntryPage();
   }, []);
 
