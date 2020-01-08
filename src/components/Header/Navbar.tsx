@@ -34,6 +34,13 @@ function handleMobileMenu(): void {
   }
 }
 
+function closeMobileMenu(): void {
+  const home = document.querySelector('#home');
+  if (home) {
+    home.classList.remove('nav-opened');
+  }
+}
+
 const Navbar: FunctionComponent = () => {
   return (
     <Container className="container-wrapper container-wrapper-navbar">
@@ -42,7 +49,7 @@ const Navbar: FunctionComponent = () => {
         <Col lg={4} sm={12}>
           <div className="navbar-flex-wrapper">
             <ReachLink to="/" aria-label="Logo">
-              <div className="logo">
+              <div className="logo" onClick={(): void => closeMobileMenu()}>
                 <img className="logo-img" src={logoMin} alt="Nototrip logo" />
               </div>
             </ReachLink>
