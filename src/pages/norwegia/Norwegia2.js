@@ -164,7 +164,7 @@ const Norway2 = () => {
       <p>
         Po Preikestolen zrobiliśmy sobie przerwę i odpoczęliśmy spacerując po
         łagodnych trasach w{' '}
-        <ReachLink to="/norwegia/hardengervidda-i-jotunheimen">
+        <ReachLink to="/norwegia/hardangervidda-i-jotunheimen">
           Parku Narodowym Hardangervidda
         </ReachLink>
         . Zapraszam po więcej informacji dotyczących parku.
