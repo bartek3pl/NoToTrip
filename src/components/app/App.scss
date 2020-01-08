@@ -57,14 +57,14 @@ h5 {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0.8rem;
   background-color: rgba(51, 51, 51, 1);
 }
 
 ::-webkit-scrollbar-thumb:vertical {
   background-color: rgba(34, 210, 200, 1);
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -73,13 +73,13 @@ h5 {
 
 ::-webkit-scrollbar-thumb:vertical:active {
   background: rgba(34, 210, 200, 0.7);
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
 }
 
 .entry-page {
   position: relative;
-  min-height: 800px;
+  min-height: 80rem;
   height: 100vh;
   width: 100%;
 }
@@ -115,7 +115,7 @@ h2 {
   font-size: 5rem;
   font-weight: 400;
   text-align: center;
-  text-shadow: 1px 1px 50px #000;
+  text-shadow: 0.1rem 0.1rem 5rem #000;
 }
 
 @media screen and (max-width: 1000px) {

@@ -9,12 +9,12 @@
   padding-bottom: 8rem;
   z-index: 0;
   overflow: hidden;
-  border-bottom: 2px #33f4d9 solid;
-  border-top: 2px #33f4d9 solid;
+  border-bottom: 0.2rem #33f4d9 solid;
+  border-top: 0.2rem #33f4d9 solid;
 
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.75);
+  box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.75);
 
   &::before {
     content: '';
@@ -38,7 +38,7 @@
     font-size: 5.5rem;
     font-weight: 400;
     text-align: center;
-    text-shadow: 1px 1px 50px #000;
+    text-shadow: 0.1rem 0.1rem 5rem #000;
   }
 
   p {
@@ -46,7 +46,7 @@
     font-size: 3rem;
     font-weight: lighter;
     text-align: center;
-    text-shadow: 1px 1px 50px #000;
+    text-shadow: 0.1rem 0.1rem 5rem #000;
   }
 }
 

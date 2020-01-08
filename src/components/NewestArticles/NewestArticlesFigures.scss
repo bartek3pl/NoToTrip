@@ -3,8 +3,8 @@
   height: 15rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border: 2px #11c1b7 solid;
-  border-radius: 5px;
+  border: 0.2rem #11c1b7 solid;
+  border-radius: 0.5rem;
   background: linear-gradient(
     to top,
     var(--main-bg-color-1),
@@ -15,9 +15,9 @@
   overflow: hidden;
   opacity: 1;
 
-  -webkit-box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
+  box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
 
   &::before {
     content: '';
@@ -62,7 +62,7 @@
     height: 100%;
     float: left;
     overflow: hidden;
-    border-right: 2px #00c1a7 solid;
+    border-right: 0.2rem #00c1a7 solid;
 
     .img-article {
       width: 18rem;

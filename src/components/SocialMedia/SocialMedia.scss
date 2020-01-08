@@ -4,13 +4,13 @@
   background-image: linear-gradient(to top, #00b0a6, #22d2c8);
   max-height: 40rem;
   width: 100%;
-  border-bottom: 2px #33f4d9 solid;
-  border-top: 2px #33f4d9 solid;
+  border-bottom: 0.2rem #33f4d9 solid;
+  border-top: 0.2rem #33f4d9 solid;
   z-index: 0;
 
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.75);
+  box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.75);
 
   &::before {
     content: '';
@@ -44,17 +44,6 @@
   opacity: 1;
 }
 
-.instagram-logo-img {
-  position: absolute;
-  display: none;
-  opacity: 0;
-  transition: all 0.3s ease;
-  top: 3.55rem;
-  left: 2.2rem;
-  width: 29.28rem;
-  height: 29.28rem;
-}
-
 .icon-arrow {
   transform: rotate(-35deg);
   max-width: 45rem;
@@ -84,6 +73,19 @@
 .instagram-mobile {
   display: none;
 }
+
+/*
+.instagram-logo-img {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  top: 3.55rem;
+  left: 2.2rem;
+  width: 29.28rem;
+  height: 29.28rem;
+}
+*/
 
 @media screen and (max-width: 1500px) {
   .col-arrow {

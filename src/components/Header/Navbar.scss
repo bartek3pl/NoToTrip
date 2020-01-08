@@ -83,9 +83,9 @@
     border-top-right-radius: 0;
     transition: opacity 0.2s ease;
 
-    -webkit-box-shadow: 0px 15px 24px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 15px 24px -8px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 15px 24px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0rem 1.5rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0rem 1.5rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0rem 1.5rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
 
     .trips-li {
       font-size: 1.8rem;
@@ -144,8 +144,8 @@
   pointer-events: none;
   position: absolute;
   top: 0;
-  padding-top: 100px;
-  margin-top: -10px;
+  padding-top: 10rem;
+  margin-top: -1rem;
   height: 100vh;
   z-index: -1;
   transition: opacity 0.2s ease-in-out;
@@ -162,12 +162,12 @@
   z-index: -5;
   opacity: 1;
   overflow: hidden;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 
-  -webkit-box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
+  box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
 }
 
 .entry-page-header {
@@ -186,9 +186,9 @@
   left: 0;
   transition: all 0.2s ease;
 
-  -webkit-box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
+  box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 1700px) {
