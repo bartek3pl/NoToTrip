@@ -7,7 +7,12 @@ import articlesData from '../../data/ArticlesData';
 import './ArticlesPage.scss';
 import NumbersSection from './NumbersSection';
 import { convertToUrl } from '../../utils/jsUtils';
-import ArticleContainer from '../../pages/ArticleContainer';
+
+const ArticleContainer = React.lazy(() =>
+  import('../../pages/ArticleContainer')
+);
+
+const Suspense = (React as any).Suspense;
 
 interface IProps {
   index: number;
@@ -34,7 +39,9 @@ const ArticlesPageFigures: FunctionComponent<IProps> = ({ index }) => {
 
   if (articles) {
     allArticlesPageFigures = articles.map((article) => (
-      <ArticlesPageFigure {...article} title={title} key={article.subtitle} />
+      <Suspense fallback={<div>Wczytywanie...</div>}>
+        <ArticlesPageFigure {...article} title={title} key={article.subtitle} />
+      </Suspense>
     ));
   }
 
