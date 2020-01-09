@@ -25,9 +25,8 @@ const ArticlesPageFigure: FunctionComponent<IProps> = ({
   const spinner = css`
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
   `;
 
   return (
