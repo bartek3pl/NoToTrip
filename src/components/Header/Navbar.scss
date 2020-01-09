@@ -22,14 +22,14 @@
 
 .navbar-brand {
   display: flex;
-  width: auto;
+  width: 85%;
   margin: 0 auto;
   margin-top: 1.6rem;
 
   .navbar-li {
     cursor: pointer;
-    min-width: 15.2rem;
     height: 2.4rem;
+    width: 100%;
     font-weight: 400;
     font-size: 1.6rem;
     text-align: center;
