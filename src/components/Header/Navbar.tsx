@@ -118,7 +118,11 @@ const Navbar: FunctionComponent = () => {
                 spy={true}
                 smooth={true}
                 aria-label="Przejdź do sekcji autorzy"
-              ></Link>
+              >
+                <ReachLink to="/">
+                  <li></li>
+                </ReachLink>
+              </Link>
               <Link
                 className="navbar-li"
                 to="autorzy"
