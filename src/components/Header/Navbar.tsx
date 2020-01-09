@@ -111,17 +111,7 @@ const Navbar: FunctionComponent = () => {
                   <li>Najnowsze artykuły</li>
                 </ReachLink>
               </Link>
-              <Link
-                className="navbar-li"
-                to="autorzy"
-                spy={true}
-                smooth={true}
-                aria-label="Przejdź do sekcji autorzy"
-              >
-                <ReachLink to="/">
-                  <li>Autorzy</li>
-                </ReachLink>
-              </Link>
+
               <Link
                 className="navbar-li"
                 to="autorzy"
