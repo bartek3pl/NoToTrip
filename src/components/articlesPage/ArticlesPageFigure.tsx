@@ -2,7 +2,7 @@ import React, { useState, useEffect, FunctionComponent } from 'react';
 import { Col } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
 import { convertToUrl } from '../../utils/jsUtils';
-import ClipLoader from 'react-spinners/ClipLoader';
+import CircleLoader from 'react-spinners/ClipLoader';
 import './ArticlesPageFigure.scss';
 
 interface IProps {
@@ -24,7 +24,7 @@ const ArticlesPageFigure: FunctionComponent<IProps> = ({
   return (
     <Col xl={4} lg={6}>
       {!loaded ? (
-        <ClipLoader size={500} color={'#fff'} loading={!loaded} />
+        <CircleLoader size={50} color={'#fff'} loading={!loaded} />
       ) : null}
       <figure
         className="figures-wrapper"
