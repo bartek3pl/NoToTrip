@@ -18,6 +18,13 @@
   -moz-box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
   box-shadow: 0rem 1rem 2.4rem -0.8rem rgba(0, 0, 0, 0.75);
 
+  &:hover .img-authors,
+  &:focus .img-authors {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
   &:nth-child(1) {
     margin-top: 2.4rem;
   }
@@ -29,13 +36,6 @@
   border-radius: 50%;
   opacity: 1;
   transition: transform 0.2s ease;
-
-  &:hover,
-  &:focus {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-  }
 }
 
 .img-authors-animate {
