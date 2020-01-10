@@ -187,6 +187,8 @@
 
 .icon-angle-right-up-wrapper {
   position: fixed;
+  transform: translatez(0);
+  -webkit-transform: translatez(0);
   display: block;
   top: 30rem;
   left: 20rem;

@@ -173,12 +173,13 @@
 
 .main-bg {
   position: fixed;
+  transform: translatez(0);
+  -webkit-transform: translatez(0);
   top: 0;
   left: 0;
   overflow: hidden;
   height: 100%;
   width: 100vw;
-  z-index: -2;
   opacity: 0.8;
 }
 
@@ -196,6 +197,8 @@
 
 #img-mobile {
   position: fixed;
+  transform: translatez(0);
+  -webkit-transform: translatez(0);
   display: none;
   opacity: 0.6;
   z-index: -2;
