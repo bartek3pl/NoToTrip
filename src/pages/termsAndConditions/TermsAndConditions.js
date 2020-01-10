@@ -40,15 +40,6 @@ const TermsAndConditions = () => {
               role="img"
               aria-hidden="true"
             >
-              <Link
-                to="top"
-                smooth={true}
-                spy={true}
-                className="show-icon"
-                aria-label="Przejdź do początku artykułu"
-              >
-                <i className="icon-angle-right up" />
-              </Link>
               <h3>Welcome to NoToTrip</h3>
               <p>
                 These terms and conditions outline the rules and regulations for
