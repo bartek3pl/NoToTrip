@@ -26,6 +26,7 @@ import Czechy1 from './czechy/Czechy1';
 
 interface IProps {
   article: string;
+  articleSubtitle: string;
   title: string;
   articlesData: any;
 }
@@ -96,6 +97,7 @@ function hideArrow() {
 
 const ArticleContainer: FunctionComponent<IProps> = ({
   article,
+  articleSubtitle,
   title,
   articlesData,
 }) => {
@@ -109,27 +111,33 @@ const ArticleContainer: FunctionComponent<IProps> = ({
   ) as FunctionComponent;
 
   return (
-    <Container className="article-container animated fadeIn">
-      <Row>
-        <Col>
-          <div className="article-bg" id="top" role="img" aria-hidden="true">
-            <Link
-              to="top"
-              smooth={true}
-              spy={true}
-              className="show-icon"
-              aria-label="Przejdź do początku artykułu"
-            >
-              <i className="icon-angle-right up" />
-            </Link>
+    <>
+      <header className="articles-header">
+        <h2>{title}</h2>
+        <p>{articleSubtitle}</p>
+      </header>
+      <Container className="article-container animated fadeIn">
+        <Row>
+          <Col>
+            <div className="article-bg" id="top" role="img" aria-hidden="true">
+              <Link
+                to="top"
+                smooth={true}
+                spy={true}
+                className="show-icon"
+                aria-label="Przejdź do początku artykułu"
+              >
+                <i className="icon-angle-right up" />
+              </Link>
 
-            <ArticleComponent />
+              <ArticleComponent />
 
-            <DisqusSection articleTitle={article} articlesTitle={title} />
-          </div>
-        </Col>
-      </Row>
-    </Container>
+              <DisqusSection articleTitle={article} articlesTitle={title} />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 

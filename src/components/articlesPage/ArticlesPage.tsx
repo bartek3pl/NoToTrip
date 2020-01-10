@@ -1,4 +1,4 @@
-import React, { useEffect, FunctionComponent } from 'react';
+import React, { useEffect, useState, FunctionComponent } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { RouteComponentProps, Router } from '@reach/router';
 import Fade from 'react-reveal/Fade';
@@ -21,10 +21,8 @@ const RouterPage = (
 function addEntryPage() {
   const entryPage = document.querySelector('.entry-page');
 
-  if (entryPage) {
-    if (!entryPage.classList.contains('articles-page')) {
-      entryPage.classList.add('articles-page');
-    }
+  if (entryPage && !entryPage.classList.contains('articles-page')) {
+    entryPage.classList.add('articles-page');
   }
 }
 
@@ -56,7 +54,7 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
     addEntryPage();
   }, []);
 
-  const getBackgroundImg = () => `url(${img})`;
+  const getBackgroundImage = () => `url(${img})`;
 
   const allArticleContainers = articlesData[
     index
@@ -66,6 +64,7 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
       pageComponent={
         <ArticleContainer
           article={convertToUrl(articles[mapIndex].subtitle)}
+          articleSubtitle={articles[mapIndex].subtitle}
           articlesData={articlesData[index]}
           title={title}
         />
@@ -74,19 +73,24 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
     />
   ));
 
+  const backgroundImage = getBackgroundImage();
+
   return (
     <section role="article" className="articles-trips">
-      <header className="articles-header">
-        <Fade cascade bottom>
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
-        </Fade>
-      </header>
-
       <Router primary={false}>
         <RouterPage
           path="/"
-          pageComponent={<ArticlesPageFigures index={index} />}
+          pageComponent={
+            <>
+              <header className="articles-header">
+                <Fade bottom>
+                  <h2>{title}</h2>
+                  <p>{subtitle}</p>
+                </Fade>
+              </header>
+              <ArticlesPageFigures index={index} />
+            </>
+          }
         />
 
         {allArticleContainers}
@@ -95,7 +99,7 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
       <div
         className="articles-background"
         role="img"
-        style={{ backgroundImage: getBackgroundImg() }}
+        style={{ backgroundImage: backgroundImage }}
       />
 
       <NumbersSection
