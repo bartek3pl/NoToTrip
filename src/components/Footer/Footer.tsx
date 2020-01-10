@@ -15,9 +15,9 @@ const Footer: FunctionComponent = () => {
           <Col md={10} lg={8}>
             <div className="footer-block">
               <div className="footer-rights">
-                <a href="#home" tabIndex={0}>
+                <ReachLink to="/" tabIndex={0}>
                   &copy; {currentYear} NoToTrip All Rights Reserved
-                </a>
+                </ReachLink>
               </div>
 
               <div className="footer-menu">
@@ -57,11 +57,10 @@ const Footer: FunctionComponent = () => {
                   </Link>
                   <ReachLink
                     to="terms-and-conditions"
-                    className="footer-menu-li"
                     aria-label="Przejdź do strony Terms and Conditions"
                   >
                     <li className="footer-menu-li">
-                      <span lang="en">Terms & Conditions</span>
+                      <span lang="en">Terms &amp; Conditions</span>
                     </li>
                   </ReachLink>
                 </ul>
