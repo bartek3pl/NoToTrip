@@ -78,13 +78,11 @@ const Navbar: FunctionComponent = () => {
         <Col md={8} id="main-menu">
           <nav className="navbar">
             <ul className="navbar-brand">
-              <ReachLink
-                className="navbar-li"
-                to="/"
-                aria-label="Strona główna"
-              >
-                <li>Strona główna</li>
-              </ReachLink>
+              <li className="navbar-li">
+                <ReachLink to="/" aria-label="Strona główna">
+                  Strona główna
+                </ReachLink>
+              </li>
               <li
                 className="navbar-li"
                 aria-label="Przejdź do sekcji podróże"
@@ -103,28 +101,26 @@ const Navbar: FunctionComponent = () => {
                   />
                 </li>
               </li>
-              <Link
-                className="navbar-li"
-                to="najnowsze-artykuly"
-                spy={true}
-                smooth={true}
-                aria-label="Przejdź do sekcji najnowsze artykuły"
-              >
-                <ReachLink to="/">
-                  <li>Najnowsze artykuły</li>
-                </ReachLink>
-              </Link>
-              <Link
-                className="navbar-li"
-                to="autorzy"
-                spy={true}
-                smooth={true}
-                aria-label="Przejdź do sekcji autorzy"
-              >
-                <ReachLink to="/">
-                  <li>Autorzy</li>
-                </ReachLink>
-              </Link>
+              <li className="navbar-li">
+                <Link
+                  to="najnowsze-artykuly"
+                  spy={true}
+                  smooth={true}
+                  aria-label="Przejdź do sekcji najnowsze artykuły"
+                >
+                  <ReachLink to="/">Najnowsze artykuły</ReachLink>
+                </Link>
+              </li>
+              <li className="navbar-li">
+                <Link
+                  to="autorzy"
+                  spy={true}
+                  smooth={true}
+                  aria-label="Przejdź do sekcji autorzy"
+                >
+                  <ReachLink to="/">Autorzy</ReachLink>
+                </Link>
+              </li>
             </ul>
           </nav>
         </Col>
