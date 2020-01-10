@@ -5,7 +5,7 @@
 #welcome-1 {
   font-family: 'Amatic SC', cursive;
   font-size: 11.2rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.6rem;
 }
 
@@ -18,6 +18,7 @@
 
 .welcome {
   position: absolute;
+  pointer-events: none;
   right: 0;
   left: 0;
   top: 16rem;
@@ -25,7 +26,6 @@
   font-size: 6.4rem;
   text-align: center;
   font-weight: 400;
-  padding-top: 6rem;
   text-shadow: 0.5rem 0.5rem 6.4rem #000;
 }
 
@@ -220,7 +220,7 @@
 
   .welcome {
     font-size: 8rem;
-    padding-top: 7rem;
+    margin-top: 7rem;
   }
 
   .snd {
@@ -256,7 +256,7 @@
 
   .welcome {
     font-size: 6.4rem;
-    padding-top: 6rem;
+    margin-top: 5rem;
   }
 
   .snd {
@@ -314,7 +314,7 @@
   }
 
   .welcome {
-    padding-top: 3.2rem;
+    margin-top: 3.2rem;
     font-size: 4.8rem;
   }
 
@@ -335,7 +335,7 @@
   }
 
   .welcome {
-    padding-top: 0.8rem;
+    margin-top: 0.8rem;
     font-size: 3.2rem;
   }
 
