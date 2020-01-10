@@ -8,14 +8,12 @@ const EntryPage: FunctionComponent = () => {
 
   return (
     <>
-      <span className="entry-page-header">
-        <h1 className="welcome animated fadeIn slow" id="welcome-1">
-          Witaj przybyszu!
-        </h1>
-        <h1 className="welcome snd animated fadeIn slow" id="welcome-2">
-          Wejdź, rozgość się...
-        </h1>
-      </span>
+      <h1 className="welcome animated fadeIn slow" id="welcome-1">
+        Witaj przybyszu!
+      </h1>
+      <h1 className="welcome snd animated fadeIn slow" id="welcome-2">
+        Wejdź, rozgość się...
+      </h1>
 
       <Link
         to="podroze"
