@@ -119,15 +119,17 @@ const ArticleContainer: FunctionComponent<IProps> = ({
       <Container className="article-container animated fadeIn">
         <Row>
           <Col>
-            <div className="article-bg" id="top" role="img" aria-hidden="true">
+            <div className="article-bg" role="img" aria-hidden="true">
               <Link
-                to="top"
+                to="navbar-top"
                 smooth={true}
                 spy={true}
                 className="show-icon"
                 aria-label="Przejdź do początku artykułu"
               >
-                <i className="icon-angle-right up" />
+                <div className="icon-angle-right-up-wrapper">
+                  <i className="icon-angle-right up" />
+                </div>
               </Link>
 
               <ArticleComponent />

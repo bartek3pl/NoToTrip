@@ -43,7 +43,10 @@ function closeMobileMenu(): void {
 
 const Navbar: FunctionComponent = () => {
   return (
-    <Container className="container-wrapper container-wrapper-navbar">
+    <Container
+      className="container-wrapper container-wrapper-navbar"
+      id="navbar-top"
+    >
       <span role="img" className="entry-page-header" />
       <Row className="justify-content-md-center animated fadeInDown">
         <Col lg={4} sm={12}>
