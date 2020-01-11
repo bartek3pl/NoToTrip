@@ -20,7 +20,11 @@ const Norway8 = () => {
         przygotowaliśmy również szczegółową listę z rzeczami które trzeba ze
         sobą zabrać. Przez cały wyjazd spisywałam nasze wydatki na kartce oraz
         śledziłam trasę na mapie. Jeśli więc chcecie się wybrać do Norwegii,
-        koniecznie musicie zapoznać się z tym wpisem 😉.
+        koniecznie musicie zapoznać się z tym wpisem{' '}
+        <span role="img" aria-label="uśmiechnięta buźka">
+          😉
+        </span>
+        .
       </h3>
 
       <h4>Koszt wyjazdu (na 2 osoby, chronologicznie)</h4>
@@ -170,9 +174,13 @@ const Norway8 = () => {
         dni i ile mamy alkoholu. Jednak nikt tego nie zweryfikował... może
         uwierzyli nam na słowo? Jednak, to że nam się tak trafiło, nie znaczy,
         że jest tak zawsze. Dlatego radzę dokładnie zapoznać się z limitami
-        celnymi. Osobiście miałam mały problem ze zrozumieniem. Te przepisy to
-        niezłe zadanie matematyczne, ale da się rozgryźć, po kilku kalkulacjach.
-        ;)
+        celnymi przed wyjazdem. Osobiście miałam mały problem ze zrozumieniem.
+        Te przepisy to niezłe zadanie matematyczne, ale da się rozgryźć, po
+        kilku kalkulacjach{' '}
+        <span role="img" aria-label="uśmiechnięta buźka">
+          😉
+        </span>
+        .
       </p>
 
       <p className="link">

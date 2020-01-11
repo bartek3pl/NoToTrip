@@ -95,7 +95,7 @@
 }
 
 .figures-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   padding: 0 1.2rem;
 }
 
@@ -172,6 +172,7 @@
   .img-overlay .img-link .title {
     font-size: 7.8rem;
     margin-bottom: 1rem;
+    line-height: 6rem;
   }
 
   .img-overlay .img-link .description {
@@ -187,6 +188,7 @@
   .img-overlay .img-link .title {
     font-size: 6rem;
     letter-spacing: 0.8rem;
+    line-height: 5rem;
   }
 
   .img-overlay .img-link .description {
@@ -198,6 +200,7 @@
   .img-overlay .img-link .title {
     font-size: 5rem;
     letter-spacing: 0.8rem;
+    line-height: 4.5rem;
   }
 
   .img-overlay .img-link .description {
@@ -209,6 +212,7 @@
   .img-overlay .img-link .title {
     font-size: 3.8rem;
     letter-spacing: 0.2rem;
+    line-height: 4rem;
   }
 
   .img-overlay .img-link .description {
@@ -225,12 +229,13 @@
 
 @media screen and (max-width: 350px) {
   .img-overlay .img-link .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     letter-spacing: 0.1rem;
     margin-bottom: 0rem;
+    line-height: 3rem;
   }
 
   .img-overlay .img-link .description {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 }

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 import bg1 from '../../assets/images/bg-1.jpg';
 import '../../components/articlesPage/ArticlesPage.scss';
 import '../ArticleContainer.scss';

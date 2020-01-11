@@ -1,4 +1,4 @@
-import React, { useEffect, useState, FunctionComponent } from 'react';
+import React, { useEffect, FunctionComponent } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { RouteComponentProps, Router } from '@reach/router';
 import Fade from 'react-reveal/Fade';

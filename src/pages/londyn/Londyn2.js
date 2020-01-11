@@ -231,7 +231,7 @@ const London2 = () => {
       </figure>
 
       <p>
-        Na koniec naszej wycieczki odwiedziliśmy St. Katharine Docks- piękny
+        Na koniec naszej wycieczki odwiedziliśmy St. Katharine Docks - piękny
         kompleks rekreacyjny i mieszkalny z małym portem dla jachtów. Nocą w
         świetle lamp wyglądał bardzo klimatycznie. Spacer po nim był idealnym
         uwieńczeniem naszego intensywnego zwiedzania. Pozostało tylko wrócić do
