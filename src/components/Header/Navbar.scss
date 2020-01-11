@@ -146,7 +146,7 @@
 .nav-opened-bg {
   pointer-events: none;
   position: absolute;
-  left: -100%;
+  left: -100vw;
   padding-top: 8rem;
   margin-top: -0.8rem;
   height: 100vh;
@@ -409,7 +409,7 @@
   }
 
   #home.nav-opened .nav-opened-bg {
-    transform: translateX(100%);
+    transform: translateX(100vw);
     pointer-events: auto;
   }
 
