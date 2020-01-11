@@ -256,6 +256,36 @@
   text-align: right !important;
 }
 
+@media screen and (max-width: 3840px) {
+  .icon-angle-right-up-wrapper {
+    top: 35rem;
+    left: 25rem;
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+
+  .up {
+    top: -1.1rem;
+    left: 0.3rem;
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .icon-angle-right-up-wrapper {
+    top: 30rem;
+    left: 20rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .up {
+    top: -1.4rem;
+    left: -0.2rem;
+    font-size: 5rem;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .icon-angle-right-up-wrapper {
     left: 18rem;
