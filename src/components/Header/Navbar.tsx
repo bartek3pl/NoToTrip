@@ -48,7 +48,7 @@ const Navbar: FunctionComponent = () => {
       id="navbar-top"
     >
       <span role="img" className="entry-page-header" />
-      <Row className="justify-content-md-center animated fadeInDown">
+      <Row className="justify-content-md-center navbar-row animated fadeInDown">
         <Col lg={4} sm={12}>
           <div className="navbar-flex-wrapper">
             <ReachLink to="/" aria-label="Logo">

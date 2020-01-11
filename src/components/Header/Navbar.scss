@@ -1,3 +1,8 @@
+.navbar-row {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .logo {
   margin-top: 1.6rem;
   margin-bottom: 2.4rem;
@@ -384,9 +389,14 @@
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
   .container-wrapper-navbar {
     max-width: 100%;
+  }
+
+  .navbar-row {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   #main-menu {

@@ -19,6 +19,7 @@
 .welcome {
   position: absolute;
   pointer-events: none;
+  z-index: -1;
   right: 0;
   left: 0;
   top: 16rem;
@@ -69,6 +70,7 @@
 
     border-radius: 3rem;
     opacity: 1;
+    transition: opacity 0.2s ease;
   }
 
   &:active::before {
@@ -92,11 +94,6 @@
   &:active {
     transform: scale(0.95) !important;
     background-color: #00b0a6 !important;
-  }
-
-  &:active + .icon-down-open {
-    opacity: 0;
-    transform: translateY(12rem);
   }
 
   p {
@@ -174,6 +171,7 @@
   position: fixed;
   transform: translatez(0);
   -webkit-transform: translatez(0);
+  z-index: -2;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -281,7 +279,7 @@
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
   #home.nav-opened .btn {
     display: none;
   }

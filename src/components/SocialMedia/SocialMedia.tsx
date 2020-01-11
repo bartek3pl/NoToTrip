@@ -10,7 +10,7 @@ const SocialMedia: FunctionComponent = () => {
   return (
     <section role="article" className="social-media-page">
       <Container className="container-wrapper">
-        <Row className="justify-content-center">
+        <Row className="justify-content-center social-media-row">
           <Col xl={4}>
             <a href={instagramLink} target="_blank" rel="noreferrer noopener">
               <div role="img" className="instagram-logo">
