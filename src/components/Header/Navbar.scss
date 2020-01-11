@@ -144,15 +144,15 @@
 }
 
 .nav-opened-bg {
-  opacity: 0;
   pointer-events: none;
   position: absolute;
-  top: 0;
+  left: -100%;
   padding-top: 8rem;
   margin-top: -0.8rem;
   height: 100vh;
   z-index: -1;
-  transition: opacity 0.2s ease-in-out;
+  transform: translateX(0);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease;
 }
 
 .nav-opened-overlay {
@@ -409,7 +409,7 @@
   }
 
   #home.nav-opened .nav-opened-bg {
-    opacity: 1;
+    transform: translateX(100%);
     pointer-events: auto;
   }
 
