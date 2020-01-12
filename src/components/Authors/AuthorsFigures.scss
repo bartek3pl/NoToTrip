@@ -60,6 +60,44 @@
   }
 }
 
+@media screen and (max-width: 3840px) {
+  .authors-block {
+    height: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 105rem;
+  }
+
+  .img-authors {
+    width: 15rem;
+  }
+
+  .authors-description {
+    width: 78%;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .authors-block {
+    height: 12rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.6rem;
+    max-width: 85rem;
+  }
+
+  .img-authors {
+    width: 12rem;
+  }
+
+  .authors-description {
+    width: 78%;
+    margin-left: 2.4rem;
+    margin-top: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .authors-description {
     width: 72%;

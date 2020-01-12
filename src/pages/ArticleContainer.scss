@@ -269,6 +269,68 @@
     left: 0.3rem;
     font-size: 5rem;
   }
+
+  .article-figure {
+    margin-top: 4.8rem !important;
+  }
+
+  .article-bg {
+    h3 {
+      font-size: 2.6rem;
+      margin: 0 10rem;
+      padding-top: 10rem;
+      padding-bottom: 1rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+      margin: 0 10rem;
+      padding-top: 3.8rem;
+    }
+
+    p {
+      font-size: 1.9rem;
+      margin-top: 1.9rem !important;
+      margin: 0 10rem;
+    }
+
+    &:last-child {
+      margin-bottom: 10rem !important;
+    }
+
+    .link {
+      margin-top: 1rem !important;
+    }
+
+    .point {
+      margin-top: 1rem !important;
+    }
+
+    .first {
+      margin-top: 2rem !important;
+    }
+  }
+
+  .article-figcaption {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem !important;
+    margin-bottom: 3rem !important;
+    font-size: 2.2rem;
+  }
+
+  .gmap {
+    margin-top: 5rem !important;
+    height: 60rem;
+  }
+
+  .angle-down::before {
+    font-size: 3rem;
+  }
+
+  .link-to-article {
+    margin-top: 3rem !important;
+  }
 }
 
 @media screen and (max-width: 1919px) {
@@ -283,6 +345,88 @@
     top: -1.4rem;
     left: -0.2rem;
     font-size: 5rem;
+  }
+
+  .article-container {
+    margin-bottom: 8rem;
+  }
+
+  .article-figure {
+    margin-top: 4rem !important;
+  }
+
+  .article-bg {
+    h3 {
+      font-size: 2.2rem;
+      margin: 0 8rem;
+      padding-top: 8rem;
+      padding-bottom: 0.8rem;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+      margin: 0 8rem;
+      padding-top: 3.2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-top: 1.6rem !important;
+      margin: 0 8rem;
+    }
+
+    &:last-child {
+      margin-bottom: 8rem !important;
+    }
+
+    .link {
+      margin-top: 0.8rem !important;
+    }
+
+    .point {
+      margin-top: 0.8rem !important;
+    }
+
+    .first {
+      margin-top: 1.6rem !important;
+    }
+  }
+
+  .article-figcaption {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 1.6rem !important;
+    margin-bottom: 2.4rem !important;
+    font-size: 1.8rem;
+  }
+
+  .article-img-overlay {
+    .article-img-link {
+      .title {
+        margin-top: 9.6rem !important;
+        margin-bottom: 0;
+        margin-left: 0;
+        font-size: 5rem;
+        letter-spacing: 1.6rem;
+      }
+
+      .two-line {
+        margin-top: 8rem !important;
+      }
+    }
+  }
+
+  .gmap {
+    margin-top: 4rem !important;
+    height: 48rem;
+  }
+
+  .angle-down::before {
+    font-size: 2.4rem;
+  }
+
+  .link-to-article {
+    margin-top: 2.4rem !important;
   }
 }
 

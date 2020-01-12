@@ -114,6 +114,26 @@
   position: relative;
 }
 
+@media screen and (max-width: 3840px) {
+  .articles-figure {
+    .trips-figcaption {
+      font-size: 2rem;
+      margin-top: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .articles-figure {
+    .trips-figcaption {
+      font-size: 1.6rem;
+      margin-top: 1rem;
+      margin-bottom: 2.7rem;
+    }
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .img-overlay .img-link .title {
     font-size: 5rem;
