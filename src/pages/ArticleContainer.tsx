@@ -78,23 +78,6 @@ function subtitleToComponent(
   }
 }
 
-/*
-function getArrow() {
-  const arrow = document.querySelector('.up') as HTMLElement;
-  return arrow;
-}
-
-function showArrow() {
-  const arrow = getArrow();
-  arrow.style.opacity = '1';
-}
-
-function hideArrow() {
-  const arrow = getArrow();
-  arrow.style.opacity = '0';
-}
-*/
-
 const ArticleContainer: FunctionComponent<IProps> = ({
   article,
   articleSubtitle,

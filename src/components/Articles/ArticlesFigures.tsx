@@ -11,6 +11,13 @@ interface IProps {
   caption: string;
 }
 
+function closeMobileMenu(): void {
+  const home = document.querySelector('#home');
+  if (home) {
+    home.classList.remove('nav-opened');
+  }
+}
+
 const ArticlesFigures: FunctionComponent<IProps> = ({
   title,
   desc,
@@ -26,6 +33,7 @@ const ArticlesFigures: FunctionComponent<IProps> = ({
         className="articles-figure"
         aria-label={caption}
         style={{ opacity: loaded ? '1' : '0' }}
+        onClick={(): void => closeMobileMenu()}
       >
         <div role="img" className="img-overlay" aria-hidden="true">
           <img

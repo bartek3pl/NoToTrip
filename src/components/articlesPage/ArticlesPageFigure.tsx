@@ -13,6 +13,13 @@ interface IProps {
   img: string;
 }
 
+function closeMobileMenu(): void {
+  const home = document.querySelector('#home');
+  if (home) {
+    home.classList.remove('nav-opened');
+  }
+}
+
 const ArticlesPageFigure: FunctionComponent<IProps> = ({
   title,
   subtitle,
@@ -43,7 +50,12 @@ const ArticlesPageFigure: FunctionComponent<IProps> = ({
         aria-label={caption}
         style={{ opacity: loaded ? '1' : '0' }}
       >
-        <div role="img" className="img-overlay" aria-hidden="true">
+        <div
+          role="img"
+          className="img-overlay"
+          aria-hidden="true"
+          onClick={(): void => closeMobileMenu()}
+        >
           <img
             src={img}
             className="reg img-fluid rounded d-block m-1"

@@ -9,6 +9,13 @@ interface IProps {
   img: string;
 }
 
+function closeMobileMenu(): void {
+  const home = document.querySelector('#home');
+  if (home) {
+    home.classList.remove('nav-opened');
+  }
+}
+
 const MobileNewestArticlesFigures: FunctionComponent<IProps> = ({
   title,
   subtitle,
@@ -22,6 +29,7 @@ const MobileNewestArticlesFigures: FunctionComponent<IProps> = ({
       className="newest-articles-figure"
       aria-label={subtitle}
       style={{ opacity: loaded ? '1' : '0' }}
+      onClick={(): void => closeMobileMenu()}
     >
       <div role="img" className="img-overlay-mobile" aria-hidden="true">
         <ReachLink
