@@ -1,5 +1,5 @@
 import React, { useEffect, FunctionComponent } from 'react';
-import { Router, RouteComponentProps } from '@reach/router';
+import { Router, Redirect, RouteComponentProps } from '@reach/router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/fontello/css/fontello.css';
 import './App.scss';
@@ -20,12 +20,32 @@ const RouterPage = (
   props: { pageComponent: JSX.Element } & RouteComponentProps
 ) => props.pageComponent;
 
+// removes entry-page class when route is changed in Main section
+function removeArticlesPage() {
+  const entryPage = document.querySelector('.entry-page');
+
+  if (entryPage) {
+    if (entryPage.classList.contains('articles-page')) {
+      entryPage.classList.remove('articles-page');
+    }
+  }
+}
+
+// changes display of main page when route is changed in Main section
+function addEntryContent() {
+  const entryContent = document.querySelector('.entry-content') as HTMLElement;
+
+  if (entryContent && entryContent.style.display !== 'block') {
+    entryContent.style.display = 'block';
+  }
+}
+
 const Header: FunctionComponent = () => {
   return (
     <section role="article" className="entry-page" id="home">
       <Navbar />
       <Router>
-        <RouterPage path="/" pageComponent={<EntryPage />} />
+        <RouterPage default path="/" pageComponent={<EntryPage />} />
       </Router>
     </section>
   );
@@ -33,19 +53,11 @@ const Header: FunctionComponent = () => {
 
 const Main: FunctionComponent = () => {
   useEffect(() => {
-    if (window.location.pathname === '/') removeEntryPage();
-  }, []);
-
-  const entryPage = document.querySelector('.entry-page');
-
-  // removes entry-page class when route is changed in Main section
-  function removeEntryPage() {
-    if (entryPage) {
-      if (entryPage.classList.contains('articles-page')) {
-        entryPage.classList.remove('articles-page');
-      }
+    if (window.location.pathname === '/') {
+      removeArticlesPage();
+      addEntryContent();
     }
-  }
+  }, []);
 
   return (
     <main>
@@ -70,7 +82,7 @@ function App() {
     <>
       <Header />
       <Router primary={false}>
-        <RouterPage path="/" pageComponent={<Main />} />
+        <RouterPage default path="/" pageComponent={<Main />} />
         {allArticlesPages}
         <RouterPage
           path="/terms-and-conditions"

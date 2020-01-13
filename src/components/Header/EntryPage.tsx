@@ -7,7 +7,7 @@ const EntryPage: FunctionComponent = () => {
   const [isButtonPressed, setIsButtonPressed] = useState(false);
 
   return (
-    <>
+    <div className="entry-content">
       <h1 className="welcome animated fadeIn slow" id="welcome-1">
         Witaj przybyszu!
       </h1>
@@ -46,7 +46,7 @@ const EntryPage: FunctionComponent = () => {
         />
         <div id="img-mobile" aria-hidden="true"></div>
       </div>
-    </>
+    </div>
   );
 };
 

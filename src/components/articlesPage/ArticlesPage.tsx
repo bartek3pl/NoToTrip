@@ -18,11 +18,20 @@ const RouterPage = (
 ) => props.pageComponent;
 
 // adds entry-page class when route is changed in Main section
-function addEntryPage() {
+function addArticlesPage() {
   const entryPage = document.querySelector('.entry-page');
 
   if (entryPage && !entryPage.classList.contains('articles-page')) {
     entryPage.classList.add('articles-page');
+  }
+}
+
+// changes display of main page when route is changed in Main section
+function removeEntryContent() {
+  const entryContent = document.querySelector('.entry-content') as HTMLElement;
+
+  if (entryContent && entryContent.style.display !== 'none') {
+    entryContent.style.display = 'none';
   }
 }
 
@@ -51,7 +60,8 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    addEntryPage();
+    removeEntryContent();
+    addArticlesPage();
   }, []);
 
   const getBackgroundImage = () => `url(${img})`;
@@ -79,6 +89,7 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
     <section role="article" className="articles-trips">
       <Router primary={false}>
         <RouterPage
+          default
           path="/"
           pageComponent={
             <>
