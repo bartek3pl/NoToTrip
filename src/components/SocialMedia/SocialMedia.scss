@@ -90,6 +90,74 @@
   height: 23.42rem;
 }
 
+@media screen and (max-width: 3840px) {
+  .social-media-page {
+    max-height: 38rem;
+  }
+
+  .social-media-row {
+    max-width: 1920px;
+  }
+
+  .instagram-logo {
+    margin-left: 13.4rem;
+    margin-top: 2rem;
+  }
+
+  .icon-instagram {
+    font-size: 23rem;
+  }
+
+  .icon-arrow {
+    max-width: 40rem;
+    padding-bottom: 10rem;
+    padding-left: 4.8rem;
+  }
+
+  .social-media-text {
+    padding-top: 7.7rem;
+    padding-left: 2rem;
+
+    p {
+      font-size: 7.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .social-media-page {
+    max-height: 32rem;
+  }
+
+  .social-media-row {
+    max-width: 1920px;
+  }
+
+  .instagram-logo {
+    margin-left: 11.2rem;
+    margin-top: 1.6rem;
+  }
+
+  .icon-instagram {
+    font-size: 19.2rem;
+  }
+
+  .icon-arrow {
+    max-width: 36rem;
+    padding-bottom: 8rem;
+    padding-left: 4rem;
+  }
+
+  .social-media-text {
+    padding-top: 6.4rem;
+    padding-left: 1.6rem;
+
+    p {
+      font-size: 6.4rem;
+    }
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .col-arrow {
     display: none;
@@ -123,10 +191,4 @@
   .icon-instagram {
     font-size: 8.8rem;
   }
-
-  /*
-  .instagram-logo-img {
-    display: none;
-  }
-  */
 }

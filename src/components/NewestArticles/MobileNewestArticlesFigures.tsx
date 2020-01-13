@@ -44,7 +44,7 @@ const MobileNewestArticlesFigures: FunctionComponent<IProps> = ({
           />
         </ReachLink>
       </div>
-      <figcaption className="fig-mobile">{subtitle}</figcaption>
+      <figcaption className="fig-mobile">{title} - {subtitle}</figcaption>
     </figure>
   );
 };

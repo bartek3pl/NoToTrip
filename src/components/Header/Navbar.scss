@@ -220,7 +220,7 @@
     .navbar-li {
       min-width: 18.2rem;
       height: 3rem;
-      font-size: 2rem;
+      font-size: 1.9rem;
 
       &::after {
         margin-top: 0.5rem;
@@ -232,7 +232,7 @@
       margin-top: 3.7rem;
 
       .trips-li {
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
       }
@@ -257,6 +257,69 @@
 
   .entry-page-header {
     height: 11.5rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .logo {
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .logo-img {
+    height: 8.8rem;
+    margin-top: -1.2rem;
+    margin-left: 5.6rem;
+  }
+
+  .navbar {
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+    height: 4rem;
+  }
+
+  .navbar-brand {
+    margin-top: 1.6rem;
+
+    .navbar-li {
+      height: 2.4rem;
+      font-size: 1.6rem;
+
+      &::after {
+        margin-top: 0.4rem;
+        height: 0.2rem;
+      }
+    }
+
+    .trips-list {
+      margin-top: 3.2rem;
+
+      .trips-li {
+        font-size: 1.4rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
+
+  .icon-angle-right {
+    font-size: 1.6rem;
+    margin-left: 0.8rem;
+  }
+
+  #mobile-main-menu {
+    .icon-menu {
+      font-size: 2.6rem;
+    }
+  }
+
+  .nav-opened-bg {
+    padding-top: 8rem;
+    margin-top: -0.8rem;
+  }
+
+  .entry-page-header {
+    height: 9.6rem;
   }
 }
 
