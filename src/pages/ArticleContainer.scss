@@ -12,7 +12,7 @@
 }
 
 .articles-trips {
-  .articles-header {
+  .article-header {
     h2 {
       font-family: 'Gelasio';
       padding-top: 5.6rem;
@@ -535,11 +535,11 @@
 }
 
 @media screen and (max-width: 800px) {
-  .articles-trips .articles-header h2 {
+  .articles-trips .article-header h2 {
     font-size: 3.2rem;
   }
 
-  .articles-trips .articles-header h1 {
+  .articles-trips .article-header h1 {
     font-size: 1.6rem;
   }
 }

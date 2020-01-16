@@ -95,7 +95,7 @@ const ArticleContainer: FunctionComponent<IProps> = ({
 
   return (
     <>
-      <header className="articles-header">
+      <header className="articles-header article-header">
         <h2>{title}</h2>
         <h1>{articleSubtitle}</h1>
       </header>
