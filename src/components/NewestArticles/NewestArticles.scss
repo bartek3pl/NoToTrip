@@ -8,7 +8,7 @@
   header {
     position: relative;
 
-    p {
+    h3 {
       margin-top: 0.8rem;
       font-size: 2.4rem;
       font-weight: lighter;
@@ -48,19 +48,19 @@
 }
 
 @media screen and (max-width: 1700px) {
-  .article p {
+  .article h3 {
     font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .article p {
+  .article h3 {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .article p {
+  .article h3 {
     font-size: 1.1rem;
   }
 }
@@ -70,7 +70,7 @@
     padding-top: 3.2rem;
   }
 
-  .article p {
+  .article h3 {
     font-size: 1rem;
   }
 
@@ -92,7 +92,7 @@
     font-size: 3.2rem;
   }
 
-  .newest-articles header p {
+  .newest-articles header h3 {
     font-size: 1.6rem;
   }
 }

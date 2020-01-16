@@ -1,6 +1,14 @@
 .article-container {
   margin-bottom: 8rem;
   max-width: 64%;
+
+  h3,
+  h4,
+  h5 {
+    font-family: 'Gelasio';
+    font-weight: 400;
+    text-shadow: none;
+  }
 }
 
 .article-figure {

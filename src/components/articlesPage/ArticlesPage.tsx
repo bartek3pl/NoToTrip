@@ -95,8 +95,8 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
             <>
               <header className="articles-header">
                 <Fade bottom>
-                  <h2>{title}</h2>
-                  <p>{subtitle}</p>
+                  <h1>{title}</h1>
+                  <h2>{subtitle}</h2>
                 </Fade>
               </header>
               <ArticlesPageFigures index={index} />

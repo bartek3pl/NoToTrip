@@ -22,7 +22,7 @@ const Authors: FunctionComponent = () => {
           <h2>Autorzy</h2>
         </Fade>
         <Fade bottom>
-          <p>Dowiedz się o nas więcej</p>
+          <h3>Dowiedz się o nas więcej</h3>
         </Fade>
       </header>
 

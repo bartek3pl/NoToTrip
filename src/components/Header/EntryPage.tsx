@@ -11,9 +11,9 @@ const EntryPage: FunctionComponent = () => {
       <h1 className="welcome animated fadeIn slow" id="welcome-1">
         Witaj przybyszu!
       </h1>
-      <h1 className="welcome snd animated fadeIn slow" id="welcome-2">
+      <h2 className="welcome snd animated fadeIn slow" id="welcome-2">
         Wejdź, rozgość się...
-      </h1>
+      </h2>
 
       <Link
         to="podroze"

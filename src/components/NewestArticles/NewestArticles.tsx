@@ -35,7 +35,7 @@ const NewestArticles: FunctionComponent = () => {
       <header>
         <Fade bottom>
           <h2>Najnowsze artykuły</h2>
-          <p>Zajrzyj aby dowiedzieć się więcej o wybranym miejscu</p>
+          <h3>Zajrzyj aby dowiedzieć się więcej o wybranym miejscu</h3>
         </Fade>
       </header>
 

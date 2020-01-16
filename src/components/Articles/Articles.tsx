@@ -17,7 +17,7 @@ const Articles: FunctionComponent = () => {
           <h2>Podróże</h2>
         </Fade>
         <Fade bottom>
-          <p>„Ten kto żyje widzi dużo, ten kto podróżuje widzi więcej.”</p>
+          <h3>„Ten kto żyje widzi dużo, ten kto podróżuje widzi więcej.”</h3>
         </Fade>
       </header>
 
