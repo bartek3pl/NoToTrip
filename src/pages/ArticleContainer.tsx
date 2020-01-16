@@ -96,8 +96,8 @@ const ArticleContainer: FunctionComponent<IProps> = ({
   return (
     <>
       <header className="articles-header">
-        <h1>{title}</h1>
-        <h2>{articleSubtitle}</h2>
+        <h2>{title}</h2>
+        <h1>{articleSubtitle}</h1>
       </header>
       <Container className="article-container animated fadeIn">
         <Row>

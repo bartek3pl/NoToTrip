@@ -11,6 +11,27 @@
   }
 }
 
+.articles-trips {
+  .articles-header {
+    h2 {
+      font-family: 'Gelasio';
+      padding-top: 5.6rem;
+      font-size: 4.4rem;
+      font-weight: 400;
+      text-shadow: 0.1rem 0.1rem 4rem #000;
+    }
+
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      padding-top: 0;
+      margin-top: 0.8rem;
+      font-size: 2.8rem;
+      font-weight: lighter;
+      text-shadow: 0.1rem 0.1rem 4rem #000;
+    }
+  }
+}
+
 .article-figure {
   margin-top: 4rem !important;
   width: 100%;
@@ -510,6 +531,16 @@
 
   .gmap {
     height: 40rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .articles-trips .articles-header h2 {
+    font-size: 3.2rem;
+  }
+
+  .articles-trips .articles-header h1 {
+    font-size: 1.6rem;
   }
 }
 
