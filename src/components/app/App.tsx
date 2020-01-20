@@ -1,5 +1,5 @@
 import React, { useEffect, FunctionComponent } from 'react';
-import { Router, Redirect, RouteComponentProps } from '@reach/router';
+import { Router, RouteComponentProps } from '@reach/router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/fontello/css/fontello.css';
 import './App.scss';
