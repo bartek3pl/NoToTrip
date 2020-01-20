@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import trasa1 from '../../assets/images/norwegia/trasa.slider.1.1.jpg';
 import trasa2 from '../../assets/images/norwegia/trasa.slider.1.2.jpg';

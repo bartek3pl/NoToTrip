@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import aurland1 from '../../assets/images/norwegia/aurland.slider.1.1.jpg';
 import aurland2 from '../../assets/images/norwegia/aurland.slider.1.4.jpg';

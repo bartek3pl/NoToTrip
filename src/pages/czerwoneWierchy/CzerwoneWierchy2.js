@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import mapa from '../../assets/images/wierchy/mapa.jpg';
 import wierchy1 from '../../assets/images/wierchy/wierchyii.slider.1.2.jpg';

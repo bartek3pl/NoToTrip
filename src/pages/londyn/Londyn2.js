@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import eye from '../../assets/images/londyn/eye.jpg';
 import westminster from '../../assets/images/londyn/westminster.jpg';

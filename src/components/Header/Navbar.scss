@@ -37,6 +37,10 @@
     font-size: 1.6rem;
     text-align: center;
 
+    .navbar-li-block {
+      display: block;
+    }
+
     .trips-list-wrapper {
       pointer-events: none;
     }

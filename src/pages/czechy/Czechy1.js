@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import benecko1 from '../../assets/images/harrachov/benecko1.1.jpg';
 import benecko2 from '../../assets/images/harrachov/benecko1.3.jpg';

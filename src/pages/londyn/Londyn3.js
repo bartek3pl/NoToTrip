@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import cyberdog1 from '../../assets/images/londyn/art3slider1.2.jpg';
 import cyberdog2 from '../../assets/images/londyn/art3slider1.3.jpg';

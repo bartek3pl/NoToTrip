@@ -216,8 +216,10 @@
 
 .icon-angle-right-up-wrapper {
   position: fixed;
-  transform: translatez(0);
-  -webkit-transform: translatez(0);
+  opacity: 1;
+  pointer-events: auto;
+  transform: translatez(0), scale(0);
+  -webkit-transform: translatez(0), scale(0);
   display: block;
   top: 30rem;
   left: 20rem;
@@ -232,7 +234,7 @@
   -webkit-box-shadow: 0rem 0.8rem 1.9rem -0.6rem rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0rem 0.8rem 1.9rem -0.6rem rgba(0, 0, 0, 0.75);
   box-shadow: 0rem 0.8rem 1.9rem -0.6rem rgba(0, 0, 0, 0.75);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 
   &:hover .up {
     transform: translateY(-0.5rem) scale(0.95);
@@ -241,6 +243,13 @@
   &:active {
     transform: scale(0.9);
   }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.3);
+  -webkit-transform: scale(0.3);
 }
 
 .up {

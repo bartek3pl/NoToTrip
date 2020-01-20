@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import harden1 from '../../assets/images/norwegia/hardangervidda.slider.1.1.jpg';
 import harden2 from '../../assets/images/norwegia/hardangervidda.slider.1.3.jpg';

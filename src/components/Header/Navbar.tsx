@@ -80,7 +80,7 @@ const Navbar: FunctionComponent = () => {
             <ul className="navbar-brand">
               <li className="navbar-li">
                 <ReachLink to="/" aria-label="Strona główna">
-                  Strona główna
+                  <p className="navbar-li-block">Strona główna</p>
                 </ReachLink>
               </li>
               <li
@@ -108,7 +108,9 @@ const Navbar: FunctionComponent = () => {
                   smooth={true}
                   aria-label="Przejdź do sekcji najnowsze artykuły"
                 >
-                  <ReachLink to="/">Najnowsze artykuły</ReachLink>
+                  <ReachLink to="/">
+                    <p className="navbar-li-block">Najnowsze artykuły</p>
+                  </ReachLink>
                 </Link>
               </li>
               <li className="navbar-li">
@@ -118,7 +120,9 @@ const Navbar: FunctionComponent = () => {
                   smooth={true}
                   aria-label="Przejdź do sekcji autorzy"
                 >
-                  <ReachLink to="/">Autorzy</ReachLink>
+                  <ReachLink to="/">
+                    <p className="navbar-li-block">Autorzy</p>
+                  </ReachLink>
                 </Link>
               </li>
             </ul>

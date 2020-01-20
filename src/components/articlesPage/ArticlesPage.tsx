@@ -7,7 +7,7 @@ import articlesData from '../../data/ArticlesData';
 import './ArticlesPage.scss';
 import NumbersSection from './NumbersSection';
 import { convertToUrl } from '../../utils/jsUtils';
-import ArticleContainer from '../../pages/ArticleContainer';
+import ArticleContainer from './ArticlesContainer/ArticleContainer';
 
 interface IProps {
   index: number;

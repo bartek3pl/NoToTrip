@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import troll1 from '../../assets/images/norwegia/trolltunga.slider.1.1.jpg';
 import troll2 from '../../assets/images/norwegia/trolltunga.slider.1.3.jpg';

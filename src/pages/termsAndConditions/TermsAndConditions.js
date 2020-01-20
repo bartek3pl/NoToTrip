@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import bg1 from '../../assets/images/bg-1.jpg';
-import '../../components/articlesPage/ArticlesPage.scss';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesPage.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 // adds entry-page class when route is changed in Main section
 function addEntryPage() {

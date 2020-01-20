@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import prom from '../../assets/images/norwegia/prom.png';
 import preikestolen1 from '../../assets/images/norwegia/preikestolen1.jpg';

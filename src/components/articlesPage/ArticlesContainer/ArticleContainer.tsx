@@ -2,27 +2,28 @@ import React, { FunctionComponent, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import DisqusSection from './DisqusSection';
-import { convertToUrl, removeSpaces } from '../utils/jsUtils';
+import { convertToUrl, removeSpaces } from '../../../utils/jsUtils';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
 import './ArticleContainer.scss';
 
-import Londyn1 from './londyn/Londyn1';
-import Londyn2 from './londyn/Londyn2';
-import Londyn3 from './londyn/Londyn3';
+import Londyn1 from '../../../pages/londyn/Londyn1';
+import Londyn2 from '../../../pages/londyn/Londyn2';
+import Londyn3 from '../../../pages/londyn/Londyn3';
 
-import Norwegia1 from './norwegia/Norwegia1';
-import Norwegia2 from './norwegia/Norwegia2';
-import Norwegia3 from './norwegia/Norwegia3';
-import Norwegia4 from './norwegia/Norwegia4';
-import Norwegia5 from './norwegia/Norwegia5';
-import Norwegia6 from './norwegia/Norwegia6';
-import Norwegia7 from './norwegia/Norwegia7';
-import Norwegia8 from './norwegia/Norwegia8';
+import Norwegia1 from '../../../pages/norwegia/Norwegia1';
+import Norwegia2 from '../../../pages/norwegia/Norwegia2';
+import Norwegia3 from '../../../pages/norwegia/Norwegia3';
+import Norwegia4 from '../../../pages/norwegia/Norwegia4';
+import Norwegia5 from '../../../pages/norwegia/Norwegia5';
+import Norwegia6 from '../../../pages/norwegia/Norwegia6';
+import Norwegia7 from '../../../pages/norwegia/Norwegia7';
+import Norwegia8 from '../../../pages/norwegia/Norwegia8';
 
-import CzerwoneWierchy1 from './czerwoneWierchy/CzerwoneWierchy1';
-import CzerwoneWierchy2 from './czerwoneWierchy/CzerwoneWierchy2';
+import CzerwoneWierchy1 from '../../../pages/czerwoneWierchy/CzerwoneWierchy1';
+import CzerwoneWierchy2 from '../../../pages/czerwoneWierchy/CzerwoneWierchy2';
 
-import Czechy1 from './czechy/Czechy1';
+import Czechy1 from '../../../pages/czechy/Czechy1';
 
 interface IProps {
   article: string;
@@ -78,6 +79,23 @@ function subtitleToComponent(
   }
 }
 
+function getArrow() {
+  const arrow = document.querySelector(
+    '.icon-angle-right-up-wrapper'
+  ) as HTMLElement;
+  return arrow;
+}
+
+function showArrow() {
+  const arrow = getArrow();
+  arrow.classList.remove('hidden');
+}
+
+function hideArrow() {
+  const arrow = getArrow();
+  arrow.classList.add('hidden');
+}
+
 const ArticleContainer: FunctionComponent<IProps> = ({
   article,
   articleSubtitle,
@@ -86,7 +104,17 @@ const ArticleContainer: FunctionComponent<IProps> = ({
 }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    hideArrow();
   }, []);
+
+  useScrollPosition(({ currPos }) => {
+    const minScrollPosition = -300;
+    if (currPos.y <= minScrollPosition) {
+      showArrow();
+    } else {
+      hideArrow();
+    }
+  });
 
   const ArticleComponent = subtitleToComponent(
     article,

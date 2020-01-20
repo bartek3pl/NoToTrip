@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import '../ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
 
 import joste1 from '../../assets/images/norwegia/jostedalsbreen-mapa.jpg';
 import joste2 from '../../assets/images/norwegia/jestedals.slider.1.1.jpg';
