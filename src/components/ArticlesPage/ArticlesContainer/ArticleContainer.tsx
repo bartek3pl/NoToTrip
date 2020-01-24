@@ -143,7 +143,6 @@ const ArticleContainer: FunctionComponent<IProps> = ({
                 to="navbar-top"
                 smooth={true}
                 spy={true}
-                className="show-icon"
                 aria-label="Przejdź do początku artykułu"
               >
                 <div className="icon-angle-right-up-wrapper">
