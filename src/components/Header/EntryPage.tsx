@@ -64,7 +64,7 @@ const EntryPage: FunctionComponent = () => {
 
       <div className="main-bg-overlay">
         <div id="main-bg" className="main-bg" aria-hidden="true" />
-        <div id="img-mobile" aria-hidden="true"></div>
+        <div id="img-mobile" aria-hidden="true" />
       </div>
     </div>
   );

@@ -96,6 +96,13 @@ function hideArrow() {
   arrow.classList.add('hidden');
 }
 
+function closeMobileMenu(): void {
+  const home = document.querySelector('#home');
+  if (home) {
+    home.classList.remove('nav-opened');
+  }
+}
+
 const ArticleContainer: FunctionComponent<IProps> = ({
   article,
   articleSubtitle,
@@ -105,6 +112,7 @@ const ArticleContainer: FunctionComponent<IProps> = ({
   useEffect(() => {
     window.scrollTo(0, 0);
     hideArrow();
+    closeMobileMenu();
   }, []);
 
   useScrollPosition(({ currPos }) => {
