@@ -53,7 +53,8 @@ const Header: FunctionComponent = () => {
 
 const Main: FunctionComponent = () => {
   useEffect(() => {
-    if (window.location.pathname === '/') {
+    const currentPathName = window.location.pathname;
+    if (currentPathName === '/') {
       removeArticlesPage();
       addEntryContent();
     }

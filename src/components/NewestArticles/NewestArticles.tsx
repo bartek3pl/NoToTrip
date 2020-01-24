@@ -45,7 +45,7 @@ const NewestArticles: FunctionComponent = () => {
         {allMobileNewestArticles}
       </Container>
 
-      <div role="img" className="img-article-overlay" aria-hidden="true"></div>
+      <div role="img" className="img-article-overlay" aria-hidden="true" />
     </section>
   );
 };

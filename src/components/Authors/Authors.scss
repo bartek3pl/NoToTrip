@@ -11,15 +11,14 @@
     top: 0;
     left: 0;
     background-image: url('../../assets/images/kjerag.jpg');
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translatez(0);
-    -webkit-transform: translatez(0);
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
     opacity: 0.5;
+    will-change: transform;
   }
 
   header {

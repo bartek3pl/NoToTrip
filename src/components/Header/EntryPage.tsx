@@ -1,10 +1,36 @@
 import React, { useState, FunctionComponent } from 'react';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import { Link } from 'react-scroll';
-import bg1 from '../../assets/images/bg-1.jpg';
 import './EntryPage.scss';
 
 const EntryPage: FunctionComponent = () => {
   const [isButtonPressed, setIsButtonPressed] = useState(false);
+
+  const getEntryPageSection = () =>
+    document.querySelector('.entry-page') as HTMLElement;
+
+  const hideLayer = () => {
+    const entryPage = getEntryPageSection();
+    entryPage.style.zIndex = '0';
+  };
+
+  const showLayer = () => {
+    const entryPage = getEntryPageSection();
+    entryPage.style.zIndex = '1';
+  };
+
+  useScrollPosition(({ currPos }) => {
+    const entryPage = getEntryPageSection();
+    const entryPageHeight = entryPage.getBoundingClientRect().height;
+    const minScrollPosition = -entryPageHeight;
+    const currentPathName = window.location.pathname;
+
+    if (currentPathName === '/' && currPos.y < minScrollPosition) {
+      hideLayer();
+    } else {
+      showLayer();
+    }
+  });
 
   return (
     <div className="entry-content">
@@ -37,13 +63,7 @@ const EntryPage: FunctionComponent = () => {
       </Link>
 
       <div className="main-bg-overlay">
-        <img
-          src={bg1}
-          id="main-bg"
-          className="main-bg"
-          alt="Nototrip tło"
-          aria-hidden="true"
-        />
+        <div id="main-bg" className="main-bg" aria-hidden="true" />
         <div id="img-mobile" aria-hidden="true"></div>
       </div>
     </div>
