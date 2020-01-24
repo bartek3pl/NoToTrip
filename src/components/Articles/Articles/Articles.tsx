@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import articlesData from '../../data/ArticlesData';
+import articlesData from '../../../data/ArticlesData';
 import './Articles.scss';
-import ArticlesFigures from './ArticlesFigures';
+import ArticlesFigures from '../ArticlesFigures/ArticlesFigures';
 
 const Articles: FunctionComponent = () => {
   const allArticles = articlesData.map((article) => (

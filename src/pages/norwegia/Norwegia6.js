@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import mapa from '../../assets/images/norwegia/geiranger-mapa.jpg';
 import gei1 from '../../assets/images/norwegia/geiranger.slider.1.1.jpg';
@@ -95,23 +96,11 @@ const Norway6 = () => {
         stromy i wysoki.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={gei1} alt="Geirangerfjord" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={gei2}
-              alt="Wodospad Siedmiu Sióstr"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Widoki ze szlaku i Wodospad Siedmiu Sióstr
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Widoki ze szlaku i Wodospad Siedmiu Sióstr">
+        <Img src={gei1} alt="Geirangerfjord" />
+
+        <Img src={gei2} alt="Wodospad Siedmiu Sióstr" />
+      </Carousel>
 
       <p>
         Po drodze zwiedziliśmy opuszczoną farmę Homlongsaetra i Skageflå. Obie
@@ -122,19 +111,11 @@ const Norway6 = () => {
         temperatura i klimat również nie sprzyjały uprawie warzyw.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={gei3} alt="Homlongsaetra" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={gei4} alt="Homlongsaetra" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Opuszczone farmy Homlongsaetra i Skageflå
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Opuszczone farmy Homlongsaetra i Skageflå">
+        <Img src={gei3} alt="Homlongsaetra" />
+
+        <Img src={gei4} alt="Homlongsaetra" />
+      </Carousel>
 
       <p>
         Przy farmie Skageflå był przepiękny widok na rozpościerający się
@@ -181,23 +162,11 @@ const Norway6 = () => {
         się jedyny w Norwegii znak drogowy "Uwaga Trolle".
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={droga1} alt="Droga Trolli" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={droga2}
-              alt="Wodospad Stigfossen"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Punkt widokowy na Trollstigen - Drogę Trolli i wodospad Stigfossen
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Punkt widokowy na Trollstigen - Drogę Trolli i wodospad Stigfossen">
+        <Img src={droga1} alt="Droga Trolli" />
+
+        <Img src={droga2} alt="Wodospad Stigfossen" />
+      </Carousel>
 
       <p>
         Miejsce jak najbardziej warte zobaczenia i zabrania ze sobą drona. My

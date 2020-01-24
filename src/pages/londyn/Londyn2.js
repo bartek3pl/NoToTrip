@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import eye from '../../assets/images/londyn/eye.jpg';
 import westminster from '../../assets/images/londyn/westminster.jpg';
@@ -27,7 +28,7 @@ const London2 = () => {
       </h3>
 
       <figure className="article-figure">
-        <img src={eye} alt="London Eye" />
+        <Img src={eye} alt="London Eye" />
         <figcaption className="article-figcaption">
           Widok na London Eye
         </figcaption>
@@ -64,7 +65,7 @@ const London2 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={westminster} alt="Pałac Westminster" />
+        <Img src={westminster} alt="Pałac Westminster" />
         <figcaption className="article-figcaption">
           Pałac Westminsterski
         </figcaption>
@@ -116,26 +117,13 @@ const London2 = () => {
         nieco problematyczne.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={tate1} alt="Tate Modern" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={tate2}
-              alt="Widok z Tate Modern"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={tate3} alt="Tate Modern" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Widok z 10 piętra Tate Modern
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Widok z 10 piętra Tate Modern">
+        <Img src={tate1} alt="Tate Modern" />
+
+        <Img src={tate2} alt="Widok z Tate Modern" />
+
+        <Img src={tate3} alt="Tate Modern" />
+      </Carousel>
 
       <h4>Znowu te zabytki...</h4>
 
@@ -163,7 +151,7 @@ const London2 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={teatr} alt="Globe Theatre" />
+        <Img src={teatr} alt="Globe Theatre" />
         <figcaption className="article-figcaption">Globe Theatre</figcaption>
       </figure>
 
@@ -176,16 +164,16 @@ const London2 = () => {
 
       <figure className="article-figure">
         <div className="four-img">
-          <img src={jajo} alt="Nowoczesne budynki Tamiza" />
+          <Img src={jajo} alt="Nowoczesne budynki Tamiza" />
         </div>
         <div className="four-img">
-          <img src={dariaTower} alt="Tower bridge" />
+          <Img src={dariaTower} alt="Tower bridge" />
         </div>
         <div className="four-img">
-          <img src={statek} alt="Londyn brytyjski okręt" />
+          <Img src={statek} alt="Londyn brytyjski okręt" />
         </div>
         <div className="four-img">
-          <img src={szklo} alt="Okolice Tower Bridge" />
+          <Img src={szklo} alt="Okolice Tower Bridge" />
         </div>
         <figcaption className="article-figcaption">
           Szklany, modernistyczny budynek i okolice Tower Bridge
@@ -212,23 +200,11 @@ const London2 = () => {
         Wilhelma I.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={bridge1} alt="Albert Bridge" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={bridge2}
-              alt="Londyn zachód słońca"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Albert Bridge i zachód Słońca
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Albert Bridge i zachód Słońca">
+        <Img src={bridge1} alt="Albert Bridge" />
+
+        <Img src={bridge2} alt="Londyn zachód słońca" />
+      </Carousel>
 
       <p>
         Na koniec naszej wycieczki odwiedziliśmy St. Katharine Docks - piękny

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import mapa from '../../assets/images/wierchy/mapa.jpg';
 import wierchy1 from '../../assets/images/wierchy/wierchyii.slider.1.2.jpg';
@@ -68,34 +69,11 @@ const CzerwoneWierchy2 = () => {
         zniszczone przez stopę trolla, wędrującego z Norwegii aż do Tatr.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy1}
-              alt="Czerwone Wierchy"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy2}
-              alt="Czerwone Wierchy"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy3}
-              alt="Czerwone Wierchy"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Przez las w stronę Przysłopu Miętusiego
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Przez las w stronę Przysłopu Miętusiego">
+        <Img src={wierchy1} alt="Czerwone Wierchy" />
+        <Img src={wierchy2} alt="Czerwone Wierchy" />
+        <Img src={wierchy3} alt="Czerwone Wierchy" />
+      </Carousel>
 
       <p>
         Następnie od Małołączniaka dzieliły Nas jakieś 4 kilometry dość męczącej
@@ -110,34 +88,13 @@ const CzerwoneWierchy2 = () => {
         :).
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy4}
-              alt="Czerwone Wierchy"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy5}
-              alt="Czerwone Wierchy"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy6}
-              alt="Czerwone Wierchy Małołączniak"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Wspinaczka na szczyt Małołączniaka
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Wspinaczka na szczyt Małołączniaka">
+        <Img src={wierchy4} alt="Czerwone Wierchy" />
+
+        <Img src={wierchy5} alt="Czerwone Wierchy" />
+
+        <Img src={wierchy6} alt="Czerwone Wierchy Małołączniak" />
+      </Carousel>
 
       <p>
         I wreszcie, pierwszy szczyt - Małołączniak (2 096 m.n.p.m), po jakiś
@@ -163,55 +120,19 @@ const CzerwoneWierchy2 = () => {
         aucie w drodze do Wrocławia.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy7}
-              alt="Czerwone Wierchy"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy8}
-              alt="Czerwone Wierchy Giewont"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy9}
-              alt="Czerwone Wierchy Kopa Kondracka"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy10}
-              alt="Czerwone Wierchy Krzesanica"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy11}
-              alt="Czerwone Wierchy Krzesanica"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy12}
-              alt="Czerwone Wierchy Małołączniak"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Widoki z trzech szczytów
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Widoki z trzech szczytów">
+        <Img src={wierchy7} alt="Czerwone Wierchy" />
+
+        <Img src={wierchy8} alt="Czerwone Wierchy Giewont" />
+
+        <Img src={wierchy9} alt="Czerwone Wierchy Kopa Kondracka" />
+
+        <Img src={wierchy10} alt="Czerwone Wierchy Krzesanica" />
+
+        <Img src={wierchy11} alt="Czerwone Wierchy Krzesanica" />
+
+        <Img src={wierchy12} alt="Czerwone Wierchy Małołączniak" />
+      </Carousel>
 
       <p>
         Ogólnie trasa jak najbardziej warta przejścia, a widoki warte

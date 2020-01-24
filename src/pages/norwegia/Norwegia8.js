@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import trasa1 from '../../assets/images/norwegia/trasa.slider.1.1.jpg';
 import trasa2 from '../../assets/images/norwegia/trasa.slider.1.2.jpg';
@@ -149,23 +150,11 @@ const Norway8 = () => {
         </a>
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={trasa1}
-              alt="Prom z danii do norwegii"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={trasa2} alt="Langesund" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Przeprawa z Danii do Norwegii i widoki z promu
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Przeprawa z Danii do Norwegii i widoki z promu">
+        <Img src={trasa1} alt="Prom z danii do norwegii" />
+
+        <Img src={trasa2} alt="Langesund" />
+      </Carousel>
 
       <h4>Kontrola graniczna</h4>
 
@@ -202,27 +191,16 @@ const Norway8 = () => {
         Może ktoś kojarzy to miejsce?) Rano wyjechaliśmy dalej na zachód.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={trasa3}
-              alt="norwegia jezioro"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={trasa4} alt="norwegia domek" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={trasa5} alt="norwegia namiot" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Pierwsza noc nad norweskim jeziorem, drewniana chatka dla gości i
-          miejsce rozbicia namiotu
-        </figcaption>
-      </figure>
+      <Carousel
+        figcaption="Pierwsza noc nad norweskim jeziorem, drewniana chatka dla gości i
+          miejsce rozbicia namiotu"
+      >
+        <Img src={trasa3} alt="norwegia jezioro" />
+
+        <Img src={trasa4} alt="norwegia domek" />
+
+        <Img src={trasa5} alt="norwegia namiot" />
+      </Carousel>
 
       <h4>Plan naszej całej wycieczki</h4>
 

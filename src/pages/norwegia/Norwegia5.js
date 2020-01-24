@@ -1,6 +1,7 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import joste1 from '../../assets/images/norwegia/jostedalsbreen-mapa.jpg';
 import joste2 from '../../assets/images/norwegia/jestedals.slider.1.1.jpg';
@@ -67,7 +68,7 @@ const Norway5 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={joste3} alt="Jostedalsbreen" />
+        <Img src={joste3} alt="Jostedalsbreen" />
         <figcaption className="article-figcaption">
           Z powodu zawartości drobnych cząstek lodu zawieszonych w wodach,
           jeziora mają niesamowity turkusowy kolor
@@ -98,22 +99,13 @@ const Norway5 = () => {
         nocować.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={joste4} alt="Jostedalsbreen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={joste5} alt="Jostedalsbreen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={joste6} alt="Jostedalsbreen" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Drewniana chatka na wzgórzu, pytanie brzmi kto tu mieszka?
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Drewniana chatka na wzgórzu, pytanie brzmi kto tu mieszka?">
+        <Img src={joste4} alt="Jostedalsbreen" />
+
+        <Img src={joste5} alt="Jostedalsbreen" />
+
+        <Img src={joste6} alt="Jostedalsbreen" />
+      </Carousel>
 
       <p>
         Dalsza droga prowadziła około kilometr przez las, później zaczął się
@@ -122,22 +114,13 @@ const Norway5 = () => {
         Usiedliśmy więc i oglądaliśmy lodowcowy wodospad.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={joste7} alt="Jostedalsbreen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={joste8} alt="Jostedalsbreen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={joste9} alt="Jostedalsbreen" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Czubek jęzora lodowca Briksdalsbreen
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Czubek jęzora lodowca Briksdalsbreen">
+        <Img src={joste7} alt="Jostedalsbreen" />
+
+        <Img src={joste8} alt="Jostedalsbreen" />
+
+        <Img src={joste9} alt="Jostedalsbreen" />
+      </Carousel>
 
       <p>
         Wieczorem, ogromnym problemem okazało się znalezienie miejsca
@@ -148,20 +131,14 @@ const Norway5 = () => {
         jeziora o lustrzanej tafli.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={joste10} alt="Jostedalsbreen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={joste11} alt="Jostedalsbreen" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Rano przywitał nas czarujący krajobraz. Śniadanie z takim widokiem to
-          idealny początek dnia!
-        </figcaption>
-      </figure>
+      <Carousel
+        figcaption="Rano przywitał nas czarujący krajobraz. Śniadanie z takim widokiem to
+          idealny początek dnia!"
+      >
+        <Img src={joste10} alt="Jostedalsbreen" />
+
+        <Img src={joste11} alt="Jostedalsbreen" />
+      </Carousel>
 
       <h4>Informacje praktyczne</h4>
 

@@ -1,0 +1,11 @@
+.articles-page {
+  position: relative;
+  height: 0 !important;
+  min-height: 0 !important;
+  z-index: 1;
+  width: 100%;
+}
+
+.articles-page-column {
+  position: relative;
+}

@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { Fade } from 'react-bootstrap';
-import authorsData from '../../data/AuthorsData';
+import authorsData from '../../../data/AuthorsData';
 import './MobileAuthorsFigures.scss';
 
 interface IProps {

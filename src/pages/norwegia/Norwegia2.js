@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import prom from '../../assets/images/norwegia/prom.png';
 import preikestolen1 from '../../assets/images/norwegia/preikestolen1.jpg';
@@ -76,34 +77,13 @@ const Norway2 = () => {
         zrezygnować na samej końcówce…
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={preikestolen1}
-              alt="Preikestolen"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={preikestolen2}
-              alt="Preikestolen"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={preikestolen3}
-              alt="Preikestolen"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Warunki pogodowe i droga na Preikestolen
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Warunki pogodowe i droga na Preikestolen">
+        <Img src={preikestolen1} alt="Preikestolen" />
+
+        <Img src={preikestolen2} alt="Preikestolen" />
+
+        <Img src={preikestolen3} alt="Preikestolen" />
+      </Carousel>
 
       <p>
         Jednak nagle zza mgły wyłoniły się dwie turystki. Zapytałam je, czy
@@ -117,34 +97,13 @@ const Norway2 = () => {
         klimatu.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={preikestolen4}
-              alt="Preikestolen"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={preikestolen5}
-              alt="Preikestolen"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={preikestolen6}
-              alt="Preikestolen"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Wreszcie udało nam się osiągnąć szczyt
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Wreszcie udało nam się osiągnąć szczyt">
+        <Img src={preikestolen4} alt="Preikestolen" />
+
+        <Img src={preikestolen5} alt="Preikestolen" />
+
+        <Img src={preikestolen6} alt="Preikestolen" />
+      </Carousel>
 
       <h4>Praktyczne wskazówki</h4>
 

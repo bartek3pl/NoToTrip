@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { Col } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import { convertToUrl } from '../../utils/jsUtils';
+import { convertToUrl } from '../../../utils/jsUtils';
 import './ArticlesFigures.scss';
 
 interface IProps {

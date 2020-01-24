@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import authorsData from '../../data/AuthorsData';
+import authorsData from '../../../data/AuthorsData';
 import './Authors.scss';
-import AuthorsFigures from './AuthorsFigures';
-import MobileAuthorsFigures from './MobileAuthorsFigures';
+import AuthorsFigures from '../AuthorsFigures/AuthorsFigures';
+import MobileAuthorsFigures from '../MobileAuthorsFigures/MobileAuthorsFigures';
 
 const Authors: FunctionComponent = () => {
   const allAuthors = authorsData.map((author) => (

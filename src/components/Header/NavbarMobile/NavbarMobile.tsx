@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { Link as ReachLink } from '@reach/router';
-import TripsList from './TripsList';
+import TripsList from '../TripsList';
 import './NavbarMobile.scss';
 
 interface IProps {

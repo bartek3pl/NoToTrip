@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import kjerag1 from '../../assets/images/norwegia/kjerag.slajder.1.1.jpg';
 import kjerag2 from '../../assets/images/norwegia/kjerag.slajder.1.2.jpg';
@@ -40,25 +41,15 @@ const Norway1 = () => {
         zachodem Słońca, podczas której emitowane jest światło o złotym kolorze.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag1} alt="Kjeragbolten" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag2} alt="Kjeragbolten" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag3} alt="Kjeragbolten" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag4} alt="Kjeragbolten" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Droga przez skały Kjeragu
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Droga przez skały Kjeragu">
+        <Img src={kjerag1} alt="Kjeragbolten" />
+
+        <Img src={kjerag2} alt="Kjeragbolten" />
+
+        <Img src={kjerag3} alt="Kjeragbolten" />
+
+        <Img src={kjerag4} alt="Kjeragbolten" />
+      </Carousel>
 
       <p>
         Trasa zajęła nam około 4h 15 min (w dwie strony), szlak do Kjeragbolten
@@ -85,26 +76,13 @@ const Norway1 = () => {
         którego tafla odbijała niebo jak lustro.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={kjerag5}
-              alt="Kjeragbolten owce"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag6} alt="Kjeragbolten" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag7} alt="Kjeragbolten" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Malownicze góry i ich mieszkańcy
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Malownicze góry i ich mieszkańcy">
+        <Img src={kjerag5} alt="Kjeragbolten owce" />
+
+        <Img src={kjerag6} alt="Kjeragbolten" />
+
+        <Img src={kjerag7} alt="Kjeragbolten" />
+      </Carousel>
 
       <p>
         Później wchodzi się po schodach i idzie skalną drogą w kierunku
@@ -115,25 +93,15 @@ const Norway1 = () => {
         drogi. Widoki są niesamowite!
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag8} alt="Kjeragbolten" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag9} alt="Kjeragbolten" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag10} alt="Kjeragbolten" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={kjerag11} alt="Kjeragbolten" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Czarujący krajobraz rozpościerający się po całym paśmie gór
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Czarujący krajobraz rozpościerający się po całym paśmie gór">
+        <Img src={kjerag8} alt="Kjeragbolten" />
+
+        <Img src={kjerag9} alt="Kjeragbolten" />
+
+        <Img src={kjerag10} alt="Kjeragbolten" />
+
+        <Img src={kjerag11} alt="Kjeragbolten" />
+      </Carousel>
 
       <p>
         Pod koniec, na sam punkt widokowy - Kjeragbolten, idzie się dosyć wąskim
@@ -143,7 +111,7 @@ const Norway1 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={kjerag12} alt="Kjeragbolten" />
+        <Img src={kjerag12} alt="Kjeragbolten" />
         <figcaption className="article-figcaption">
           Kjeragbolten zdobyty!
         </figcaption>

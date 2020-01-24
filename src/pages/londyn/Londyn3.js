@@ -1,6 +1,7 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import cyberdog1 from '../../assets/images/londyn/art3slider1.2.jpg';
 import cyberdog2 from '../../assets/images/londyn/art3slider1.3.jpg';
@@ -217,36 +218,17 @@ const London3 = () => {
         elektronicznej, tatuażu, piercingu.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={cyberdog1} alt="Cyberdog" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={cyberdog2}
-              alt="Cyberdog w środku"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={cyberdog3}
-              alt="Cyberdog na zewnątrz"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={camden1} alt="Camden Market" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={camden2} alt="Camden Market" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Camden Market i Cyberdog
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Camden Market i Cyberdog">
+        <Img src={cyberdog1} alt="Cyberdog" />
+
+        <Img src={cyberdog2} alt="Cyberdog w środku" />
+
+        <Img src={cyberdog3} alt="Cyberdog na zewnątrz" />
+
+        <Img src={camden1} alt="Camden Market" />
+
+        <Img src={camden2} alt="Camden Market" />
+      </Carousel>
 
       <p>
         Warto zajrzeć do sklepu{' '}
@@ -270,34 +252,13 @@ const London3 = () => {
         szybko.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={sklep}
-              alt="Sklep Harry Potter"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={bluza}
-              alt="Bluza peron 9 i 3/4"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={harry}
-              alt="Harry Potter różdżki"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Sklep Harrego Pottera
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Sklep Harrego Pottera">
+        <Img src={sklep} alt="Sklep Harry Potter" />
+
+        <Img src={bluza} alt="Bluza peron 9 i 3/4" />
+
+        <Img src={harry} alt="Harry Potter różdżki" />
+      </Carousel>
 
       <p>
         Po południu pojechaliśmy do Canary Wharf, czyli nowoczesnego kompleksu
@@ -306,19 +267,11 @@ const London3 = () => {
         Greenwich.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={crossrail} alt="Crossrail" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={canary} alt="Canary Wharf" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Okolice Canary Wharf
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Okolice Canary Wharf">
+        <Img src={crossrail} alt="Crossrail" />
+
+        <Img src={canary} alt="Canary Wharf" />
+      </Carousel>
 
       <h4>Greenwich po zmroku</h4>
 
@@ -371,16 +324,16 @@ const London3 = () => {
 
       <figure className="article-figure">
         <div className="four-img">
-          <img src={peron} alt="Peron 9 i 3/4" />
+          <Img src={peron} alt="Peron 9 i 3/4" />
         </div>
         <div className="four-img">
-          <img src={traffic} alt="Traffic light tree" />
+          <Img src={traffic} alt="Traffic light tree" />
         </div>
         <div className="four-img">
-          <img src={biurowiec} alt="Biurowiec canary wharf" />
+          <Img src={biurowiec} alt="Biurowiec canary wharf" />
         </div>
         <div className="four-img">
-          <img src={tunel} alt="tunel do greenwich" />
+          <Img src={tunel} alt="tunel do greenwich" />
         </div>
         <figcaption>
           Peron 9¾, Traffic Light Tree, Biurowiec Canary Wharf i tunel w stronę

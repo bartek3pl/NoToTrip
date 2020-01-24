@@ -1,6 +1,6 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 
 import benecko1 from '../../assets/images/harrachov/benecko1.1.jpg';
 import benecko2 from '../../assets/images/harrachov/benecko1.3.jpg';
@@ -33,27 +33,10 @@ const Czechy1 = () => {
         obsługa była bardzo miła i pomocna.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={benecko1}
-              alt="Czechy Benecko"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={benecko2}
-              alt="Czechy Benecko"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Pobliskie stoki narciarskie
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Pobliskie stoki narciarskie">
+        <Img src={benecko1} alt="Czechy Benecko" />
+        <Img src={benecko2} alt="Czechy Benecko" />
+      </Carousel>
 
       <p>Przedstawię Wam trzy stoki blisko naszego pensjonatu:</p>
 
@@ -119,28 +102,13 @@ const Czechy1 = () => {
         od godziny 13 do 16 płaci się już tylko 360 KC.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={benecko3}
-              alt="Czechy Herlokovice"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={benecko4}
-              alt="Czechy Herlokovice"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Ośrodek narciarski Herlikovice był zdecydowanie najlepszy spośród
-          trzech tutaj wymienionych :)
-        </figcaption>
-      </figure>
+      <Carousel
+        figcaption="Ośrodek narciarski Herlikovice był zdecydowanie najlepszy spośród
+          trzech tutaj wymienionych :)"
+      >
+        <Img src={benecko3} alt="Czechy Herlikovice" />
+        <Img src={benecko4} alt="Czechy Herlikovice" />
+      </Carousel>
 
       <h4>Szklarska Poręba Dolna - Szlak Waloński</h4>
 
@@ -188,27 +156,10 @@ const Czechy1 = () => {
         pomnikiem przyrody.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={benecko5}
-              alt="Szklarska Poręba"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={benecko6}
-              alt="Szklarska Poręba"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Szlak Waloński w Szklarskiej Porębie
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Szlak Waloński w Szklarskiej Porębie">
+        <Img src={benecko5} alt="Szklarska Poręba" />
+        <Img src={benecko6} alt="Szklarska Poręba" />
+      </Carousel>
 
       <p>
         Następnie Witriolejnia, czyli zakład wytwarzający z łupków pirytu kwas

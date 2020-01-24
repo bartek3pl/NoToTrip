@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import troll1 from '../../assets/images/norwegia/trolltunga.slider.1.1.jpg';
 import troll2 from '../../assets/images/norwegia/trolltunga.slider.1.3.jpg';
@@ -86,22 +87,13 @@ const Norway4 = () => {
         na dworze, można też wykupić nocleg w pokoju.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll1} alt="Trolltunga" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll2} alt="Trolltunga" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll3} alt="Trolltunga" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Po krętym podejściu, doszliśmy do torfowiska
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Po krętym podejściu, doszliśmy do torfowiska">
+        <Img src={troll1} alt="Trolltunga" />
+
+        <Img src={troll2} alt="Trolltunga" />
+
+        <Img src={troll3} alt="Trolltunga" />
+      </Carousel>
 
       <p>
         Następnie droga prowadziła przez torfowisko. Tego dnia tereny były
@@ -118,23 +110,16 @@ const Norway4 = () => {
         mgła była wyjątkowo gęsta.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll4} alt="Trolltunga" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll5} alt="Trolltunga" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll6} alt="Trolltunga" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Niektórzy rozbijają tu namioty, a podczas drogi mija się dwa domki -
-          schroniska
-        </figcaption>
-      </figure>
+      <Carousel
+        figcaption="Niektórzy rozbijają tu namioty, a podczas drogi mija się dwa domki -
+          schroniska"
+      >
+        <Img src={troll4} alt="Trolltunga" />
+
+        <Img src={troll5} alt="Trolltunga" />
+
+        <Img src={troll6} alt="Trolltunga" />
+      </Carousel>
 
       <p>
         Po przebytych następnych trzech kilometrach zobaczyliśmy chatkę - schron
@@ -161,22 +146,11 @@ const Norway4 = () => {
         mroczny klimat... Przygoda była z pewnością przez nią niezapomniana!
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll7} alt="Trolltunga" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll8} alt="Trolltunga" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={troll9} alt="Trolltunga" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          W końcu zawitaliśmy u Trolla.. a właściwie na jego języku ;)
-        </figcaption>
-      </figure>
+      <Carousel figcaption="W końcu zawitaliśmy u Trolla.. a właściwie na jego języku ;)">
+        <Img src={troll7} alt="Trolltunga" />
+        <Img src={troll8} alt="Trolltunga" />
+        <Img src={troll9} alt="Trolltunga" />
+      </Carousel>
 
       <h4>Praktyczne informacje</h4>
 

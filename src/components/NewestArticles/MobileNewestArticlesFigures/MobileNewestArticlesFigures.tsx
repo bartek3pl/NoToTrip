@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { Link as ReachLink } from '@reach/router';
-import { convertToUrl } from '../../utils/jsUtils';
+import { convertToUrl } from '../../../utils/jsUtils';
 import './MobileNewestArticlesFigures.scss';
 
 interface IProps {
@@ -44,7 +44,9 @@ const MobileNewestArticlesFigures: FunctionComponent<IProps> = ({
           />
         </ReachLink>
       </div>
-      <figcaption className="fig-mobile">{title} - {subtitle}</figcaption>
+      <figcaption className="fig-mobile">
+        {title} - {subtitle}
+      </figcaption>
     </figure>
   );
 };

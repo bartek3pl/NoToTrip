@@ -84,6 +84,8 @@
 }
 
 .articles-figure {
+  transition: opacity 0.2s ease;
+
   .trips-figcaption {
     position: relative;
     font-size: 1.6rem;

@@ -2,9 +2,9 @@ import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { Link as ReachLink } from '@reach/router';
-import logoMin from '../../assets/images/logo-min.png';
-import TripsList from './TripsList';
-import NavbarMobile from './NavbarMobile';
+import logoMin from '../../../assets/images/logo-min.png';
+import TripsList from '../TripsList';
+import NavbarMobile from '../NavbarMobile/NavbarMobile';
 import './Navbar.scss';
 
 function handleTripsList(action: string): void {

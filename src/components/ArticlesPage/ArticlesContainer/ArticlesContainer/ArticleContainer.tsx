@@ -1,29 +1,29 @@
 import React, { FunctionComponent, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import DisqusSection from './DisqusSection';
-import { convertToUrl, removeSpaces } from '../../../utils/jsUtils';
+import DisqusSection from '../DisqusSection/DisqusSection';
+import { convertToUrl, removeSpaces } from '../../../../utils/jsUtils';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
 import './ArticleContainer.scss';
 
-import Londyn1 from '../../../pages/londyn/Londyn1';
-import Londyn2 from '../../../pages/londyn/Londyn2';
-import Londyn3 from '../../../pages/londyn/Londyn3';
+import Londyn1 from '../../../../pages/londyn/Londyn1';
+import Londyn2 from '../../../../pages/londyn/Londyn2';
+import Londyn3 from '../../../../pages/londyn/Londyn3';
 
-import Norwegia1 from '../../../pages/norwegia/Norwegia1';
-import Norwegia2 from '../../../pages/norwegia/Norwegia2';
-import Norwegia3 from '../../../pages/norwegia/Norwegia3';
-import Norwegia4 from '../../../pages/norwegia/Norwegia4';
-import Norwegia5 from '../../../pages/norwegia/Norwegia5';
-import Norwegia6 from '../../../pages/norwegia/Norwegia6';
-import Norwegia7 from '../../../pages/norwegia/Norwegia7';
-import Norwegia8 from '../../../pages/norwegia/Norwegia8';
+import Norwegia1 from '../../../../pages/norwegia/Norwegia1';
+import Norwegia2 from '../../../../pages/norwegia/Norwegia2';
+import Norwegia3 from '../../../../pages/norwegia/Norwegia3';
+import Norwegia4 from '../../../../pages/norwegia/Norwegia4';
+import Norwegia5 from '../../../../pages/norwegia/Norwegia5';
+import Norwegia6 from '../../../../pages/norwegia/Norwegia6';
+import Norwegia7 from '../../../../pages/norwegia/Norwegia7';
+import Norwegia8 from '../../../../pages/norwegia/Norwegia8';
 
-import CzerwoneWierchy1 from '../../../pages/czerwoneWierchy/CzerwoneWierchy1';
-import CzerwoneWierchy2 from '../../../pages/czerwoneWierchy/CzerwoneWierchy2';
+import CzerwoneWierchy1 from '../../../../pages/czerwoneWierchy/CzerwoneWierchy1';
+import CzerwoneWierchy2 from '../../../../pages/czerwoneWierchy/CzerwoneWierchy2';
 
-import Czechy1 from '../../../pages/czechy/Czechy1';
+import Czechy1 from '../../../../pages/czechy/Czechy1';
 
 interface IProps {
   article: string;

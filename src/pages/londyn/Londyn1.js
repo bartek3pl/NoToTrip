@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import mall from '../../assets/images/londyn/plac.jpg';
 import arch from '../../assets/images/londyn/1.4.jpg';
@@ -39,7 +40,7 @@ const London1 = () => {
       <figure className="article-figure">
         <div className="figure-img">
           <div className="article-img-overlay">
-            <img src={mall} alt="The Mall" />
+            <Img src={mall} alt="The Mall" />
             <span className="article-img-link d-block rounded">
               <p className="title">The Mall</p>
             </span>
@@ -48,7 +49,7 @@ const London1 = () => {
 
         <div className="figure-img">
           <div className="article-img-overlay">
-            <img src={arch} alt="Admiralty Arch" />
+            <Img src={arch} alt="Admiralty Arch" />
             <span className="article-img-link d-block rounded">
               <p className="title two-line">Admiralty Arch</p>
             </span>
@@ -57,7 +58,7 @@ const London1 = () => {
 
         <div className="figure-img">
           <div className="article-img-overlay">
-            <img src={victoria} alt="Plac Victoria Memorial" />
+            <Img src={victoria} alt="Plac Victoria Memorial" />
             <span className="article-img-link d-block rounded">
               <p className="title two-line">Victoria Memorial</p>
             </span>
@@ -66,7 +67,7 @@ const London1 = () => {
 
         <div className="figure-img">
           <div className="article-img-overlay">
-            <img src={whitehall} alt="Whitehall Street" />
+            <Img src={whitehall} alt="Whitehall Street" />
             <span className="article-img-link d-block rounded">
               <p className="title two-line">Whitehall Street</p>
             </span>
@@ -155,7 +156,7 @@ const London1 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={lew} alt="Londyn czerwony lew" />
+        <Img src={lew} alt="Londyn czerwony lew" />
         <figcaption className="article-figcaption">
           Karmazynowy "piąty" lew
         </figcaption>
@@ -189,7 +190,7 @@ const London1 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={supreme} alt="supreme" />
+        <Img src={supreme} alt="supreme" />
         <figcaption className="article-figcaption">
           Kolejki po drop Supreme
         </figcaption>
@@ -220,7 +221,7 @@ const London1 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={china} alt="Londyn China Town" />
+        <Img src={china} alt="Londyn China Town" />
         <figcaption className="article-figcaption">
           Słynna dzielnica China Town (+ Pan wyglądający jak Hodor)
         </figcaption>
@@ -265,23 +266,10 @@ const London1 = () => {
         posprzątał szufelką).
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={sklep} alt="Sklep M&M's" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={harry}
-              alt="Londyn Harry Potter"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Ciekawe miejsca w dzielnicy Soho
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Ciekawe miejsca w dzielnicy Soho">
+        <Img src={sklep} alt="Sklep M&M's" />
+        <Img src={harry} alt="Londyn Harry Potter" />
+      </Carousel>
 
       <h4>Małe ostrzeżenie na koniec!</h4>
 

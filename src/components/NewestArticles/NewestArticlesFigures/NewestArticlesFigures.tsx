@@ -2,7 +2,7 @@ import React, { FunctionComponent, useEffect, useState } from 'react';
 import { Link as ReachLink } from '@reach/router';
 import { Col } from 'react-bootstrap';
 import Zoom from 'react-reveal/Zoom';
-import { convertToUrl } from '../../utils/jsUtils';
+import { convertToUrl } from '../../../utils/jsUtils';
 import './NewestArticlesFigures.scss';
 
 interface IProps {

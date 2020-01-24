@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import harden1 from '../../assets/images/norwegia/hardangervidda.slider.1.1.jpg';
 import harden2 from '../../assets/images/norwegia/hardangervidda.slider.1.3.jpg';
@@ -42,28 +43,17 @@ const Norway3 = () => {
         Chociażby z tego powodu, że park był również ich toaletą ;)
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden1} alt="Hardengervidda" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden2} alt="Hardengervidda" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden3} alt="Hardengervidda" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden4} alt="Hardengervidda" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden5} alt="Hardengervidda" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Spacer wzdłuż rzeki
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Spacer wzdłuż rzeki">
+        <Img src={harden1} alt="Hardengervidda" />
+
+        <Img src={harden2} alt="Hardengervidda" />
+
+        <Img src={harden3} alt="Hardengervidda" />
+
+        <Img src={harden4} alt="Hardengervidda" />
+
+        <Img src={harden5} alt="Hardengervidda" />
+      </Carousel>
 
       <h4>Trasa trzech wodospadów</h4>
 
@@ -82,32 +72,17 @@ const Norway3 = () => {
         niesamowite, a każdy wodospad zjawiskowy.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden6} alt="Hardengervidda" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden7} alt="Hardengervidda" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden8} alt="Hardengervidda" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={harden9} alt="Hardengervidda" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={harden10}
-              alt="Hardengervidda"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Tveitafossen, Nyastolfossen oraz Nykkjesøyfossen
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Tveitafossen, Nyastolfossen oraz Nykkjesøyfossen">
+        <Img src={harden6} alt="Hardengervidda" />
+
+        <Img src={harden7} alt="Hardengervidda" />
+
+        <Img src={harden8} alt="Hardengervidda" />
+
+        <Img src={harden9} alt="Hardengervidda" />
+
+        <Img src={harden10} alt="Hardengervidda" />
+      </Carousel>
 
       <p class="link">
         <a
@@ -131,7 +106,7 @@ const Norway3 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={harden11} alt="Hardangervidda" />
+        <Img src={harden11} alt="Hardangervidda" />
         <figcaption className="article-figcaption">
           Pierwszy nocleg w lesie
         </figcaption>
@@ -148,28 +123,17 @@ const Norway3 = () => {
         Na terenie parku występują liczne górskie jeziora oraz lodowce.
       </h4>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={jotun1} alt="Jotunheimen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={jotun2} alt="Jotunheimen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={jotun3} alt="Jotunheimen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={jotun4} alt="Jotunheimen" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={jotun5} alt="Jotunheimen" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Mroźny Dom Gigantów (Jotunheimen)
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Mroźny Dom Gigantów (Jotunheimen)">
+        <Img src={jotun1} alt="Jotunheimen" />
+
+        <Img src={jotun2} alt="Jotunheimen" />
+
+        <Img src={jotun3} alt="Jotunheimen" />
+
+        <Img src={jotun4} alt="Jotunheimen" />
+
+        <Img src={jotun5} alt="Jotunheimen" />
+      </Carousel>
 
       <h4>Nasza wyprawa</h4>
 

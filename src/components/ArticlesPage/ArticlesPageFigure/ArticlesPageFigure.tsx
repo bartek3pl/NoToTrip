@@ -1,7 +1,7 @@
 import React, { useState, useEffect, FunctionComponent } from 'react';
 import { Col } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
-import { convertToUrl } from '../../utils/jsUtils';
+import { convertToUrl } from '../../../utils/jsUtils';
 import { css } from '@emotion/core';
 import CircleLoader from 'react-spinners/CircleLoader';
 import './ArticlesPageFigure.scss';
@@ -30,10 +30,9 @@ const ArticlesPageFigure: FunctionComponent<IProps> = ({
   useEffect(() => {}, [loaded]);
 
   const spinner = css`
-    display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 45%;
   `;
 
   return (
@@ -45,11 +44,7 @@ const ArticlesPageFigure: FunctionComponent<IProps> = ({
         loading={!loaded}
       />
 
-      <figure
-        className="figures-wrapper"
-        aria-label={caption}
-        style={{ opacity: loaded ? '1' : '0' }}
-      >
+      <figure aria-label={caption} style={{ opacity: loaded ? '1' : '0' }}>
         <div
           role="img"
           className="img-overlay"

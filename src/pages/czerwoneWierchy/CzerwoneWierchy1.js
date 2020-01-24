@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import wierchy1 from '../../assets/images/wierchy/wierchy.1.jpg';
 import wierchy2 from '../../assets/images/wierchy/wierchy.slider.1.1.jpg';
@@ -52,7 +53,7 @@ const CzerwoneWierchy1 = () => {
       </p>
 
       <figure className="article-figure">
-        <img src={wierchy1} alt="Willa u Perełki" />
+        <Img src={wierchy1} alt="Willa u Perełki" />
         <figcaption className="article-figcaption">
           Tutaj nocowaliśmy - Willa u Perełki
         </figcaption>
@@ -77,48 +78,13 @@ const CzerwoneWierchy1 = () => {
         gdzieś indziej o wiele lepsze.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy2}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy3}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy4}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy5}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy6}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Spacer po Krupówkach
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Spacer po Krupówkach">
+        <Img src={wierchy2} alt="Zakopane Krupówki" />
+        <Img src={wierchy3} alt="Zakopane Krupówki" />
+        <Img src={wierchy4} alt="Zakopane Krupówki" />
+        <Img src={wierchy5} alt="Zakopane Krupówki" />
+        <Img src={wierchy6} alt="Zakopane Krupówki" />
+      </Carousel>
 
       <h4>Gdzie tradycja?</h4>
 
@@ -143,48 +109,13 @@ const CzerwoneWierchy1 = () => {
         .
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy7}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy8}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy9}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy10}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={wierchy11}
-              alt="Zakopane Krupówki"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Spacer po Krupówkach, ciąg dalszy
-        </figcaption>
-      </figure>
+      <Carousel figcaption=" Spacer po Krupówkach, ciąg dalszy">
+        <Img src={wierchy7} alt="Zakopane Krupówki" />
+        <Img src={wierchy8} alt="Zakopane Krupówki" />
+        <Img src={wierchy9} alt="Zakopane Krupówki" />
+        <Img src={wierchy10} alt="Zakopane Krupówki" />
+        <Img src={wierchy11} alt="Zakopane Krupówki" />
+      </Carousel>
 
       <h4>Recenzja regionalnych piw</h4>
 
@@ -222,16 +153,16 @@ const CzerwoneWierchy1 = () => {
 
       <figure className="article-figure">
         <div className="four-img">
-          <img src={piwo1} alt="Ryży Dżon" />
+          <Img src={piwo1} alt="Ryży Dżon" />
         </div>
         <div className="four-img">
-          <img src={piwo2} alt="Zakopiańskie" />
+          <Img src={piwo2} alt="Zakopiańskie" />
         </div>
         <div className="four-img">
-          <img src={piwo3} alt="Świstok" />
+          <Img src={piwo3} alt="Świstok" />
         </div>
         <div className="four-img">
-          <img src={piwo4} alt="Hruby Baca" />
+          <Img src={piwo4} alt="Hruby Baca" />
         </div>
         <figcaption className="article-figcaption">
           Regionalne piwa podhalańskie

@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { Link as ReachLink } from '@reach/router';
 import articlesData from '../../data/ArticlesData';
 import { convertToUrl } from '../../utils/jsUtils';
-import './Navbar.scss';
+import './Navbar/Navbar.scss';
 
 interface IProps {
   trips: string;

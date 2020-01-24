@@ -2,12 +2,12 @@ import React, { useEffect, FunctionComponent } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { RouteComponentProps, Router } from '@reach/router';
 import Fade from 'react-reveal/Fade';
-import ArticlesPageFigure from './ArticlesPageFigure';
-import articlesData from '../../data/ArticlesData';
+import ArticlesPageFigure from '../ArticlesPageFigure/ArticlesPageFigure';
+import articlesData from '../../../data/ArticlesData';
 import './ArticlesPage.scss';
-import NumbersSection from './NumbersSection';
-import { convertToUrl } from '../../utils/jsUtils';
-import ArticleContainer from './ArticlesContainer/ArticleContainer';
+import NumbersSection from '../NumbersSection/NumbersSection';
+import { convertToUrl } from '../../../utils/jsUtils';
+import ArticleContainer from '../ArticlesContainer/ArticlesContainer/ArticleContainer';
 
 interface IProps {
   index: number;

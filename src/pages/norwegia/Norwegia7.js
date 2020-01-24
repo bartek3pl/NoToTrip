@@ -1,7 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
 import { Link as ReachLink } from '@reach/router';
-import '../../components/ArticlesPage/ArticlesContainer/ArticleContainer.scss';
+import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import aurland1 from '../../assets/images/norwegia/aurland.slider.1.1.jpg';
 import aurland2 from '../../assets/images/norwegia/aurland.slider.1.4.jpg';
@@ -36,19 +37,11 @@ const Norway7 = () => {
         górskim, a jego łączna długość to 47 km.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={aurland1} alt="Stegestein" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={aurland2} alt="Stegestein" />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Widok na fiord z platformy Stegestein w Aurland
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Widok na fiord z platformy Stegestein w Aurland">
+        <Img src={aurland1} alt="Stegestein" />
+
+        <Img src={aurland2} alt="Stegestein" />
+      </Carousel>
 
       <p>
         Jest to miejscowość, a zarazem gmina, leżąca nad Aurlansfjordem. To
@@ -59,37 +52,15 @@ const Norway7 = () => {
         gotyckim.
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img className="d-block w-100" src={aurland3} alt="Aurland port" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={aurland4}
-              alt="Aurland norwegia"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={aurland5}
-              alt="Aurland norweiga"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={aurland6}
-              alt="Aurland norwegia"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Portowe miasteczko Aurland
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Portowe miasteczko Aurland">
+        <Img src={aurland3} alt="Aurland port" />
+
+        <Img src={aurland4} alt="Aurland norwegia" />
+
+        <Img src={aurland5} alt="Aurland norweiga" />
+
+        <Img src={aurland6} alt="Aurland norwegia" />
+      </Carousel>
 
       <h4>Lærdal</h4>
 
@@ -121,34 +92,13 @@ const Norway7 = () => {
         </b>
       </p>
 
-      <figure className="article-figure">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={aurland7}
-              alt="Lærdal norwegia"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={aurland8}
-              alt="Lærdal norwegia"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={aurland9}
-              alt="Lærdal norweiga"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <figcaption className="article-figcaption">
-          Drewniane domy i zabytkowy kościół w Lærdal
-        </figcaption>
-      </figure>
+      <Carousel figcaption="Drewniane domy i zabytkowy kościół w Lærdal">
+        <Img src={aurland7} alt="Lærdal norwegia" />
+
+        <Img src={aurland8} alt="Lærdal norwegia" />
+
+        <Img src={aurland9} alt="Lærdal norweiga" />
+      </Carousel>
 
       <h4>Flåm</h4>
 
