@@ -88,15 +88,15 @@ function getArrow() {
 
 function showArrow() {
   const arrow = getArrow();
-  arrow.classList.remove('hidden');
+  arrow.classList.add('visible');
 }
 
 function hideArrow() {
   const arrow = getArrow();
-  arrow.classList.add('hidden');
+  arrow.classList.remove('visible');
 }
 
-function closeMobileMenu(): void {
+function closeMobileMenu() {
   const home = document.querySelector('#home');
   if (home) {
     home.classList.remove('nav-opened');
@@ -111,7 +111,6 @@ const ArticleContainer: FunctionComponent<IProps> = ({
 }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    hideArrow();
     closeMobileMenu();
   }, []);
 
@@ -139,17 +138,6 @@ const ArticleContainer: FunctionComponent<IProps> = ({
         <Row>
           <Col>
             <div className="article-bg" role="img" aria-hidden="true">
-              <Link
-                to="navbar-top"
-                smooth={true}
-                spy={true}
-                aria-label="Przejdź do początku artykułu"
-              >
-                <div className="icon-angle-right-up-wrapper">
-                  <i className="icon-angle-right up" />
-                </div>
-              </Link>
-
               <ArticleComponent />
 
               <DisqusSection articleTitle={article} articlesTitle={title} />

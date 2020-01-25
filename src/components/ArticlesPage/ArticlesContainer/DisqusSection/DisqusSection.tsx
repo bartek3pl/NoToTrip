@@ -13,7 +13,7 @@ const DisqusSection: FunctionComponent<IProps> = ({
 }) => {
   const disqusShortname = 'NoToTrip';
   const disqusConfig = {
-    url: 'http://nototrip.pl',
+    url: 'https://nototrip.pl',
     identifier: `${articleTitle}`,
     title: `${articlesTitle}-${articleTitle}`,
   };
