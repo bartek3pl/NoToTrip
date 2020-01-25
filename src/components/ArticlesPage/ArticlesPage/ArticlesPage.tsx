@@ -62,7 +62,16 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
     window.scrollTo(0, 0);
     removeEntryContent();
     addArticlesPage();
+    showLayer();
   }, []);
+
+  const getEntryPageSection = () =>
+    document.querySelector('.entry-page') as HTMLElement;
+
+  const showLayer = () => {
+    const entryPage = getEntryPageSection();
+    entryPage.style.zIndex = '1';
+  };
 
   const getBackgroundImage = () => `url(${img})`;
 
