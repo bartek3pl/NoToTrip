@@ -1,5 +1,5 @@
 import React, { useEffect, FunctionComponent } from 'react';
-import { Router, RouteComponentProps } from '@reach/router';
+import { Router, RouteComponentProps, redirectTo } from '@reach/router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/fontello/css/fontello.css';
 import './App.scss';
@@ -84,7 +84,9 @@ function App() {
       <Header />
       <Router primary={false}>
         <RouterPage default path="/" pageComponent={<Main />} />
+
         {allArticlesPages}
+
         <RouterPage
           path="/terms-and-conditions"
           pageComponent={<TermsAndConditions />}

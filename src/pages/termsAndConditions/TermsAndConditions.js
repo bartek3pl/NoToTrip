@@ -15,9 +15,19 @@ function addEntryPage() {
   }
 }
 
+// changes display of main page when route is changed in Main section
+function removeEntryContent() {
+  const entryContent = document.querySelector('.entry-content');
+
+  if (entryContent && entryContent.style.display !== 'none') {
+    entryContent.style.display = 'none';
+  }
+}
+
 const TermsAndConditions = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    removeEntryContent();
     addEntryPage();
   }, []);
 

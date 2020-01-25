@@ -25,10 +25,12 @@ const EntryPage: FunctionComponent = () => {
     const minScrollPosition = -entryPageHeight;
     const currentPathName = window.location.pathname;
 
-    if (currentPathName === '/' && currPos.y < minScrollPosition) {
-      hideLayer();
-    } else {
-      showLayer();
+    if (currentPathName === '/') {
+      if (currPos.y < minScrollPosition) {
+        hideLayer();
+      } else {
+        showLayer();
+      }
     }
   });
 
