@@ -29,7 +29,15 @@ const TermsAndConditions = () => {
     window.scrollTo(0, 0);
     removeEntryContent();
     addEntryPage();
+    showLayer();
   }, []);
+
+  const getEntryPageSection = () => document.querySelector('.entry-page');
+
+  const showLayer = () => {
+    const entryPage = getEntryPageSection();
+    entryPage.style.zIndex = '1';
+  };
 
   const getBackgroundImg = () => `url(${bg1})`;
 
