@@ -2,8 +2,7 @@ import React, { useState, useEffect, FunctionComponent } from 'react';
 import { Col } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
 import { convertToUrl } from '../../../utils/jsUtils';
-import { css } from '@emotion/core';
-import CircleLoader from 'react-spinners/CircleLoader';
+import Spinner from '../../../utils/Spinner';
 import './ArticlesPageFigure.scss';
 
 interface IProps {
@@ -29,27 +28,16 @@ const ArticlesPageFigure: FunctionComponent<IProps> = ({
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {}, [loaded]);
 
-  const spinner = css`
-    position: absolute;
-    top: 35%;
-    left: 45%;
-  `;
-
   return (
     <Col xl={4} lg={6} className="articles-page-column">
-      <CircleLoader
-        size={50}
-        color={'#22d2c8'}
-        css={spinner}
-        loading={!loaded}
-      />
+      <Spinner loaded={loaded} />
 
       <figure aria-label={caption} style={{ opacity: loaded ? '1' : '0' }}>
         <div
           role="img"
           className="img-overlay"
           aria-hidden="true"
-          onClick={(): void => closeMobileMenu()}
+          onClick={() => closeMobileMenu()}
         >
           <img
             src={img}

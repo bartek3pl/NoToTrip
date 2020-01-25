@@ -2,6 +2,7 @@ import React, { FunctionComponent, useEffect, useState } from 'react';
 import { Col } from 'react-bootstrap';
 import { Link as ReachLink } from '@reach/router';
 import { convertToUrl } from '../../../utils/jsUtils';
+import Spinner from '../../../utils/Spinner';
 import './ArticlesFigures.scss';
 
 interface IProps {
@@ -11,7 +12,7 @@ interface IProps {
   caption: string;
 }
 
-function closeMobileMenu(): void {
+function closeMobileMenu() {
   const home = document.querySelector('#home');
   if (home) {
     home.classList.remove('nav-opened');
@@ -29,18 +30,20 @@ const ArticlesFigures: FunctionComponent<IProps> = ({
 
   return (
     <Col lg={4} md={6} className="figures-wrapper">
+      <Spinner loaded={loaded} />
+
       <figure
         className="articles-figure"
         aria-label={caption}
         style={{ opacity: loaded ? '1' : '0' }}
-        onClick={(): void => closeMobileMenu()}
+        onClick={() => closeMobileMenu()}
       >
         <div role="img" className="img-overlay" aria-hidden="true">
           <img
             src={img}
             className="reg img-fluid rounded d-block m-1"
             alt={title}
-            onLoad={(): void => setLoaded(true)}
+            onLoad={() => setLoaded(true)}
           />
           <ReachLink
             to={`/${convertToUrl(title)}`}
