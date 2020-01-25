@@ -57,6 +57,8 @@ const Main: FunctionComponent = () => {
     if (currentPathName === '/') {
       removeArticlesPage();
       addEntryContent();
+    } else {
+      navigate('/');
     }
   }, []);
 
