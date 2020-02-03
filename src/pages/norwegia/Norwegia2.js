@@ -1,7 +1,12 @@
 import React from 'react';
-import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
-import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
-import { Link as ReachLink } from '@reach/router';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Img';
+import Header from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Header';
+import P from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/P';
+import Subheader from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Subheader';
+import Figure from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Figure';
+import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticle';
+import Iframe from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Iframe';
 import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import prom from '../../assets/images/norwegia/prom.png';
@@ -15,22 +20,22 @@ import preikestolen6 from '../../assets/images/norwegia/preikestolen6.jpg';
 const Norway2 = () => {
   return (
     <>
-      <h3>
+      <Header>
         Preikestolen to słynny klif w Norwegii o wysokości 604 m, położony nad
         Lysefjordem. Powstał najprawdopodobniej ok. 10 tysięcy lat temu w wyniku
         pęknięcia skał pod wpływem mrozu. Płaska powierzchnia wierzchołka ma
         wymiary 25 na 25 metrów. Po drugiej stronie Lysefjordu znajduje się
         Kjeragbolten, który jest również bardzo chętnie odwiedzany przez
         turystów.
-      </h3>
+      </Header>
 
-      <h4>Dojazd i promy na Preikestolen z Kjeragbolten</h4>
+      <Subheader>Dojazd i promy na Preikestolen z Kjeragbolten</Subheader>
 
-      <p>
+      <P>
         Pokażę możliwe trasy z{' '}
-        <ReachLink to="/norwegia/golden-hour-na-kjeragbolten">
+        <LinkToArticle to="/norwegia/golden-hour-na-kjeragbolten">
           Kjeragbolten
-        </ReachLink>
+        </LinkToArticle>
         . Każda opcja dotarcia do celu wiążę się z zakupem biletu na prom,
         niestety nie ma dobrej alternatywy z pominięciem przeprawy promem. My
         jechaliśmy z Lysebotn do Lauvvik i stamtąd promem do Oanes. Za przeprawę
@@ -38,22 +43,19 @@ const Norway2 = () => {
         był prom do Forsand z Lysebotn, a trzecią była przeprawa z Songesand do
         Lysebotn. Cennik z cenami za promy z opcji, z których nie korzystaliśmy
         możecie zobaczyć poniżej:
-      </p>
+      </P>
 
-      <figure className="article-figure">
-        <img
+      <Figure figcaption="Rozkład godzinowy promu z Lauvik do Lysebotn">
+        <Img
           src={prom}
           style={{ width: '30%', margin: '0 auto', display: 'block' }}
           alt="Prom z lauvik do lysebotn"
         />
-        <figcaption className="article-figcaption">
-          Rozkład godzinowy promu z Lauvik do Lysebotn
-        </figcaption>
-      </figure>
+      </Figure>
 
-      <h4>Szczegóły naszej wyprawy</h4>
+      <Subheader>Szczegóły naszej wyprawy</Subheader>
 
-      <p>
+      <P>
         Od rana padało. Prognoza pogody pokazywała, że niestety podczas takiej
         pogody czeka nas trasa na Preikestolen. Trudno, plan to plan!
         Zaparkowaliśmy na Pulpit Rock Parking, czyli parkingu najbliższym do
@@ -65,9 +67,9 @@ const Norway2 = () => {
         przerywała przeprawa przez mocno podmokłe tereny. Tam trzeba było
         przeprawić się drewnianymi mostami. Chociaż kilka razy zdarzyło się, że
         i one były zalane wodą.
-      </p>
+      </P>
 
-      <p>
+      <P>
         Po około 1,8 kilometra weszliśmy na tereny skalne. Tam ulewa z mocnym
         wiatrem już tak dawała w kość, że zaczęłam rozważać opcję zejścia w dół.
         Już od ponad godziny nie widzieliśmy innych turystów. Pomyślałam, że w
@@ -75,17 +77,15 @@ const Norway2 = () => {
         warunków pogodowych. Strach wygrał. Zaczęliśmy, więc schodzić ze skał i
         powoli zmierzać na dół w smutnym nastroju. Szkoda, że musieliśmy
         zrezygnować na samej końcówce…
-      </p>
+      </P>
 
       <Carousel figcaption="Warunki pogodowe i droga na Preikestolen">
         <Img src={preikestolen1} alt="Preikestolen" />
-
         <Img src={preikestolen2} alt="Preikestolen" />
-
         <Img src={preikestolen3} alt="Preikestolen" />
       </Carousel>
 
-      <p>
+      <P>
         Jednak nagle zza mgły wyłoniły się dwie turystki. Zapytałam je, czy
         zamierzają iść dalej I nie uważają tego za niebezpieczne. Powiedziały,
         że tak czy inaczej będą szły. Poczułam się pewniej i bezpieczniej,
@@ -95,54 +95,51 @@ const Norway2 = () => {
         kilometr, całe szczęście że nie zrezygnowaliśmy. Widoki były
         niesamowite. Mgła i monstrualność skały, nadawała dodatkowo mrocznego
         klimatu.
-      </p>
+      </P>
 
       <Carousel figcaption="Wreszcie udało nam się osiągnąć szczyt">
         <Img src={preikestolen4} alt="Preikestolen" />
-
         <Img src={preikestolen5} alt="Preikestolen" />
-
         <Img src={preikestolen6} alt="Preikestolen" />
       </Carousel>
 
-      <h4>Praktyczne wskazówki</h4>
+      <Subheader>Praktyczne wskazówki</Subheader>
 
-      <p>
+      <P>
         Trasę w przeciwieństwie do{' '}
-        <ReachLink to="/norwegia/golden-hour-na-kjeragbolten">
+        <LinkToArticle to="/norwegia/golden-hour-na-kjeragbolten">
           Kjeragbolten
-        </ReachLink>{' '}
+        </LinkToArticle>{' '}
         dało się bez problemu przejść w ulewę, wiatr i mgłę. Strome skały
         stanowiły mniejszość. Można zabrać ze sobą kijki. Nie było żadnych na
         tyle skomplikowanych podejść, aby było konieczne umieszczenie łańcuchów
         do trzymania przy wchodzeniu. Zakaz dronów oraz rozbijania namiotów był
         powieszony dopiero przy samym Preikestolen. Jednak z filmików, które
         oglądałam w internecie, widzę że ludzi zbytnio ten znak nie obchodził.
-      </p>
+      </P>
 
-      <p>
+      <P>
         Po Preikestolen zrobiliśmy sobie przerwę i odpoczęliśmy spacerując po
         łagodnych trasach w{' '}
-        <ReachLink to="/norwegia/hardangervidda-i-jotunheimen">
+        <LinkToArticle to="/norwegia/hardangervidda-i-jotunheimen">
           Parku Narodowym Hardangervidda
-        </ReachLink>
+        </LinkToArticle>
         . Zapraszam po więcej informacji dotyczących parku.
-      </p>
+      </P>
 
-      <p>
+      <P>
         Wspinaczka na Preikestolen była dosyć ekstremalna, ale nie pod względem
         samej trasy, lecz pod względem pogody. Jeśli chcecie zapoznać się z
         kolejną ekstremalną trasą to zapraszam na wpis dotyczący on naszej{' '}
-        <ReachLink to="/norwegia/trolltunga-spotkanie-z-trollem">
+        <LinkToArticle to="/norwegia/trolltunga-spotkanie-z-trollem">
           wyprawy na Trolltungę
-        </ReachLink>
+        </LinkToArticle>
         . Jest to słynny Język trolla, czyli najpopularniejszy punkt turystyczny
         w Norwegii.
-      </p>
+      </P>
 
-      <iframe
+      <Iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1027.8226117873965!2d6.186510126774705!3d58.987653984560296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463bd51bf654eb09%3A0x4a83e6bdbfa3b78b!2sPreikestolen!5e0!3m2!1spl!2spl!4v1544095748879"
-        className="gmap"
         title="Preikestolen"
       />
     </>

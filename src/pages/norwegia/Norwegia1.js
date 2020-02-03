@@ -1,7 +1,12 @@
 import React from 'react';
-import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
-import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
-import { Link as ReachLink } from '@reach/router';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Img';
+import Header from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Header';
+import P from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/P';
+import Subheader from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Subheader';
+import Figure from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Figure';
+import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticle';
+import Iframe from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Iframe';
 import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import kjerag1 from '../../assets/images/norwegia/kjerag.slajder.1.1.jpg';
@@ -20,18 +25,18 @@ import kjerag12 from '../../assets/images/norwegia/kjerag.uklad.1.jpg';
 const Norway1 = () => {
   return (
     <>
-      <h3>
+      <Header>
         Na górze Kjerag położonej nad Lysefjordem, nieopodal miasta Forsand w
         okręgu Rogaland znajduje się głaz Kjeragbolten, zaklinowany pomiędzy
         dwiema skałami. Z tego miejsca rozciąga się piękny widok na Lysefjorden.
         Najwyższy punkt góry wznosi się na wysokość 1100 metrów nad poziomem
         morza. Po drugiej stronie znajduje się{' '}
-        <ReachLink to="/norwegia/preikestolen">Preikestolen</ReachLink>.
-      </h3>
+        <LinkToArticle to="/norwegia/preikestolen">Preikestolen</LinkToArticle>.
+      </Header>
 
-      <h4>Praktyczne informacje</h4>
+      <Subheader>Praktyczne informacje</Subheader>
 
-      <p>
+      <P>
         Warto wiedzieć, że na przełomie października i listopada, wyprawa jest
         możliwa tylko ze specjalnym wyposażeniem oraz z przewodnikiem. Wtedy
         śnieg jest głęboki, a narty lub śniegowce są niezbędne. Nam pod koniec
@@ -39,26 +44,23 @@ const Norway1 = () => {
         ponieważ zależało nam na spacerze podczas "golden hour". Dla osób które
         o tym nie słyszały - jest to godzina po wschodzie Słońca i godzina przed
         zachodem Słońca, podczas której emitowane jest światło o złotym kolorze.
-      </p>
+      </P>
 
       <Carousel figcaption="Droga przez skały Kjeragu">
         <Img src={kjerag1} alt="Kjeragbolten" />
-
         <Img src={kjerag2} alt="Kjeragbolten" />
-
         <Img src={kjerag3} alt="Kjeragbolten" />
-
         <Img src={kjerag4} alt="Kjeragbolten" />
       </Carousel>
 
-      <p>
+      <P>
         Trasa zajęła nam około 4h 15 min (w dwie strony), szlak do Kjeragbolten
         miał 4,6 kilometra długości. Nie widzieliśmy zakazu latania dronem.
-      </p>
+      </P>
 
-      <h4>Nasza wyprawa</h4>
+      <Subheader>Nasza wyprawa</Subheader>
 
-      <p>
+      <P>
         Zanim przyjechaliśmy na miejsce, musieliśmy pokonać samochodem drogę
         prowadzącą z Lysebotn przez 27 serpentyn. Trasę rozpoczęliśmy od
         parkingu przy restauracji Øygardstølen. Stanowi ona centrum turystyczne
@@ -68,65 +70,56 @@ const Norway1 = () => {
         podejściach były łańcuchy. Dlatego bardzo odradzam wyprawę w deszcz, lub
         z kijkami. Pomimo trudnej drogi mijaliśmy sporo rodzin z dziećmi, a
         nawet rodziców niosących maluchy w chuście.
-      </p>
+      </P>
 
-      <p>
+      <P>
         Po około kilometrze wspinaczki zeszliśmy do trawiastej doliny,
         odwiedzanej przez liczne stada owiec. Jest tam również położone jezioro,
         którego tafla odbijała niebo jak lustro.
-      </p>
+      </P>
 
       <Carousel figcaption="Malownicze góry i ich mieszkańcy">
         <Img src={kjerag5} alt="Kjeragbolten owce" />
-
         <Img src={kjerag6} alt="Kjeragbolten" />
-
         <Img src={kjerag7} alt="Kjeragbolten" />
       </Carousel>
 
-      <p>
+      <P>
         Później wchodzi się po schodach i idzie skalną drogą w kierunku
         Kjeragbolten. Po 3 km drogi znaleźliśmy się na skalnym pustkowiu i nie
         wiedzieliśmy jak dalej podążać, musieliśmy zapytać innych turystów.
         Szlak przez całą drogę był oznaczony literką T, jednak w tym miejscu
         gdzieś nam się urwał.. Więc przez pewien czas szukaliśmy właściwej
         drogi. Widoki są niesamowite!
-      </p>
+      </P>
 
       <Carousel figcaption="Czarujący krajobraz rozpościerający się po całym paśmie gór">
         <Img src={kjerag8} alt="Kjeragbolten" />
-
         <Img src={kjerag9} alt="Kjeragbolten" />
-
         <Img src={kjerag10} alt="Kjeragbolten" />
-
         <Img src={kjerag11} alt="Kjeragbolten" />
       </Carousel>
 
-      <p>
+      <P>
         Pod koniec, na sam punkt widokowy - Kjeragbolten, idzie się dosyć wąskim
         przesmykiem, którym płynie rzeczka. Trzeba więc być uważnym, aby nie
         zamoczyć butów. Gwarantuję, że po przejściu tego kawałka, widoki oraz
         zam głaz zrobią z pewnością na Was ogromne wrażenie!
-      </p>
+      </P>
 
-      <figure className="article-figure">
+      <Figure figcaption="Kjeragbolten zdobyty!">
         <Img src={kjerag12} alt="Kjeragbolten" />
-        <figcaption className="article-figcaption">
-          Kjeragbolten zdobyty!
-        </figcaption>
-      </figure>
+      </Figure>
 
-      <p>
+      <P>
         Następnego dnia w planach mieliśmy{' '}
-        <ReachLink to="/norwegia/preikestolen">Preikestolen</ReachLink>.
+        <LinkToArticle to="/norwegia/preikestolen">Preikestolen</LinkToArticle>.
         Zapraszam do wpisu z tej wyprawy, gdzie opisuję szczegółowo możliwości
         dojazdu z Kjeragbolten do Preikestolen oraz całą naszą wyprawę.
-      </p>
+      </P>
 
-      <iframe
+      <Iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d393200.5516582081!2d5.84519308554446!3d59.08105045296021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463976bf7ab2505d%3A0x976d2a12b25abbc2!2sKjeragbolten!5e0!3m2!1spl!2spl!4v1544122081532"
-        className="gmap"
         title="Kjeragbolten"
       />
     </>

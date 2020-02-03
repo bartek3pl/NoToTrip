@@ -1,7 +1,13 @@
 import React from 'react';
-import Carousel from '../../components/ArticlesPage/ArticlesContainer/Carousel';
-import Img from '../../components/ArticlesPage/ArticlesContainer/Img';
-import { Link as ReachLink } from '@reach/router';
+import Carousel from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Carousel';
+import Img from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Img';
+import Header from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Header';
+import Subheader from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Subheader';
+import P from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/P';
+import A from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/A';
+import Figure from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Figure';
+import Figures4x1 from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Figures4x1';
+import LinkToArticleFooter from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticleFooter';
 import '../../components/ArticlesPage/ArticlesContainer/ArticlesContainer/ArticleContainer.scss';
 
 import wierchy1 from '../../assets/images/wierchy/wierchy.1.jpg';
@@ -23,52 +29,42 @@ import piwo4 from '../../assets/images/wierchy/piwo4.jpg';
 const CzerwoneWierchy1 = () => {
   return (
     <>
-      <h3>
+      <Header>
         Piszę prosto z zimowej stolicy Polski, otoczonej Tatrami. W tym wpisie
         dowiecie się gdzie nocowaliśmy, czy Krupówki są przereklamowane, czy
         jednak warte odwiedzenia, co warto tu zjeść i jakie piwo wypić :).
-      </h3>
+      </Header>
 
-      <h4>Gdzie się zatrzymaliśmy</h4>
+      <Subheader>Gdzie się zatrzymaliśmy</Subheader>
 
-      <p>
+      <P>
         Z Wrocławia wyjechaliśmy około godziny 8. Po pięciu godzinach
         dojechaliśmy do Zakopanego. Zatrzymaliśmy się w znalezionej na bookingu{' '}
-        <a
-          href="https://uperelki.nocowanie.pl/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          „Willi u Perełki”
-        </a>
-        .
-      </p>
+        <A href="https://uperelki.nocowanie.pl/">„Willi u Perełki”</A>.
+      </P>
 
-      <p>
+      <P>
         Byłam zadowolona z tego miejsca, mogę je szczerze polecić innym.
         Gospodarze byli bardzo uprzejmi i pomocni. Mieszkaliśmy w przytulnym,
         dobrze wyposażonym pokoju z łazienką i TV. Na korytarzu był aneks
         kuchenny dostępny dla wszystkich gości. Cena również była bardzo
         przyjazna ☺.
-      </p>
+      </P>
 
-      <figure className="article-figure">
+      <Figure figcaption="Tutaj nocowaliśmy - Willa u Perełki">
         <Img src={wierchy1} alt="Willa u Perełki" />
-        <figcaption className="article-figcaption">
-          Tutaj nocowaliśmy - Willa u Perełki
-        </figcaption>
-      </figure>
+      </Figure>
 
-      <h4>Co robiliśmy na Krupówkach</h4>
+      <Subheader>Co robiliśmy na Krupówkach</Subheader>
 
-      <p>
+      <P>
         Po południu, gdy odpoczęliśmy po drodze, wybraliśmy się na spacer po
         Krupówkach. Zwiedziliśmy Kościół Świętej Rodziny – najstarsza murowana
         świątynia w Zakopanem. Jest to rzymskokatolicki kościół parafialny,
         znajdujący się przy ul. Krupówki 1A.
-      </p>
+      </P>
 
-      <p>
+      <P>
         Podczas pobytu na Krupówkach nie mogło się obejść bez smażonego oscypka
         z żurawiną. Odwiedziliśmy sklep z regionalnym alkoholem, w celu
         znalezienia Zakopiańskich nowości. A po zmroku udaliśmy się do karczmy
@@ -76,7 +72,7 @@ const CzerwoneWierchy1 = () => {
         takich nie jedliśmy. Naszym zdaniem były smaczne. Grzaniec również
         bardzo dobry! Natomiast flaki, które również zamówiliśmy, jedliśmy
         gdzieś indziej o wiele lepsze.
-      </p>
+      </P>
 
       <Carousel figcaption="Spacer po Krupówkach">
         <Img src={wierchy2} alt="Zakopane Krupówki" />
@@ -86,9 +82,9 @@ const CzerwoneWierchy1 = () => {
         <Img src={wierchy6} alt="Zakopane Krupówki" />
       </Carousel>
 
-      <h4>Gdzie tradycja?</h4>
+      <Subheader>Gdzie tradycja?</Subheader>
 
-      <p>
+      <P>
         Generalnie był to krótki spacer, wyruszyliśmy około 15, a już koło 17
         było ciemno.. Podsumowując same Krupówki jako atrakcję turystyczną, mogę
         powiedzieć, że jest… coraz gorzej! Mimo, że nie byliśmy w sezonie
@@ -99,15 +95,11 @@ const CzerwoneWierchy1 = () => {
         Sinsay, Diverse, Armani…) jak w jakimś centrum handlowym! Aaa,
         zapomniałam, przecież stoi tu już prawie ukończona szklana galeria
         handlowa{' '}
-        <a
-          href="http://krakow.wyborcza.pl/krakow/7,44425,21526000,zaskoczeni-szklana-galeria-na-krupowkach-wsrod-10-makabryl.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <A href="http://krakow.wyborcza.pl/krakow/7,44425,21526000,zaskoczeni-szklana-galeria-na-krupowkach-wsrod-10-makabryl.html">
           uznana za jedną z dziesięciu makabrył 2016-go roku
-        </a>
+        </A>
         .
-      </p>
+      </P>
 
       <Carousel figcaption=" Spacer po Krupówkach, ciąg dalszy">
         <Img src={wierchy7} alt="Zakopane Krupówki" />
@@ -117,9 +109,9 @@ const CzerwoneWierchy1 = () => {
         <Img src={wierchy11} alt="Zakopane Krupówki" />
       </Carousel>
 
-      <h4>Recenzja regionalnych piw</h4>
+      <Subheader>Recenzja regionalnych piw</Subheader>
 
-      <p>
+      <P>
         Jak już wspomniałam, odwiedziliśmy sklep z regionalnym alkoholem.
         Postanowiłam więc napisać mini-recenzję dla miłośników piwa.
         Kierowaliśmy się tym, by były to tylko piwa regionalne. Pierwsze -
@@ -127,58 +119,44 @@ const CzerwoneWierchy1 = () => {
         razu rzuciło mi się w oczy. Delikatne pszeniczne, z otwartej
         fermentacji. W sumie dosyć lekkie, czyli właściwie jak standardowe jasne
         piwo.
-      </p>
+      </P>
 
-      <p>
+      <P>
         Drugie - Ryży Dżon, także z interesującym obrazkiem z góralem i równie
         ciekawą nazwą. American IPA, gorzkie z aromatem cytrusowym ( mi
         przypominało grapefruita). Ładny zapach, smak dobry (ale ja generalnie
         lubię IPY☺).
-      </p>
+      </P>
 
-      <p>
+      <P>
         Jako trzecie wybraliśmy Zakopiańskie, z góralskim wzorem. Było to piwo
         pasteryzowane i niefiltrowane, miało mętny kolor. W smaku było
         mocniejsze niż Świstok, ale słabsze od Ryżego Dżona. Lecz smaczniejsze
         od nich obydwóch.
-      </p>
+      </P>
 
-      <p>
+      <P>
         Czwarte, również z obrazkiem górala, a właściwie to bacy - Hruby Baca -
         jase, mocno podchmielone, ale delikatne. Podobało mi się to, że można
         było wyczuć ziołowy aromat, ale nie każdy takowy lubi. Na etykiecie
         wiadomość od samego bacy: „Hruby Baca zwalca kaca, kiej piknom kozicke
         Baca po główce maca!”
-      </p>
+      </P>
 
-      <figure className="article-figure">
-        <div className="four-img">
-          <Img src={piwo1} alt="Ryży Dżon" />
-        </div>
-        <div className="four-img">
-          <Img src={piwo2} alt="Zakopiańskie" />
-        </div>
-        <div className="four-img">
-          <Img src={piwo3} alt="Świstok" />
-        </div>
-        <div className="four-img">
-          <Img src={piwo4} alt="Hruby Baca" />
-        </div>
-        <figcaption className="article-figcaption">
-          Regionalne piwa podhalańskie
-        </figcaption>
-      </figure>
+      <Figures4x1 figcaption=" Regionalne piwa podhalańskie">
+        <Img src={piwo1} alt="Ryży Dżon" />
+        <Img src={piwo2} alt="Zakopiańskie" />
+        <Img src={piwo3} alt="Świstok" />
+        <Img src={piwo4} alt="Hruby Baca" />
+      </Figures4x1>
 
-      <p
-        className="link-to-article"
+      <LinkToArticleFooter
+        to="/czerwone-wierchy/wyzej-niz-giewont"
         style={{ marginTop: '3rem', textAlign: 'right' }}
       >
-        <ReachLink to="/czerwone-wierchy/wyzej-niz-giewont">
-          Zapraszam do kolejnego wpisu z górskiego szlaku. Opisuję w nim naszą
-          trasę po tatrzańskich Czerwonych Wierchach
-          <i class="icon-angle-right"></i>
-        </ReachLink>
-      </p>
+        Zapraszam do kolejnego wpisu z górskiego szlaku. Opisuję w nim naszą
+        trasę po tatrzańskich Czerwonych Wierchach
+      </LinkToArticleFooter>
     </>
   );
 };

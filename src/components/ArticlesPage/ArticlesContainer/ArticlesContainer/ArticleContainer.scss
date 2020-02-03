@@ -222,13 +222,13 @@
 }
 
 .angle-down::before {
+  display: block;
   font-size: 2.4rem;
   color: #00a0a4;
-  display: block;
   height: 0rem;
   width: 0rem;
   margin: 0 auto;
-  transform: rotate(90deg);
+  transform: rotate(90deg) !important;
 }
 
 .link-to-article {
