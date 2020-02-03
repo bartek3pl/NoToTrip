@@ -473,6 +473,10 @@
   #mobile-main-menu {
     opacity: 1;
     pointer-events: auto;
+
+    .icon-menu {
+      top: 0.8rem;
+    }
   }
 
   #home.nav-opened .nav-opened-bg {
@@ -507,6 +511,12 @@
 @media screen and (max-width: 391px) {
   .logo-img {
     height: 6.7rem;
+  }
+
+  #mobile-main-menu {
+    .icon-menu {
+      top: 0;
+    }
   }
 
   .entry-page-header {

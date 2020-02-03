@@ -1,6 +1,5 @@
 import React, { FunctionComponent, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 import DisqusSection from '../DisqusSection/DisqusSection';
 import { convertToUrl, removeSpaces } from '../../../../utils/jsUtils';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
@@ -29,7 +28,25 @@ interface IProps {
   article: string;
   articleSubtitle: string;
   title: string;
-  articlesData: any;
+  articlesData: {
+    title: string;
+    subtitle: string;
+    desc: string;
+    img: string;
+    caption: string;
+    articles: {
+      subtitle: string;
+      caption: string;
+      desc: string;
+      img: string;
+    }[];
+    numbers: {
+      location: string;
+      distance: string;
+      fly: string;
+      drive: string;
+    };
+  };
 }
 
 const componentsMap = {
@@ -67,7 +84,25 @@ function subtitlesMap(articlesData): Map<string, FunctionComponent> {
 
 function subtitleToComponent(
   article: string,
-  articlesData: any
+  articlesData: {
+    title: string;
+    subtitle: string;
+    desc: string;
+    img: string;
+    caption: string;
+    articles: {
+      subtitle: string;
+      caption: string;
+      desc: string;
+      img: string;
+    }[];
+    numbers: {
+      location: string;
+      distance: string;
+      fly: string;
+      drive: string;
+    };
+  }
 ): FunctionComponent {
   const subtitles = subtitlesMap(articlesData);
   const getArticle = subtitles.get(article);
