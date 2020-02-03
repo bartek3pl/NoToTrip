@@ -3,7 +3,14 @@ import Figure from './Figure';
 
 const Figures2x2 = ({ children, figcaption }) => {
   const AllFourFigures = children.map((child) => (
-    <div className="figure-img">{child}</div>
+    <div className="figure-img">
+      <div className="article-img-overlay">
+        {child}
+        <span className="article-img-link d-block rounded">
+          <p className="title">{child.props.alt}</p>
+        </span>
+      </div>
+    </div>
   ));
 
   return <Figure figcaption={figcaption}>{AllFourFigures}</Figure>;

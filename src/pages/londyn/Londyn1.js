@@ -49,7 +49,7 @@ const London1 = () => {
       <Figures2x2>
         <Img src={mall} alt="The Mall" />
         <Img src={arch} alt="Admiralty Arch" />
-        <Img src={victoria} alt="Plac Victoria Memorial" />
+        <Img src={victoria} alt="Victoria Memorial" />
         <Img src={whitehall} alt="Whitehall Street" />
       </Figures2x2>
 
