@@ -12,6 +12,9 @@ const charsMap = {
   ż: 'z',
   ś: 's',
   ó: 'o',
+  ń: 'n',
+  å: 'a',
+  æ: 'ae',
 };
 
 function removeChars(string: string) {
@@ -23,6 +26,8 @@ function removeChars(string: string) {
     .split('--')
     .join('-')
     .split(',')
+    .join('')
+    .split('?')
     .join('')
     .toLowerCase();
 }

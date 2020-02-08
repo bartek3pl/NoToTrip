@@ -29,7 +29,7 @@ const articlesData = [
     caption: 'Londyn w 3 dni',
     articles: [
       {
-        subtitle: 'Must see',
+        subtitle: 'Co warto zobaczyć w Londynie pierwszego dnia?',
         caption: 'Trasa zwiedzania - Dzień 1',
         desc: `Po porannym przylocie samolotem, nie marnowaliśmy czasu. Wybraliśmy się
         na całodniowy spacer, trasą z kategorii “must see in London”. Trasa nie
@@ -38,7 +38,7 @@ const articlesData = [
         img: londyn1,
       },
       {
-        subtitle: 'Spacer Tamizą',
+        subtitle: 'Całodniowy spacer wzdłuż Tamizy',
         caption: 'Trasa zwiedzania - Dzień 2',
         desc: `To był spacer pełen mostów i łodzi. Trasa zahaczała o wiele ciekawych
         punktów kulturalnych i zabytkowych oraz zapewniła nam piękne widoki!
@@ -47,7 +47,8 @@ const articlesData = [
         img: londyn2,
       },
       {
-        subtitle: 'Magiczne miasto',
+        subtitle:
+          'Peron 9 i 3/4, Sherlock Holmes i Greenwich na południku zerowym',
         caption: 'Trasa zwiedzaina - Dzień 3',
         desc: `Tego dnia poszliśmy na spacer do malowniczego Regent’s Park. Po południu
         udaliśmy się na zakupy w Camden Town. A później odwiedziliśmy King’s
@@ -71,7 +72,7 @@ const articlesData = [
     caption: 'Norwegia samochodem w dwa tygodnie',
     articles: [
       {
-        subtitle: 'Golden hour na Kjeragbolten',
+        subtitle: 'Masz lęk wysokości? Lepiej nie wchodź na Kjeragbolten',
         caption: 'Kjeragbolten',
         desc: `Na górze Kjerag położonej nad Lysefjordem, nieopodal miasta Forsand w
         okręgu Rogaland znajduje się głaz Kjeragbolten, zaklinowany pomiędzy
@@ -81,7 +82,7 @@ const articlesData = [
         img: norwegia1,
       },
       {
-        subtitle: 'Preikestolen',
+        subtitle: 'Preikestolen - najsłynniejsza półka skalna w Norwegii',
         caption: 'Płaska skała - Preikestolen',
         desc: `Preikestolen to słynny klif w Norwegii o wysokości 604 m, położony nad
         Lysefjordem. Powstał najprawdopodobniej ok. 10 tysięcy lat temu w wyniku
@@ -92,7 +93,8 @@ const articlesData = [
         img: norwegia2,
       },
       {
-        subtitle: 'Hardangervidda i Jotunheimen',
+        subtitle:
+          'Mroźny Dom Gigantów Jotunheimen i Kraina Hobbitów Hardangervidda',
         caption: 'Spokojny płaskowyż i wysokogórski krajobraz',
         desc: `Park Narodowy Hardangervidda zajmuje 342200 ha, utworzony został w 1970.
         Jest to otwarty, bezleśny teren płaskowyżu utworzonego przez lodowiec,
@@ -110,7 +112,7 @@ const articlesData = [
         img: norwegia4,
       },
       {
-        subtitle: 'Jostedalsbreen',
+        subtitle: 'Lodowa kraina - Jostedalsbreen i jego ramię Briksdalsbreen',
         caption: 'Jostedalsbreen i jego ramię Briksdalsbreen',
         desc: `W południowo-zachodniej części Norwegii, pomiędzy Sognefjordem a
         Nordfjordem rozciąga się największy lodowiec w kontynentalnej Europie.
@@ -121,7 +123,7 @@ const articlesData = [
         img: norwegia5,
       },
       {
-        subtitle: 'Geirangerfjord i Droga Trolli',
+        subtitle: 'Średniowieczne farmy Skageflå i kręta Droga Trolli',
         caption: 'Zjawiskowy Geirangerfjord i kręta Droga Trolli',
         desc: `Geirangerfjorden leży w południowo-zachodniej Norwegii, jest wpisany na
         listę światowego dziedzictwa UNESCO. Ma długość 15 kilometrów i otoczony
@@ -133,7 +135,8 @@ const articlesData = [
         img: norwegia6,
       },
       {
-        subtitle: 'Urocze, portowe miasteczka',
+        subtitle:
+          'Urocze, portowe miasteczka nad Sognefjordem - Aurland, Lærdal i Flåm',
         caption: 'Aurland, Lærdal i Flåm',
         desc: `Te trzy miasta leżą w okręgu Sogn Og Fjordane. Klimat nadają im strome
         górskie zbocza, otaczające je z każdej strony. Platforma Stegestein w
@@ -144,7 +147,7 @@ const articlesData = [
       },
       {
         subtitle:
-          'Całkowity koszt wyjazdu do Norwegii, co ze sobą zabrać i trasa',
+          'Ile zapłaciliśmy za wyjazd do Norwegii? Jak dojechać? Co ze sobą spakować?',
         caption: 'Jak zaplanować podróż do Norwegii?',
         desc: `W tym wpisie przedstawię Wam zbiór najbardziej praktycznych informacji
         dotyczących naszego wyjazdu. Planując naszą wyprawę szukaliśmy jak
@@ -172,7 +175,7 @@ const articlesData = [
     caption: 'Zakopane i Czerwone Wierchy na weekend',
     articles: [
       {
-        subtitle: 'Spacer przez Krupówki',
+        subtitle: 'Zakopane - Spacer przez Krupówki',
         caption: 'Zakopane',
         desc: `Piszę prosto z zimowej stolicy Polski, otoczonej Tatrami. W tym wpisie
         dowiecie się gdzie nocowaliśmy, czy Krupówki są przereklamowane, czy
@@ -180,7 +183,7 @@ const articlesData = [
         img: wierchy1,
       },
       {
-        subtitle: 'Wyżej niż Giewont',
+        subtitle: 'Czerwone wierchy, czyli jesienią przez tatrzańskie grzbiety',
         caption: 'Tatrzańskie grzbiety',
         desc: `Drugi dzień był o wiele ciekawszy i było nieco więcej natury, niż na
         Krupówkach. Wybraliśmy się w góry. Wiele osób ostrzega przed wędrówkami
