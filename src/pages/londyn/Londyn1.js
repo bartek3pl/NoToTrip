@@ -217,7 +217,7 @@ const London1 = () => {
         tracić czujności.
       </P>
 
-      <LinkToArticle to="/londyn/spacer-tamiza">
+      <LinkToArticle to="/londyn/co-warto-zobaczyc-w-londynie-pierwszego-dnia">
         Zobacz jak spędziliśmy 2 dzień w Londynie
       </LinkToArticle>
 

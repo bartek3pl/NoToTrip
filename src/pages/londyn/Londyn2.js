@@ -182,7 +182,7 @@ const London2 = () => {
         domu… To co też na piechotę? ;)
       </P>
 
-      <LinkToArticle to="/londyn/magiczne-miasto">
+      <LinkToArticle to="/londyn/peron-9-i-3/4-sherlock-holmes-i-greenwich-na-poludniku-zerowym">
         Zobacz jak spędziliśmy 3 dzień w Londynie
       </LinkToArticle>
 

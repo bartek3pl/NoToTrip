@@ -27,7 +27,7 @@ const Norway4 = () => {
         Język Trolla ma 10 metrów długości, 5 metrów grubości przy nasadzie,
         natomiast na samym czubku jej grubość zwęża się do kilkudziesięciu
         centymetrów. Skała znajduje się na pograniczu płaskowyżu{' '}
-        <LinkToArticle to="/norwegia/hardangervidda-i-jotunheimen">
+        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
           Hardangervidda
         </LinkToArticle>
         , około 1100 metrów nad poziomem morza i 700 metrów nad jeziorem
@@ -46,17 +46,19 @@ const Norway4 = () => {
 
       <P>
         Po rozgrzewce na{' '}
-        <LinkToArticle to="/norwegia/golden-hour-na-kjeragbolten">
+        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
           Kjeragbolten
         </LinkToArticle>{' '}
         i{' '}
-        <LinkToArticle to="/norwegia/preikestolen">Preikestolen</LinkToArticle>{' '}
+        <LinkToArticle to="/norwegia/preikestolen-najslynniejsza-polka-skalna-w-norwegii">
+          Preikestolen
+        </LinkToArticle>{' '}
         wybraliśmy się na Trolltungę. Przyznam, że bałam się, czy sobie poradzę
         na tak długiej trasie (14 km w jedną stronę). Dodatkowo, na ten dzień
         zapowiadali opady, co oznaczało dla nas kolejne utrudnienie. Mimo to
         spróbowałam moich sił, by osiągnąć cel wyprawy i zobaczyć w końcu ten
         słynny Język Trolla. Jechaliśmy z południa{' '}
-        <LinkToArticle to="/norwegia/hardangervidda-i-jotunheimen">
+        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
           Parku Narodowego Hardangervidda
         </LinkToArticle>{' '}
         do miejscowości Tyssedal. Na dolnym parkingu w Tyssedal byliśmy około

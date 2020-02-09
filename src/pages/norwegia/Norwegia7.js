@@ -119,7 +119,7 @@ const Norway7 = () => {
 
       <P>
         Kolejnego dnia spacerowaliśmy po{' '}
-        <LinkToArticle to="/norwegia/hardangervidda-i-jotunheimen">
+        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
           Jotunheimen
         </LinkToArticle>
         . Udając się na północ, znowu pogoda i temperatura dały nam o sobie

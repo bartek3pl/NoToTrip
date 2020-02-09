@@ -192,7 +192,7 @@ const Norway8 = () => {
       <P style={{ textAlign: 'center', marginTop: '5rem', marginBottom: '0' }}>
         Przeprawiliśmy się promem z Lauvik do Oanes i już drugiego dnia
         wspinaliśmy się na{' '}
-        <LinkToArticle to="/norwegia/golden-hour-na-kjeragbolten">
+        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
           Kjeragbolten
         </LinkToArticle>
         .
@@ -202,7 +202,9 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Kolejnego dnia czekała nas deszczowa wspinaczka do{' '}
-        <LinkToArticle to="/norwegia/preikestolen">Preikesttolen</LinkToArticle>
+        <LinkToArticle to="/norwegia/preikestolen-najslynniejsza-polka-skalna-w-norwegii">
+          Preikesttolen
+        </LinkToArticle>
         .
       </P>
 
@@ -210,7 +212,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Stamtąd pojechaliśmy na południe{' '}
-        <LinkToArticle to="/norwegia/hardangervidda-i-jotunheimen">
+        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
           Parku Narodowego Hardangervidda
         </LinkToArticle>
         .
@@ -231,7 +233,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Następnego dnia zwiedzaliśmy{' '}
-        <LinkToArticle to="/norwegia/urocze-portowe-miasteczka">
+        <LinkToArticle to="/norwegia/urocze-portowe-miasteczka-nad-sognefjordem-aurland-laerdal-i-flam">
           Flam, Aurland i Aerdal
         </LinkToArticle>
         .
@@ -241,7 +243,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Ósmego dnia spacerowaliśmy po{' '}
-        <LinkToArticle to="/norwegia/hardangervidda-i-jotunheimen">
+        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
           Jotunheimen
         </LinkToArticle>
         .
@@ -251,7 +253,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Dziewiątego{' '}
-        <LinkToArticle to="/norwegia/jostedalsbreen">
+        <LinkToArticle to="/norwegia/lodowa-kraina-jostedalsbreen-i-jego-ramie-briksdalsbreen">
           Briksdalsbreen
         </LinkToArticle>
         .
@@ -261,7 +263,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Dziesiątego{' '}
-        <LinkToArticle to="/norwegia/geirangerfjord-i-droga-trolli">
+        <LinkToArticle to="/norwegia/sredniowieczne-farmy-skagefla-i-kreta-droga-trolli">
           Geiranger
         </LinkToArticle>
         .
@@ -271,7 +273,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         A jedenastego jechaliśmy na{' '}
-        <LinkToArticle to="/norwegia/geirangerfjord-i-droga-trolli">
+        <LinkToArticle to="/norwegia/sredniowieczne-farmy-skagefla-i-kreta-droga-trolli">
           Drogę Trolli
         </LinkToArticle>
         , aby się tam dostać wzięliśmy prom z Eidsdal do Linge.

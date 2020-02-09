@@ -161,7 +161,7 @@ const Norway6 = () => {
       </P>
 
       <P>
-        <LinkToArticle to="/norwegia/calkowity-koszt-wyjazdu-do-norwegii-co-ze-soba-zabrac-i-trasa">
+        <LinkToArticle to="/norwegia/ile-zaplacilismy-za-wyjazd-do-norwegii-jak-dojechac-co-ze-soba-spakowac">
           O całościowym planie naszej trasy przeczytasz w tym wpisie. Zapraszam!
         </LinkToArticle>
       </P>

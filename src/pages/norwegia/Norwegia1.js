@@ -31,7 +31,10 @@ const Norway1 = () => {
         dwiema skałami. Z tego miejsca rozciąga się piękny widok na Lysefjorden.
         Najwyższy punkt góry wznosi się na wysokość 1100 metrów nad poziomem
         morza. Po drugiej stronie znajduje się{' '}
-        <LinkToArticle to="/norwegia/preikestolen">Preikestolen</LinkToArticle>.
+        <LinkToArticle to="/norwegia/preikestolen-najslynniejsza-polka-skalna-w-norwegii">
+          Preikestolen
+        </LinkToArticle>
+        .
       </Header>
 
       <Subheader>Praktyczne informacje</Subheader>
@@ -113,8 +116,10 @@ const Norway1 = () => {
 
       <P>
         Następnego dnia w planach mieliśmy{' '}
-        <LinkToArticle to="/norwegia/preikestolen">Preikestolen</LinkToArticle>.
-        Zapraszam do wpisu z tej wyprawy, gdzie opisuję szczegółowo możliwości
+        <LinkToArticle to="/norwegia/preikestolen-najslynniejsza-polka-skalna-w-norwegii">
+          Preikestolen
+        </LinkToArticle>
+        . Zapraszam do wpisu z tej wyprawy, gdzie opisuję szczegółowo możliwości
         dojazdu z Kjeragbolten do Preikestolen oraz całą naszą wyprawę.
       </P>
 

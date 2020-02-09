@@ -33,7 +33,7 @@ const Norway2 = () => {
 
       <P>
         Pokażę możliwe trasy z{' '}
-        <LinkToArticle to="/norwegia/golden-hour-na-kjeragbolten">
+        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
           Kjeragbolten
         </LinkToArticle>
         . Każda opcja dotarcia do celu wiążę się z zakupem biletu na prom,
@@ -107,7 +107,7 @@ const Norway2 = () => {
 
       <P>
         Trasę w przeciwieństwie do{' '}
-        <LinkToArticle to="/norwegia/golden-hour-na-kjeragbolten">
+        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
           Kjeragbolten
         </LinkToArticle>{' '}
         dało się bez problemu przejść w ulewę, wiatr i mgłę. Strome skały
@@ -121,7 +121,7 @@ const Norway2 = () => {
       <P>
         Po Preikestolen zrobiliśmy sobie przerwę i odpoczęliśmy spacerując po
         łagodnych trasach w{' '}
-        <LinkToArticle to="/norwegia/hardangervidda-i-jotunheimen">
+        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
           Parku Narodowym Hardangervidda
         </LinkToArticle>
         . Zapraszam po więcej informacji dotyczących parku.

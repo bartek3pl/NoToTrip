@@ -79,7 +79,7 @@ const CzerwoneWierchy2 = () => {
         pocieszenie dodam, że na początku idzie się ładnym laskiem po płaskim
         terenie. Później jest spory odcinek dosyć stromej drogi, gdzie kawałek
         idzie się skałami, trzymając łańcucha… Jak na{' '}
-        <LinkToArticle to="/norwegia/golden-hour-na-kjeragbolten">
+        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
           Kjeragbolten
         </LinkToArticle>{' '}
         :).

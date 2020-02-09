@@ -150,7 +150,7 @@ const Norway3 = () => {
 
       <P>
         A skoro o lodowcach mowa, to koniecznie zobaczcie wpis o{' '}
-        <LinkToArticle to="/norwegia/jostedalsbreen">
+        <LinkToArticle to="/norwegia/lodowa-kraina-jostedalsbreen-i-jego-ramie-briksdalsbreen">
           Jostedalsbreen - największym lodowcu w Europie
         </LinkToArticle>{' '}
         i o naszej wycieczce pod jedno z jego ramion - Briksdalsbreen.
