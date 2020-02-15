@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import DisqusSection from '../DisqusSection/DisqusSection';
 import { convertToUrl, removeSpaces } from '../../../../utils/jsUtils';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import ArticleButton from '../../ArticlesPage/ArticleButton/ArticleButton';
 
 import './ArticleContainer.scss';
 
@@ -176,6 +177,8 @@ const ArticleContainer: FunctionComponent<IProps> = ({
               <ArticleComponent />
 
               <DisqusSection articleTitle={article} articlesTitle={title} />
+
+              <ArticleButton />
             </div>
           </Col>
         </Row>

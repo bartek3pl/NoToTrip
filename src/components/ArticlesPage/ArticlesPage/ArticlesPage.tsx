@@ -8,7 +8,6 @@ import './ArticlesPage.scss';
 import NumbersSection from '../NumbersSection/NumbersSection';
 import { convertToUrl } from '../../../utils/jsUtils';
 import ArticleContainer from '../ArticlesContainer/ArticlesContainer/ArticleContainer';
-import ArticleButton from './ArticleButton/ArticleButton';
 
 interface IProps {
   index: number;
@@ -129,8 +128,6 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
         fly={fly}
         drive={drive}
       />
-
-      <ArticleButton />
 
       <div className="img-trips-overlay" role="img" aria-hidden="true" />
     </section>
