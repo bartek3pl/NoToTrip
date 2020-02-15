@@ -7,28 +7,28 @@ import NewestArticlesFigures from '../NewestArticlesFigures/NewestArticlesFigure
 import MobileNewestArticlesFigures from '../MobileNewestArticlesFigures/MobileNewestArticlesFigures';
 
 const NewestArticles: FunctionComponent = () => {
-  const allNewestArticles = articlesData[0].articles.map((newestArticle) => {
-    return (
-      <NewestArticlesFigures
-        title={articlesData[0].title}
-        subtitle={newestArticle.subtitle}
-        desc={newestArticle.desc}
-        img={newestArticle.img}
-        key={newestArticle.subtitle}
-      />
-    );
-  });
-
-  const allMobileNewestArticles = articlesData[0].articles.map(
-    (newestArticle) => (
-      <MobileNewestArticlesFigures
-        title={articlesData[0].title}
-        subtitle={newestArticle.subtitle}
-        img={newestArticle.img}
-        key={newestArticle.subtitle}
-      />
-    )
+  const articlesKeys = Object.keys(articlesData[0].articles).map(
+    (key) => articlesData[0].articles[key]
   );
+
+  const allNewestArticles = articlesKeys.map((newestArticle) => (
+    <NewestArticlesFigures
+      title={articlesData[0].title}
+      subtitle={newestArticle.subtitle}
+      desc={newestArticle.desc}
+      img={newestArticle.img}
+      key={newestArticle.subtitle}
+    />
+  ));
+
+  const allMobileNewestArticles = articlesKeys.map((newestArticle) => (
+    <MobileNewestArticlesFigures
+      title={articlesData[0].title}
+      subtitle={newestArticle.subtitle}
+      img={newestArticle.img}
+      key={newestArticle.subtitle}
+    />
+  ));
 
   return (
     <section role="article" className="newest-articles" id="najnowsze-artykuly">

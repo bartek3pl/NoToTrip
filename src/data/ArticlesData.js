@@ -83,7 +83,7 @@ const articlesData = [
       },
       {
         subtitle: 'Preikestolen - najsłynniejsza półka skalna w Norwegii',
-        caption: 'Płaska skała - Preikestolen',
+        caption: 'Preikestolen',
         desc: `Preikestolen to słynny klif w Norwegii o wysokości 604 m, położony nad
         Lysefjordem. Powstał najprawdopodobniej ok. 10 tysięcy lat temu w wyniku
         pęknięcia skał pod wpływem mrozu. Płaska powierzchnia wierzchołka ma
@@ -95,7 +95,7 @@ const articlesData = [
       {
         subtitle:
           'Mroźny Dom Gigantów Jotunheimen i Kraina Hobbitów Hardangervidda',
-        caption: 'Spokojny płaskowyż i wysokogórski krajobraz',
+        caption: 'Jotunheimen i Hardangervidda',
         desc: `Park Narodowy Hardangervidda zajmuje 342200 ha, utworzony został w 1970.
         Jest to otwarty, bezleśny teren płaskowyżu utworzonego przez lodowiec,
         poprzecinany pasmami niewysokich gór. W parku chroniony jest głównie
@@ -124,7 +124,7 @@ const articlesData = [
       },
       {
         subtitle: 'Średniowieczne farmy Skageflå i kręta Droga Trolli',
-        caption: 'Zjawiskowy Geirangerfjord i kręta Droga Trolli',
+        caption: 'Geirangerfjord i Droga Trolli',
         desc: `Geirangerfjorden leży w południowo-zachodniej Norwegii, jest wpisany na
         listę światowego dziedzictwa UNESCO. Ma długość 15 kilometrów i otoczony
         jest stromymi, skalistymi zboczami, po których spływają liczne
