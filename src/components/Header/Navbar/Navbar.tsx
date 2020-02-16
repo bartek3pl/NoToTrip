@@ -7,7 +7,7 @@ import TripsList from '../TripsList';
 import NavbarMobile from '../NavbarMobile/NavbarMobile';
 import './Navbar.scss';
 
-function handleTripsList(action: string): void {
+function handleTripsList(action: string) {
   const tripsListWrapper = document.querySelector(
     '.navbar-brand .navbar-li .trips-list-wrapper'
   ) as HTMLElement;
@@ -27,14 +27,14 @@ function handleTripsList(action: string): void {
   }
 }
 
-function handleMobileMenu(): void {
+function handleMobileMenu() {
   const home = document.querySelector('#home');
   if (home) {
     home.classList.toggle('nav-opened');
   }
 }
 
-function closeMobileMenu(): void {
+function closeMobileMenu() {
   const home = document.querySelector('#home');
   if (home) {
     home.classList.remove('nav-opened');
@@ -60,14 +60,14 @@ const Navbar: FunctionComponent = () => {
               <i
                 className="icon-menu"
                 aria-label="Menu"
-                onClick={(): void => handleMobileMenu()}
+                onClick={() => handleMobileMenu()}
               />
 
               <i
                 className="icon-cancel"
                 id="menu-cancel"
                 aria-label="Anuluj"
-                onClick={(): void => handleMobileMenu()}
+                onClick={() => handleMobileMenu()}
               />
             </div>
           </div>
@@ -87,19 +87,19 @@ const Navbar: FunctionComponent = () => {
                 className="navbar-li"
                 aria-label="Przejdź do sekcji podróże"
                 tabIndex={0}
-                onMouseEnter={(): void => handleTripsList('show')}
-                onFocus={(): void => handleTripsList('show')}
-                onMouseLeave={(): void => handleTripsList('hide')}
-                onBlur={(): void => handleTripsList('hide')}
+                onMouseEnter={() => handleTripsList('show')}
+                onFocus={() => handleTripsList('show')}
+                onMouseLeave={() => handleTripsList('hide')}
+                onBlur={() => handleTripsList('hide')}
               >
-                <li className="trips-list-wrapper">
+                <ul className="trips-list-wrapper">
                   Podróże
                   <i className="icon-angle-right" aria-hidden="true" />
                   <TripsList
                     trips="trips-li"
                     handleMobileMenu={handleMobileMenu}
                   />
-                </li>
+                </ul>
               </li>
               <li className="navbar-li">
                 <Link
