@@ -32,28 +32,11 @@ interface Articles {
   img: string;
 }
 
-interface Numbers {
-  location: string;
-  distance: string;
-  fly: string;
-  drive: string;
-}
-
-interface ArticlesData {
-  title: string;
-  subtitle: string;
-  desc: string;
-  img: string;
-  caption: string;
-  articles: any;
-  numbers: Numbers;
-}
-
 interface IProps {
   article: string;
   articleSubtitle: string;
   title: string;
-  articlesData: ArticlesData;
+  articlesData: Articles;
 }
 
 const componentsMap = {
