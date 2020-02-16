@@ -26,6 +26,8 @@ import piwo2 from '../../assets/images/wierchy/piwo3.jpg';
 import piwo3 from '../../assets/images/wierchy/piwo1.jpg';
 import piwo4 from '../../assets/images/wierchy/piwo4.jpg';
 
+import { articlesLinks } from '../../data/ArticlesData';
+
 const CzerwoneWierchy1 = () => {
   return (
     <>
@@ -151,7 +153,7 @@ const CzerwoneWierchy1 = () => {
       </Figures4x1>
 
       <LinkToArticleFooter
-        to="/czerwone-wierchy/wyzej-niz-giewont"
+        to={articlesLinks.czerwoneWierchy.gory}
         style={{ marginTop: '3rem', textAlign: 'right' }}
       >
         Zapraszam do kolejnego wpisu z górskiego szlaku. Opisuję w nim naszą

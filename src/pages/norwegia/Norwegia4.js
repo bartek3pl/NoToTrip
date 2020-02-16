@@ -19,6 +19,7 @@ import troll6 from '../../assets/images/norwegia/trolltunga.slider.2.6.jpg';
 import troll7 from '../../assets/images/norwegia/trolltunga.slider.3.1.jpg';
 import troll8 from '../../assets/images/norwegia/trolltunga.slider.3.2.jpg';
 import troll9 from '../../assets/images/norwegia/trolltunga.slider.3.3.jpg';
+import { articlesLinks } from '../../data/ArticlesData';
 
 const Norway4 = () => {
   return (
@@ -27,7 +28,7 @@ const Norway4 = () => {
         Język Trolla ma 10 metrów długości, 5 metrów grubości przy nasadzie,
         natomiast na samym czubku jej grubość zwęża się do kilkudziesięciu
         centymetrów. Skała znajduje się na pograniczu płaskowyżu{' '}
-        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
+        <LinkToArticle to={articlesLinks.norwegia.jotunheimen}>
           Hardangervidda
         </LinkToArticle>
         , około 1100 metrów nad poziomem morza i 700 metrów nad jeziorem
@@ -46,11 +47,11 @@ const Norway4 = () => {
 
       <P>
         Po rozgrzewce na{' '}
-        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
+        <LinkToArticle to={articlesLinks.norwegia.kjeragbolten}>
           Kjeragbolten
         </LinkToArticle>{' '}
         i{' '}
-        <LinkToArticle to="/norwegia/preikestolen-najslynniejsza-polka-skalna-w-norwegii">
+        <LinkToArticle to={articlesLinks.norwegia.preikestolen}>
           Preikestolen
         </LinkToArticle>{' '}
         wybraliśmy się na Trolltungę. Przyznam, że bałam się, czy sobie poradzę
@@ -58,7 +59,7 @@ const Norway4 = () => {
         zapowiadali opady, co oznaczało dla nas kolejne utrudnienie. Mimo to
         spróbowałam moich sił, by osiągnąć cel wyprawy i zobaczyć w końcu ten
         słynny Język Trolla. Jechaliśmy z południa{' '}
-        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
+        <LinkToArticle to={articlesLinks.norwegia.jotunheimen}>
           Parku Narodowego Hardangervidda
         </LinkToArticle>{' '}
         do miejscowości Tyssedal. Na dolnym parkingu w Tyssedal byliśmy około

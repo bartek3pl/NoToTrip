@@ -23,6 +23,7 @@ import szklo from '../../assets/images/londyn/szklo.jpg';
 import bridge1 from '../../assets/images/londyn/bridge2.jpg';
 import bridge2 from '../../assets/images/londyn/bridge3.jpg';
 import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticleFooter';
+import { articlesLinks } from '../../data/ArticlesData';
 
 const London2 = () => {
   return (
@@ -182,7 +183,7 @@ const London2 = () => {
         domu… To co też na piechotę? ;)
       </P>
 
-      <LinkToArticle to="/londyn/peron-9-i-3/4-sherlock-holmes-i-greenwich-na-poludniku-zerowym">
+      <LinkToArticle to={articlesLinks.londyn.londyn3}>
         Zobacz jak spędziliśmy 3 dzień w Londynie
       </LinkToArticle>
 

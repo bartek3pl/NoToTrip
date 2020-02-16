@@ -16,6 +16,7 @@ import preikestolen3 from '../../assets/images/norwegia/preikestolen3.jpg';
 import preikestolen4 from '../../assets/images/norwegia/preikestolen4.jpg';
 import preikestolen5 from '../../assets/images/norwegia/preikestolen5.jpg';
 import preikestolen6 from '../../assets/images/norwegia/preikestolen6.jpg';
+import { articlesLinks } from '../../data/ArticlesData';
 
 const Norway2 = () => {
   return (
@@ -33,7 +34,7 @@ const Norway2 = () => {
 
       <P>
         Pokażę możliwe trasy z{' '}
-        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
+        <LinkToArticle to={articlesLinks.norwegia.kjeragbolten}>
           Kjeragbolten
         </LinkToArticle>
         . Każda opcja dotarcia do celu wiążę się z zakupem biletu na prom,
@@ -107,7 +108,7 @@ const Norway2 = () => {
 
       <P>
         Trasę w przeciwieństwie do{' '}
-        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
+        <LinkToArticle to={articlesLinks.norwegia.kjeragbolten}>
           Kjeragbolten
         </LinkToArticle>{' '}
         dało się bez problemu przejść w ulewę, wiatr i mgłę. Strome skały
@@ -121,7 +122,7 @@ const Norway2 = () => {
       <P>
         Po Preikestolen zrobiliśmy sobie przerwę i odpoczęliśmy spacerując po
         łagodnych trasach w{' '}
-        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
+        <LinkToArticle to={articlesLinks.norwegia.jotunheimen}>
           Parku Narodowym Hardangervidda
         </LinkToArticle>
         . Zapraszam po więcej informacji dotyczących parku.
@@ -131,7 +132,7 @@ const Norway2 = () => {
         Wspinaczka na Preikestolen była dosyć ekstremalna, ale nie pod względem
         samej trasy, lecz pod względem pogody. Jeśli chcecie zapoznać się z
         kolejną ekstremalną trasą to zapraszam na wpis dotyczący on naszej{' '}
-        <LinkToArticle to="/norwegia/trolltunga-spotkanie-z-trollem">
+        <LinkToArticle to={articlesLinks.norwegia.trolltunga}>
           wyprawy na Trolltungę
         </LinkToArticle>
         . Jest to słynny Język trolla, czyli najpopularniejszy punkt turystyczny

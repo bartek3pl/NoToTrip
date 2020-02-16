@@ -19,6 +19,8 @@ import gei4 from '../../assets/images/norwegia/geiranger.slider.2.2.jpg';
 import droga1 from '../../assets/images/norwegia/drogatrolli.slider.1.2.jpg';
 import droga2 from '../../assets/images/norwegia/drogatrolli.slider.1.3.jpg';
 
+import { articlesLinks } from '../../data/ArticlesData';
+
 const Norway6 = () => {
   return (
     <>
@@ -161,7 +163,7 @@ const Norway6 = () => {
       </P>
 
       <P>
-        <LinkToArticle to="/norwegia/ile-zaplacilismy-za-wyjazd-do-norwegii-jak-dojechac-co-ze-soba-spakowac">
+        <LinkToArticle to={articlesLinks.norwegia.trasa}>
           O całościowym planie naszej trasy przeczytasz w tym wpisie. Zapraszam!
         </LinkToArticle>
       </P>

@@ -19,7 +19,9 @@ import wierchy2 from '../assets/images/wierchy/min/rsz_wierchy-szlak.jpg';
 
 import czechy from '../assets/images/harrachov/min/rsz_benecko31.jpg';
 
-const articlesData = [
+import { convertToUrl } from '../utils/jsUtils';
+
+export const articlesData = [
   {
     title: 'Londyn',
     subtitle: 'Londyn w 3 dni',
@@ -227,4 +229,112 @@ const articlesData = [
   },
 ];
 
-export default articlesData;
+export const articlesLinks = {};
+
+const camalize = (str) => {
+  return str
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9]+(.)/g, (_, chr) => chr.toUpperCase());
+};
+
+const getArticleLink = (articleTitle, articleIndex, subtitleIndex) => {
+  return `/${articleTitle}/${convertToUrl(
+    articlesData[articleIndex].articles[subtitleIndex].subtitle
+  )}`;
+};
+
+const getArticleTitleUrl = (articleIndex) => {
+  return convertToUrl(articlesData[articleIndex].title);
+};
+
+const generateArticleLinks = (articleTitle, articleIndex) => {
+  switch (articleTitle) {
+    case 'londyn':
+      return {
+        londyn1: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          0
+        ),
+        londyn2: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          1
+        ),
+        londyn3: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          2
+        ),
+      };
+    case 'norwegia':
+      return {
+        kjeragbolten: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          0
+        ),
+        preikestolen: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          1
+        ),
+        jotunheimen: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          2
+        ),
+        trolltunga: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          3
+        ),
+        jostedalsbreen: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          4
+        ),
+        geirangerfjord: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          5
+        ),
+        aurland: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          6
+        ),
+        trasa: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          7
+        ),
+      };
+    case 'czerwoneWierchy':
+      return {
+        zakopane: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          0
+        ),
+        gory: getArticleLink(getArticleTitleUrl(articleIndex), articleIndex, 1),
+      };
+    case 'czechy':
+      return {
+        harrachov: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          0
+        ),
+      };
+  }
+};
+
+const addTitlesToArticlesLinks = () => {
+  Object.keys(articlesData).forEach((key) => {
+    const camelTitle = camalize(articlesData[key].title);
+    articlesLinks[camelTitle] = generateArticleLinks(camelTitle, key);
+  });
+};
+
+addTitlesToArticlesLinks();

@@ -21,6 +21,7 @@ import wierchy9 from '../../assets/images/wierchy/wierchyii.slider.3.3.jpg';
 import wierchy10 from '../../assets/images/wierchy/wierchyii.slider.3.4.jpg';
 import wierchy11 from '../../assets/images/wierchy/wierchyii.slider.3.5.jpg';
 import wierchy12 from '../../assets/images/wierchy/wierchyii.slider.3.6.jpg';
+import { articlesLinks } from '../../data/ArticlesData';
 
 const CzerwoneWierchy2 = () => {
   return (
@@ -79,7 +80,7 @@ const CzerwoneWierchy2 = () => {
         pocieszenie dodam, że na początku idzie się ładnym laskiem po płaskim
         terenie. Później jest spory odcinek dosyć stromej drogi, gdzie kawałek
         idzie się skałami, trzymając łańcucha… Jak na{' '}
-        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
+        <LinkToArticle to={articlesLinks.norwegia.kjeragbolten}>
           Kjeragbolten
         </LinkToArticle>{' '}
         :).

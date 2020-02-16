@@ -18,6 +18,7 @@ import trasa2 from '../../assets/images/norwegia/trasa.slider.1.2.jpg';
 import trasa3 from '../../assets/images/norwegia/trasa.slider.2.1.jpg';
 import trasa4 from '../../assets/images/norwegia/trasa.slider.2.3.jpg';
 import trasa5 from '../../assets/images/norwegia/trasa.slider.2.5.jpg';
+import { articlesLinks } from '../../data/ArticlesData';
 
 const Norway8 = () => {
   return (
@@ -192,7 +193,7 @@ const Norway8 = () => {
       <P style={{ textAlign: 'center', marginTop: '5rem', marginBottom: '0' }}>
         Przeprawiliśmy się promem z Lauvik do Oanes i już drugiego dnia
         wspinaliśmy się na{' '}
-        <LinkToArticle to="/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten">
+        <LinkToArticle to={articlesLinks.norwegia.kjeragbolten}>
           Kjeragbolten
         </LinkToArticle>
         .
@@ -202,8 +203,8 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Kolejnego dnia czekała nas deszczowa wspinaczka do{' '}
-        <LinkToArticle to="/norwegia/preikestolen-najslynniejsza-polka-skalna-w-norwegii">
-          Preikesttolen
+        <LinkToArticle to={articlesLinks.norwegia.preikestolen}>
+          Preikestolen
         </LinkToArticle>
         .
       </P>
@@ -212,7 +213,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Stamtąd pojechaliśmy na południe{' '}
-        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
+        <LinkToArticle to={articlesLinks.norwegia.jotunheimen}>
           Parku Narodowego Hardangervidda
         </LinkToArticle>
         .
@@ -223,7 +224,7 @@ const Norway8 = () => {
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         A następnego dnia pojechaliśmy na północ Hardangervidda w okolice
         Kinsarvik. Potem dalej na północ w stronę{' '}
-        <LinkToArticle to="/norwegia/trolltunga-spotkanie-z-trollem">
+        <LinkToArticle to={articlesLinks.norwegia.trolltunga}>
           Trolltungi
         </LinkToArticle>
         , tu również musieliśmy wziąć prom z Hjelmeland do Nesvik.
@@ -233,7 +234,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Następnego dnia zwiedzaliśmy{' '}
-        <LinkToArticle to="/norwegia/urocze-portowe-miasteczka-nad-sognefjordem-aurland-laerdal-i-flam">
+        <LinkToArticle to={articlesLinks.norwegia.aurland}>
           Flam, Aurland i Aerdal
         </LinkToArticle>
         .
@@ -243,7 +244,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Ósmego dnia spacerowaliśmy po{' '}
-        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
+        <LinkToArticle to={articlesLinks.norwegia.jotunheimen}>
           Jotunheimen
         </LinkToArticle>
         .
@@ -253,7 +254,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Dziewiątego{' '}
-        <LinkToArticle to="/norwegia/lodowa-kraina-jostedalsbreen-i-jego-ramie-briksdalsbreen">
+        <LinkToArticle to={articlesLinks.norwegia.jostedalsbreen}>
           Briksdalsbreen
         </LinkToArticle>
         .
@@ -263,7 +264,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         Dziesiątego{' '}
-        <LinkToArticle to="/norwegia/sredniowieczne-farmy-skagefla-i-kreta-droga-trolli">
+        <LinkToArticle to={articlesLinks.norwegia.geirangerfjord}>
           Geiranger
         </LinkToArticle>
         .
@@ -273,7 +274,7 @@ const Norway8 = () => {
 
       <P style={{ textAlign: 'center', marginTop: '0' }}>
         A jedenastego jechaliśmy na{' '}
-        <LinkToArticle to="/norwegia/sredniowieczne-farmy-skagefla-i-kreta-droga-trolli">
+        <LinkToArticle to={articlesLinks.norwegia.geirangerfjord}>
           Drogę Trolli
         </LinkToArticle>
         , aby się tam dostać wzięliśmy prom z Eidsdal do Linge.

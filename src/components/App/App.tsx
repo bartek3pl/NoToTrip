@@ -12,7 +12,7 @@ import SocialMedia from '../SocialMedia/SocialMedia';
 import Authors from '../Authors/Authors/Authors';
 import Footer from '../Footer/Footer';
 import ArticlesPage from '../ArticlesPage/ArticlesPage/ArticlesPage';
-import articlesData from '../../data/ArticlesData';
+import { articlesData } from '../../data/ArticlesData';
 import { convertToUrl } from '../../utils/jsUtils';
 import TermsAndConditions from '../../pages/termsAndConditions/TermsAndConditions';
 

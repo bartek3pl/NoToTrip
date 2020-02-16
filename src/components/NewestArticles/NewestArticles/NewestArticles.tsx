@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import articlesData from '../../../data/ArticlesData';
+import { articlesData } from '../../../data/ArticlesData';
 import './NewestArticles.scss';
 import NewestArticlesFigures from '../NewestArticlesFigures/NewestArticlesFigures';
 import MobileNewestArticlesFigures from '../MobileNewestArticlesFigures/MobileNewestArticlesFigures';

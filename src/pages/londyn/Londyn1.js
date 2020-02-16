@@ -22,6 +22,7 @@ import china from '../../assets/images/londyn/3.jpg';
 import sklep from '../../assets/images/londyn/1.2.jpg';
 import harry from '../../assets/images/londyn/1.3.jpg';
 import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticleFooter';
+import { articlesLinks } from '../../data/ArticlesData';
 
 const London1 = () => {
   return (
@@ -217,7 +218,7 @@ const London1 = () => {
         tracić czujności.
       </P>
 
-      <LinkToArticle to="/londyn/co-warto-zobaczyc-w-londynie-pierwszego-dnia">
+      <LinkToArticle to={articlesLinks.londyn.londyn2}>
         Zobacz jak spędziliśmy 2 dzień w Londynie
       </LinkToArticle>
 

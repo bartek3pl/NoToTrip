@@ -26,6 +26,7 @@ import jotun2 from '../../assets/images/norwegia/jotun-2.jpg';
 import jotun3 from '../../assets/images/norwegia/jotun-3.jpg';
 import jotun4 from '../../assets/images/norwegia/jotun-4.jpg';
 import jotun5 from '../../assets/images/norwegia/jotun-5.jpg';
+import { articlesLinks } from '../../data/ArticlesData';
 
 const Norway3 = () => {
   return (
@@ -90,7 +91,7 @@ const Norway3 = () => {
         Ten dzień zakończyliśmy rozbijając namiot w lesie, który napotkaliśmy po
         drodze jadąc w kierunku Języka Trolla. Był to kolejny punkt naszej
         wycieczki. Jeżeli jesteście ciekawi naszej wspinaczki na{' '}
-        <LinkToArticle to="/norwegia/trolltunga-spotkanie-z-trollem">
+        <LinkToArticle to={articlesLinks.norwegia.trolltunga}>
           Trolltungę
         </LinkToArticle>
         , to zapraszam do wpisu.
@@ -150,7 +151,7 @@ const Norway3 = () => {
 
       <P>
         A skoro o lodowcach mowa, to koniecznie zobaczcie wpis o{' '}
-        <LinkToArticle to="/norwegia/lodowa-kraina-jostedalsbreen-i-jego-ramie-briksdalsbreen">
+        <LinkToArticle to={articlesLinks.norwegia.jostedalsbreen}>
           Jostedalsbreen - największym lodowcu w Europie
         </LinkToArticle>{' '}
         i o naszej wycieczce pod jedno z jego ramion - Briksdalsbreen.

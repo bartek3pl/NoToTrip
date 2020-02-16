@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Link as ReachLink } from '@reach/router';
-import articlesData from '../../data/ArticlesData';
+import { articlesData } from '../../data/ArticlesData';
 import { convertToUrl } from '../../utils/jsUtils';
 import './Navbar/Navbar.scss';
 

@@ -17,6 +17,7 @@ import aurland6 from '../../assets/images/norwegia/aurland.slider.2.8.jpg';
 import aurland7 from '../../assets/images/norwegia/aurland.slider.3.5.jpg';
 import aurland8 from '../../assets/images/norwegia/aurland.slider.3.6.jpg';
 import aurland9 from '../../assets/images/norwegia/aurland.slider.3.1.jpg';
+import { articlesLinks } from '../../data/ArticlesData';
 
 const Norway7 = () => {
   return (
@@ -119,7 +120,7 @@ const Norway7 = () => {
 
       <P>
         Kolejnego dnia spacerowaliśmy po{' '}
-        <LinkToArticle to="/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda">
+        <LinkToArticle to={articlesLinks.norwegia.jotunheimen}>
           Jotunheimen
         </LinkToArticle>
         . Udając się na północ, znowu pogoda i temperatura dały nam o sobie

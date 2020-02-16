@@ -124,40 +124,6 @@ function closeMobileMenu() {
   }
 }
 
-const articlesLinks = {
-  londyn: {
-    londyn1: '/londyn/co-warto-zobaczyc-w-londynie-pierwszego-dnia',
-    londyn2: '/londyn/calodniowy-spacer-wzdluz-tamizy',
-    londyn3:
-      '/londyn/peron-9-i-3/4-sherlock-holmes-i-greenwich-na-poludniku-zerowym',
-  },
-  norwegia: {
-    kjeragbolten:
-      '/norwegia/masz-lek-wysokosci-lepiej-nie-wchodz-na-kjeragbolten',
-    preikestolen:
-      '/norwegia/preikestolen-najslynniejsza-polka-skalna-w-norwegii',
-    jotunheimen:
-      '/norwegia/mrozny-dom-gigantow-jotunheimen-i-kraina-hobbitow-hardangervidda',
-    trolltunga: '/norwegia/trolltunga-spotkanie-z-trollem',
-    jostedalsbreen:
-      '/norwegia/lodowa-kraina-jostedalsbreen-i-jego-ramie-briksdalsbreen',
-    geirangerfjord:
-      '/norwegia/sredniowieczne-farmy-skagefla-i-kreta-droga-trolli',
-    aurland:
-      '/norwegia/urocze-portowe-miasteczka-nad-sognefjordem-aurland-laerdal-i-flam',
-    wyjazd:
-      '/norwegia/ile-zaplacilismy-za-wyjazd-do-norwegii-jak-dojechac-co-ze-soba-spakowac',
-  },
-  czerwoneWierchy: {
-    zakopane: '/czerwone-wierchy/zakopane-spacer-przez-krupowki',
-    czerwoneWierchy:
-      '/czerwone-wierchy/czerwone-wierchy-czyli-jesienia-przez-tatrzanskie-grzbiety',
-  },
-  czechy: {
-    harrachov: '/czechy/harrachov-benecko-i-herlikovice-na-ferie-zimowe',
-  },
-};
-
 const ArticleContainer: FunctionComponent<IProps> = ({
   article,
   articleSubtitle,
