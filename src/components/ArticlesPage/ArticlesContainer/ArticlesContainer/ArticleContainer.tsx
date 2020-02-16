@@ -27,7 +27,6 @@ import Czechy1 from '../../../../pages/czechy/Czechy1';
 
 interface Articles {
   subtitle: string;
-  caption: string;
   desc: string;
   img: string;
 }

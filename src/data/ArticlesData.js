@@ -28,7 +28,6 @@ export const articlesData = [
     desc:
       'Sprawdź najlepsze trasy po Londynie i dowiedz się co trzeba w nim zobaczyć',
     img: londyn,
-    caption: 'Londyn w 3 dni',
     articles: [
       {
         subtitle: 'Co warto zobaczyć w Londynie pierwszego dnia?',
@@ -68,10 +67,9 @@ export const articlesData = [
   },
   {
     title: 'Norwegia',
-    subtitle: 'Samochodem w dwa tygodnie',
+    subtitle: 'Norwegia samochodem w dwa tygodnie',
     desc: 'Zobacz naszą wyprawę nad morzem północnym i zainspiruj się',
     img: norwegia,
-    caption: 'Norwegia samochodem w dwa tygodnie',
     articles: [
       {
         subtitle: 'Masz lęk wysokości? Lepiej nie wchodź na Kjeragbolten',
@@ -174,7 +172,6 @@ export const articlesData = [
     subtitle: 'Zakopane i Czerwone Wierchy na weekend',
     desc: 'Dowiedz się jakich widoków możesz się spodziewać',
     img: wierchy,
-    caption: 'Zakopane i Czerwone Wierchy na weekend',
     articles: [
       {
         subtitle: 'Zakopane - Spacer przez Krupówki',
@@ -209,7 +206,6 @@ export const articlesData = [
     subtitle: 'Harrachov, Benecko i Herlikovice na ferie zimowe',
     desc: 'Sprawdź gdzie warto pojeździć na stokach w Czechach',
     img: czechy,
-    caption: 'Harrachov, Benecko i Herlikovice na ferie zimowe',
     articles: [
       {
         subtitle: 'Harrachov, Benecko i Herlikovice na ferie zimowe',
@@ -330,11 +326,9 @@ const generateArticleLinks = (articleTitle, articleIndex) => {
   }
 };
 
-const addTitlesToArticlesLinks = () => {
+const addTitlesToArticlesLinks = (() => {
   Object.keys(articlesData).forEach((key) => {
     const camelTitle = camalize(articlesData[key].title);
     articlesLinks[camelTitle] = generateArticleLinks(camelTitle, key);
   });
-};
-
-addTitlesToArticlesLinks();
+})();

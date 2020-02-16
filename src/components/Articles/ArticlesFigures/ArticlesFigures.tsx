@@ -9,7 +9,7 @@ interface IProps {
   title: string;
   desc: string;
   img: string;
-  caption: string;
+  subtitle: string;
 }
 
 function closeMobileMenu() {
@@ -23,7 +23,7 @@ const ArticlesFigures: FunctionComponent<IProps> = ({
   title,
   desc,
   img,
-  caption,
+  subtitle,
 }) => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {}, [loaded]);
@@ -34,7 +34,7 @@ const ArticlesFigures: FunctionComponent<IProps> = ({
 
       <figure
         className="articles-figure"
-        aria-label={caption}
+        aria-label={subtitle}
         style={{ opacity: loaded ? '1' : '0' }}
         onClick={() => closeMobileMenu()}
       >
@@ -55,7 +55,7 @@ const ArticlesFigures: FunctionComponent<IProps> = ({
             </div>
           </ReachLink>
         </div>
-        <figcaption className="trips-figcaption">{caption}</figcaption>
+        <figcaption className="trips-figcaption">{subtitle}</figcaption>
       </figure>
     </Col>
   );
