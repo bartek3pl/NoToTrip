@@ -55,7 +55,7 @@ const ArticlesPageFigures: FunctionComponent<IProps> = ({ index }) => {
 };
 
 const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
-  const { title, img, articles, subtitle } = articlesData[index];
+  const { title, backgroundImg, articles, subtitle } = articlesData[index];
   const { location, distance, fly, drive } = articlesData[index].numbers;
 
   useEffect(() => {
@@ -73,7 +73,7 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
     entryPage.style.zIndex = '1';
   };
 
-  const getBackgroundImage = () => `url(${img})`;
+  const getBackgroundImage = () => `url(${backgroundImg})`;
 
   const allArticleContainers = articlesData[
     index

@@ -1,8 +1,10 @@
+import backgroundLondyn from '../assets/images/londyn/min/background-londyn.jpg';
 import londyn from '../assets/images/londyn/min/rsz_westminster.jpg';
 import londyn1 from '../assets/images/londyn/min/rsz_london-img-1.jpg';
 import londyn2 from '../assets/images/londyn/min/rsz_london-img-2.jpg';
 import londyn3 from '../assets/images/londyn/min/rsz_london-img-3.jpg';
 
+import backgroundNorwegia from '../assets/images/norwegia/min/background-norwegia.jpg';
 import norwegia from '../assets/images/norwegia/min/rsz_aurlandslider14.jpg';
 import norwegia1 from '../assets/images/norwegia/min/rsz_kjeragmin.jpg';
 import norwegia2 from '../assets/images/norwegia/min/rsz_preikestolenmin.jpg';
@@ -13,10 +15,12 @@ import norwegia6 from '../assets/images/norwegia/min/rsz_drogatrollimin.jpg';
 import norwegia7 from '../assets/images/norwegia/min/rsz_aurlandmin.jpg';
 import norwegia8 from '../assets/images/norwegia/min/rsz_jostedalsmin.jpg';
 
+import backgroundWierchy from '../assets/images/wierchy/min/background-czerwone-wierchy.jpg';
 import wierchy from '../assets/images/wierchy/min/rsz_czerwone-wierchy.jpg';
 import wierchy1 from '../assets/images/wierchy/min/rsz_krupówki-pupa.jpg';
 import wierchy2 from '../assets/images/wierchy/min/rsz_wierchy-szlak.jpg';
 
+import backgroundCzechy from '../assets/images/harrachov/min/background-czechy.jpg';
 import czechy from '../assets/images/harrachov/min/rsz_benecko31.jpg';
 
 import { convertToUrl } from '../utils/jsUtils';
@@ -28,6 +32,7 @@ export const articlesData = [
     desc:
       'Sprawdź najlepsze trasy po Londynie i dowiedz się co trzeba w nim zobaczyć',
     img: londyn,
+    backgroundImg: backgroundLondyn,
     articles: [
       {
         subtitle: 'Co warto zobaczyć w Londynie pierwszego dnia?',
@@ -70,6 +75,7 @@ export const articlesData = [
     subtitle: 'Norwegia samochodem w dwa tygodnie',
     desc: 'Zobacz naszą wyprawę nad morzem północnym i zainspiruj się',
     img: norwegia,
+    backgroundImg: backgroundNorwegia,
     articles: [
       {
         subtitle: 'Masz lęk wysokości? Lepiej nie wchodź na Kjeragbolten',
@@ -172,6 +178,7 @@ export const articlesData = [
     subtitle: 'Zakopane i Czerwone Wierchy na weekend',
     desc: 'Dowiedz się jakich widoków możesz się spodziewać',
     img: wierchy,
+    backgroundImg: backgroundWierchy,
     articles: [
       {
         subtitle: 'Zakopane - Spacer przez Krupówki',
@@ -206,6 +213,7 @@ export const articlesData = [
     subtitle: 'Harrachov, Benecko i Herlikovice na ferie zimowe',
     desc: 'Sprawdź gdzie warto pojeździć na stokach w Czechach',
     img: czechy,
+    backgroundImg: backgroundCzechy,
     articles: [
       {
         subtitle: 'Harrachov, Benecko i Herlikovice na ferie zimowe',
