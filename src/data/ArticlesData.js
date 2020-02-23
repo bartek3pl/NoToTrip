@@ -87,9 +87,9 @@ export const articlesData = [
         img: info,
       },
       {
-        subtitle: 'Komunikacja, banki oraz niebezpieczeństwa na Bali',
-        caption:
+        subtitle:
           'Co może Was zaskoczyć oraz na co warto zwrócić uwagę będąc na Bali?',
+        caption: 'Komunikacja, banki oraz niebezpieczeństwa na Bali',
         desc:
           'Zapraszam na drugi wpis informacyjno-poradnikowy. Opiszę w nim sposoby przemieszczania się po wyspie: skuterem, taksówkami i Grabem, jak i również podróżowanie speedboatami między wyspami. Opowiem jak wygląda sytuacja z bankomatami, płatnościami kartą i kantorami. Dowiecie się też na co zwracać szczególną uwagę odwiedzając balijskie miasta.',
         img: komunikacja,
