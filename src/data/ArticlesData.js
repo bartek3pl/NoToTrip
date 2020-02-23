@@ -37,7 +37,7 @@ import { convertToUrl } from '../utils/jsUtils';
 export const articlesData = [
   {
     title: 'Bali',
-    subtitle: 'Bali na rajskie wakacje',
+    subtitle: 'Rajskie wakacje na Bali',
     desc:
       'Trzy tygodnie na Bali i jej sąsiednich wyspach, czyli kolejne podróżnicze marzenie spełnione!',
     img: bali,
