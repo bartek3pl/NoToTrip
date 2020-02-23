@@ -1,3 +1,5 @@
+import emojiStrip from 'emoji-strip';
+
 export function getCurrentYear() {
   const date = new Date();
   return date.getFullYear();
@@ -18,7 +20,7 @@ const charsMap = {
 };
 
 function removeChars(string: string) {
-  return string
+  string = string
     .split('-')
     .join('')
     .split(' ')
@@ -30,10 +32,16 @@ function removeChars(string: string) {
     .split('?')
     .join('')
     .toLowerCase();
+
+  if (string[0] === '-') {
+    string = string.slice(1);
+  }
+
+  return string;
 }
 
 export function convertToUrl(string: string) {
-  const convertedString = removeChars(string);
+  const convertedString = removeChars(emojiStrip(string));
   let urlString = [] as string[];
 
   convertedString.split('').map((char) => {

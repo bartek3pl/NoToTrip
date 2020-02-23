@@ -75,30 +75,28 @@ const London3 = () => {
       </P>
 
       <Point>
-        - <A href="https://openairtheatre.com">Open Air Theatre</A> - Teatr
+        <A href="https://openairtheatre.com">Open Air Theatre</A> - Teatr
         znajdujący się w samym sercu parku, oferuje sztukę na łonie natury i pod
         gołym niebem.
       </Point>
       <Point>
-        - <A href="https://regents.ac.uk">Regent’s University</A> - Prywatny
+        <A href="https://regents.ac.uk">Regent’s University</A> - Prywatny
         uniwersytet, który został założony w 1984 roku.
       </Point>
       <Point>
-        - <A href="https://www.zsl.org/zsl-london-zoo">ZSL London Zoo</A> -
+        <A href="https://www.zsl.org/zsl-london-zoo">ZSL London Zoo</A> -
         Otwarte w 1848 roku, początkowo miało służyć tylko naukowcom do badań,
         jednak rok później udostępniono je dla każdego. W zoo znajduje się 650
         gatunków zwierząt, z czego 112 jest wpisana do Czerwonej księgi gatunków
         zagrożonych.
       </Point>
       <Point>
-        -{' '}
         <A href="https://uk.usembassy.gov/our-relationship/our-ambassador/ambassadors-residence/">
           Winfield House Grounds
         </A>
         .
       </Point>
       <Point>
-        -{' '}
         <A href="https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/gardens-and-landscapes/queen-marys-gardens">
           Queen Mary's Gardens
         </A>{' '}
@@ -106,7 +104,6 @@ const London3 = () => {
         Londynie.
       </Point>
       <Point>
-        -{' '}
         <A href="https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/gardens-and-landscapes/regents-park-allotment-garden">
           Park Allotment Garden
         </A>{' '}
@@ -114,7 +111,6 @@ const London3 = () => {
         i pielęgnowania warzyw oraz owoców.
       </Point>
       <Point>
-        -{' '}
         <A href="https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/gardens-and-landscapes/the-avenue-gardens">
           The Avenue Gardens
         </A>{' '}
@@ -122,16 +118,15 @@ const London3 = () => {
         i donicami wypełionymi kwiatami.
       </Point>
       <Point>
-        - <A href="http://www.iccuk.org">London Central Mosque</A> - Jest to
-        jeden z londyńskich meczetów.
+        <A href="http://www.iccuk.org">London Central Mosque</A> - Jest to jeden
+        z londyńskich meczetów.
       </Point>
       <Point>
-        - <A href="https://www.lords.org">Lord’s Cricket Ground</A> - Stadion
+        <A href="https://www.lords.org">Lord’s Cricket Ground</A> - Stadion
         krykietowy, stanowiący własność Marylebone Cricket Club. Jeden z
         najbardziej renomowanych obiektów tej dyscypliny sportu na świecie.
       </Point>
       <Point>
-        -{' '}
         <A href="https://www.cepc.org.uk/gardens/park-square-and-park-crescent-gardens/">
           Park Square i Park Crescent
         </A>{' '}
@@ -139,7 +134,7 @@ const London3 = () => {
         stiukiem.
       </Point>
       <Point>
-        - Niedaleko znajduje się Primrose Hill - zielone wzgórze, z którego jest
+        Niedaleko znajduje się Primrose Hill - zielone wzgórze, z którego jest
         piękny widok. Rewelacyjne miejsce na odpoczynek, lub piknik. Niestety
         konieczna jest dobra pogoda.
       </Point>

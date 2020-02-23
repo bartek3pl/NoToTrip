@@ -57,6 +57,20 @@
     margin-right: 1.6rem;
     min-width: 4rem;
     text-align: center;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0.2rem;
+      background: #22e3c9;
+      transition: width 0.2s ease;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+    }
   }
 }
 

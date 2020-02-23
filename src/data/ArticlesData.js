@@ -23,9 +23,85 @@ import wierchy2 from '../assets/images/wierchy/min/rsz_wierchy-szlak.jpg';
 import backgroundCzechy from '../assets/images/harrachov/min/background-czechy.jpg';
 import czechy from '../assets/images/harrachov/min/rsz_benecko31.jpg';
 
+import bali from '../assets/images/bali/bali.jpg';
+import kuta from '../assets/images/bali/min/rsz_kuta.jpg';
+import ubud from '../assets/images/bali/min/rsz_ubud.jpg';
+import munduk from '../assets/images/bali/min/rsz_munduk.jpg';
+import gili from '../assets/images/bali/min/rsz_gili.jpg';
+import nusa from '../assets/images/bali/min/rsz_penida.jpg';
+import info from '../assets/images/bali/min/rsz_info.jpg';
+import komunikacja from '../assets/images/bali/min/rsz_info2.jpg';
+
 import { convertToUrl } from '../utils/jsUtils';
 
 export const articlesData = [
+  {
+    title: 'Bali',
+    subtitle: 'Bali na rajskie wakacje',
+    desc:
+      'Trzy tygodnie na Bali i jej sąsiednich wyspach, czyli kolejne podróżnicze marzenie spełnione!',
+    img: bali,
+    backgroundImg: bali,
+    articles: [
+      {
+        subtitle: '🌊 Kuta - zachwyca czy rozczarowuje?',
+        caption: 'Kuta i okoliczne plaże w Uluwatu',
+        desc:
+          'Kuta to jedna z najbardziej znanych miejscowości na Bali, położona na południowym zachodzie wyspy. Plaże Kuty uznane są za jedne z lepszych terenów do surfowania. Wielu turystów przyjeżdża tu również bawić się klubach, barach. Zatem czy warto zatrzymać się w Kucie? Jakie są moje wrażenia? Na te i wiele innych pytań odpowiem w tym wpisie.',
+        img: kuta,
+      },
+      {
+        subtitle: '🐵 Jak najlepiej spędzić 4 dni w Ubud?',
+        caption: 'Ubud',
+        desc:
+          'Ubud - to tutaj nasze wycieczki były najbardziej urozmaicone. Blisko tego miasta znajduje się: najbardziej malownicze pola ryżowe, wiele przepięknych i bardzo starych świątyń, wodospady i święty las małp. Ubud zdecydowanie zachwyca i można się w nim zakochać.',
+        img: ubud,
+      },
+      {
+        subtitle: '🗻 Niesamowite miejsce na Bali, czyli 4 dni w Munduk',
+        caption: 'Munduk',
+        desc:
+          'Munduk to miejsce położone nad jeziorem Tamblingan, w górach na północnym zachodzie wyspy Bali. Jego krajobraz i klimat wyróżnia się od innych miejsc, które zwiedziliśmy na Bali.',
+        img: munduk,
+      },
+      {
+        subtitle:
+          '🥥🐢 Gili Meno - wyspa, którą trzeba odwiedzić będąc na Bali!',
+        caption: 'Gili Meno',
+        desc:
+          'Wyspy Gili to archipelag trzech wysp: Gili Trawangan, Gili Meno i Gili Air. Są one  położone przy północno-wschodnim brzegu wyspy Lombok. Gili Trawangan przy porcie nazywano “Party Island”, Gili Meno ma najpiękniejsze plaże i jest najmniej zaludniona, a Gili Air jest podobno mieszanką tych dwóch wysp. My wybraliśmy oczywiście opcję z ciszą, spokojem i najlepszymi widokami, czyli Gili Meno :).',
+        img: gili,
+      },
+      {
+        subtitle: '🌴 Dlaczego warto odwiedzić wyspę Nusa Penida?',
+        caption: 'Nusa Penida',
+        desc:
+          'Zjawiskowa wyspa Nusa Penida zachwyca klifowymi wybrzeżami i widokami. Jej dziurawe drogi mogą odstraszyć niejednego kierowcę… Mimo tego przypływa tu mnóstwo turystów. Bezsprzecznie jest to miejsce, które trzeba odwiedzić będąc na Bali! Zapraszam do wpisu o wyspie pełnej niespodzianek.',
+        img: nusa,
+      },
+      {
+        subtitle: 'Jak przygotować się do podróży na Bali?',
+        caption: 'Praktyczne wskazówki dla osób planujących podróż na Bali',
+        desc:
+          'W tym wpisie przedstawię podstawowe i najważniejsze informacje dotyczące przygotowań do wyjazdu na Bali. Opowiem o bezpieczeństwie, zdrowiu i szczepieniach. Doradzę co ze sobą zabrać i co zrobić, by wyjazd minął przyjemnie i bezproblemowo :).',
+        img: info,
+      },
+      {
+        subtitle: 'Komunikacja, banki oraz niebezpieczeństwa na Bali',
+        caption:
+          'Co może Was zaskoczyć oraz na co warto zwrócić uwagę będąc na Bali?',
+        desc:
+          'Zapraszam na drugi wpis informacyjno-poradnikowy. Opiszę w nim sposoby przemieszczania się po wyspie: skuterem, taksówkami i Grabem, jak i również podróżowanie speedboatami między wyspami. Opowiem jak wygląda sytuacja z bankomatami, płatnościami kartą i kantorami. Dowiecie się też na co zwracać szczególną uwagę odwiedzając balijskie miasta.',
+        img: komunikacja,
+      },
+    ],
+    numbers: {
+      location: 'Indonezja, Bali',
+      distance: '14000 km',
+      fly: '18 godz. 50 min',
+      drive: '-',
+    },
+  },
   {
     title: 'Londyn',
     subtitle: 'Londyn w 3 dni',
@@ -64,7 +140,7 @@ export const articlesData = [
       },
     ],
     numbers: {
-      location: 'Londyn',
+      location: 'Anglia, Londyn',
       distance: '1500 km',
       fly: '2 godz. 25 min',
       drive: '16 godz. 50 min',
@@ -202,7 +278,7 @@ export const articlesData = [
       },
     ],
     numbers: {
-      location: 'Wierchy',
+      location: 'Czerwone Wierchy',
       distance: '370 km',
       fly: '-',
       drive: '3 godz. 55 min',
@@ -225,7 +301,7 @@ export const articlesData = [
       },
     ],
     numbers: {
-      location: 'Benecko',
+      location: 'Czechy, Benecko',
       distance: '160 km',
       fly: '-',
       drive: '2 godz. 30 min',
@@ -331,6 +407,26 @@ const generateArticleLinks = (articleTitle, articleIndex) => {
           0
         ),
       };
+    case 'bali':
+      return {
+        kuta: getArticleLink(getArticleTitleUrl(articleIndex), articleIndex, 0),
+        ubud: getArticleLink(getArticleTitleUrl(articleIndex), articleIndex, 1),
+        munduk: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          2
+        ),
+        gili: getArticleLink(getArticleTitleUrl(articleIndex), articleIndex, 3),
+        nusa: getArticleLink(getArticleTitleUrl(articleIndex), articleIndex, 4),
+        info: getArticleLink(getArticleTitleUrl(articleIndex), articleIndex, 5),
+        komunikacja: getArticleLink(
+          getArticleTitleUrl(articleIndex),
+          articleIndex,
+          6
+        ),
+      };
+    default:
+      return {};
   }
 };
 

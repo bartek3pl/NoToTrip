@@ -169,13 +169,13 @@ const London1 = () => {
 
       <Subheader>Co znajdziemy w China Town?</Subheader>
 
-      <Point>- restauracje, bary szybkiej obsługi</Point>
-      <Point>- kawiarnie, cukiernie azjatyckie</Point>
-      <Point>- supermarkety z azjatycką żywnością</Point>
-      <Point>- sklepy z ziołami, medycyną chińską, naturalną</Point>
-      <Point>- sklepy ze sprzętem elektronicznym</Point>
-      <Point>- usługi fryzjerskie, kosmetyczne</Point>
-      <Point>- usługi typu akupunktura, masaż</Point>
+      <Point>restauracje, bary szybkiej obsługi</Point>
+      <Point>kawiarnie, cukiernie azjatyckie</Point>
+      <Point>supermarkety z azjatycką żywnością</Point>
+      <Point>sklepy z ziołami, medycyną chińską, naturalną</Point>
+      <Point>sklepy ze sprzętem elektronicznym</Point>
+      <Point>usługi fryzjerskie, kosmetyczne</Point>
+      <Point>usługi typu akupunktura, masaż</Point>
 
       <Subheader>Co zobaczyć i gdzie zjeść w China Town?</Subheader>
 

@@ -40,21 +40,21 @@ const Norway8 = () => {
 
       <Subheader>Koszt wyjazdu (na 2 osoby, chronologicznie)</Subheader>
 
-      <Point>- Prom: 670 zł</Point>
-      <Point>- Tankowanie w Polsce: 50 zł</Point>
-      <Point>- Tankowanie w Niemczech: 271 zł</Point>
-      <Point>- Tankowanie w Danii: 216 zł</Point>
-      <Point>- Parking Kjeragbolten: 88 zł</Point>
-      <Point>- Parking Preikestolen: 88 zł</Point>
-      <Point>- Prom z Lauvik do Oanes: 51 zł</Point>
-      <Point>- Prom z Hjelmeland do Nesvik: 51 zł</Point>
-      <Point>- Parking Trolltunga: 88 zł</Point>
-      <Point>- Tankowanie Norwegia: 300 zł</Point>
-      <Point>- Tankowanie Norwegia: 279 zł</Point>
-      <Point>- Prom z Eidsdal do Linge: 60 zł</Point>
-      <Point>- Camping: 45 zł</Point>
-      <Point>- Tankowanie w Danii: 86 zł</Point>
-      <Point>- Tankowanie w Niemczech: 307 zł</Point>
+      <Point>Prom: 670 zł</Point>
+      <Point>Tankowanie w Polsce: 50 zł</Point>
+      <Point>Tankowanie w Niemczech: 271 zł</Point>
+      <Point>Tankowanie w Danii: 216 zł</Point>
+      <Point>Parking Kjeragbolten: 88 zł</Point>
+      <Point>Parking Preikestolen: 88 zł</Point>
+      <Point>Prom z Lauvik do Oanes: 51 zł</Point>
+      <Point>Prom z Hjelmeland do Nesvik: 51 zł</Point>
+      <Point>Parking Trolltunga: 88 zł</Point>
+      <Point>Tankowanie Norwegia: 300 zł</Point>
+      <Point>Tankowanie Norwegia: 279 zł</Point>
+      <Point>Prom z Eidsdal do Linge: 60 zł</Point>
+      <Point>Camping: 45 zł</Point>
+      <Point>Tankowanie w Danii: 86 zł</Point>
+      <Point>Tankowanie w Niemczech: 307 zł</Point>
 
       <P>
         <b>Suma wynosi 2651 zł, czyli 1325,5 zł na osobę</b>
@@ -62,67 +62,67 @@ const Norway8 = () => {
 
       <Subheader>Co zabrać ze sobą?</Subheader>
 
-      <Point>- bielizna termiczna</Point>
+      <Point>bielizna termiczna</Point>
       <Point>
-        - namiot dwuwarstwowy lub jednowarstwowy z plandeką lub folią malarską
+        namiot dwuwarstwowy lub jednowarstwowy z plandeką lub folią malarską
       </Point>
-      <Point>- śpiwór</Point>
-      <Point>- poduszki, koce, ręczniki</Point>
-      <Point>- karimata lub dmuchany materac i pompka</Point>
-      <Point>- ekologiczne mydło</Point>
-      <Point>- nawigacja (offline)</Point>
+      <Point>śpiwór</Point>
+      <Point>poduszki, koce, ręczniki</Point>
+      <Point>karimata lub dmuchany materac i pompka</Point>
+      <Point>ekologiczne mydło</Point>
+      <Point>nawigacja (offline)</Point>
       <Point>
-        - <b>palnik gazowy</b>
+        <b>palnik gazowy</b>
       </Point>
-      <Point>- czołówka</Point>
-      <Point>- spodnie trekkingowe</Point>
-      <Point>- ciepłe spodnie polarowe</Point>
-      <Point>- kurtka przeciwdeszczowa</Point>
-      <Point>- t-shirty, bluzki z długim rękawem</Point>
-      <Point>- czapka i rękawiczki</Point>
-      <Point>- buty trekkingowe (jakieś za kostkę, 2 pary)</Point>
-      <Point>- menażka, naczynia, sztućce, patelnia, garnek</Point>
-      <Point>- deska do krojenia</Point>
-      <Point>- porządny nóż</Point>
-      <Point>- kubek termiczny</Point>
-      <Point>- spray na komary</Point>
-      <Point>- przewodnik z mapami</Point>
-      <Point>- ładowarka samochodowa, powerbank</Point>
+      <Point>czołówka</Point>
+      <Point>spodnie trekkingowe</Point>
+      <Point>ciepłe spodnie polarowe</Point>
+      <Point>kurtka przeciwdeszczowa</Point>
+      <Point>t-shirty, bluzki z długim rękawem</Point>
+      <Point>czapka i rękawiczki</Point>
+      <Point>buty trekkingowe (jakieś za kostkę, 2 pary)</Point>
+      <Point>menażka, naczynia, sztućce, patelnia, garnek</Point>
+      <Point>deska do krojenia</Point>
+      <Point>porządny nóż</Point>
+      <Point>kubek termiczny</Point>
+      <Point>spray na komary</Point>
+      <Point>przewodnik z mapami</Point>
+      <Point>ładowarka samochodowa, powerbank</Point>
       <Point>
-        - płyn antybakteryjny, chusteczki (mokre też), papier toaletowy
+        płyn antybakteryjny, chusteczki (mokre też), papier toaletowy
       </Point>
-      <Point>- apteczka, lekarstwa</Point>
-      <Point>- hamak, krzesła plażowe</Point>
-      <Point>- baterie</Point>
-      <Point>- zapalniczki, zapałki</Point>
-      <Point>- okulary przeciwsłoneczne</Point>
-      <Point>- krem do opalania</Point>
-      <Point>- strój kąpielowy</Point>
+      <Point>apteczka, lekarstwa</Point>
+      <Point>hamak, krzesła plażowe</Point>
+      <Point>baterie</Point>
+      <Point>zapalniczki, zapałki</Point>
+      <Point>okulary przeciwsłoneczne</Point>
+      <Point>krem do opalania</Point>
+      <Point>strój kąpielowy</Point>
 
       <Subheader>Jedzenie</Subheader>
 
-      <Point>- herbata, kawa</Point>
-      <Point>- alkohol</Point>
-      <Point>- masło / margaryna</Point>
-      <Point>- kasza, ryż, makarony</Point>
-      <Point>- owsianki, płatki</Point>
-      <Point>- słoiki z gotowym jedzeniem</Point>
-      <Point>- konserwy</Point>
-      <Point>- kabanosy, sucha kiełbasa</Point>
-      <Point>- wędliny (nie za dużo), sery</Point>
-      <Point>- przyprawy (sól, pieprz)</Point>
-      <Point>- zupki błyskawiczne</Point>
-      <Point>- napoje</Point>
-      <Point>- chleb tostowy, bułki do hot dogów</Point>
-      <Point>- sosy: paczki, koncentraty</Point>
-      <Point>- oliwa</Point>
-      <Point>- jaja</Point>
-      <Point>- mleko</Point>
+      <Point>herbata, kawa</Point>
+      <Point>alkohol</Point>
+      <Point>masło / margaryna</Point>
+      <Point>kasza, ryż, makarony</Point>
+      <Point>owsianki, płatki</Point>
+      <Point>słoiki z gotowym jedzeniem</Point>
+      <Point>konserwy</Point>
+      <Point>kabanosy, sucha kiełbasa</Point>
+      <Point>wędliny (nie za dużo), sery</Point>
+      <Point>przyprawy (sól, pieprz)</Point>
+      <Point>zupki błyskawiczne</Point>
+      <Point>napoje</Point>
+      <Point>chleb tostowy, bułki do hot dogów</Point>
+      <Point>sosy: paczki, koncentraty</Point>
+      <Point>oliwa</Point>
+      <Point>jaja</Point>
+      <Point>mleko</Point>
       <Point>
-        - warzywa: sałata, pomidory, ogórki, papryka, kukurydza, groszek,
-        oliwki, fasola, marchewka
+        warzywa: sałata, pomidory, ogórki, papryka, kukurydza, groszek, oliwki,
+        fasola, marchewka
       </Point>
-      <Point>- słodycze: żelki, czekolada, ciastka, orzeszki, chipsy</Point>
+      <Point>słodycze: żelki, czekolada, ciastka, orzeszki, chipsy</Point>
 
       <Subheader>Trasa z Polski do Norwegii</Subheader>
 

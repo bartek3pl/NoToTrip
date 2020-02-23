@@ -25,6 +25,14 @@ import CzerwoneWierchy2 from '../../../../pages/czerwoneWierchy/CzerwoneWierchy2
 
 import Czechy1 from '../../../../pages/czechy/Czechy1';
 
+import Bali1 from '../../../../pages/bali/Bali1';
+import Bali2 from '../../../../pages/bali/Bali2';
+import Bali3 from '../../../../pages/bali/Bali3';
+import Bali4 from '../../../../pages/bali/Bali4';
+import Bali5 from '../../../../pages/bali/Bali5';
+import Bali6 from '../../../../pages/bali/Bali6';
+import Bali7 from '../../../../pages/bali/Bali7';
+
 interface Articles {
   subtitle: string;
   desc: string;
@@ -53,6 +61,13 @@ const componentsMap = {
   CzerwoneWierchy1,
   CzerwoneWierchy2,
   Czechy1,
+  Bali1,
+  Bali2,
+  Bali3,
+  Bali4,
+  Bali5,
+  Bali6,
+  Bali7,
 };
 
 function subtitlesMap(articlesData): Map<string, FunctionComponent> {

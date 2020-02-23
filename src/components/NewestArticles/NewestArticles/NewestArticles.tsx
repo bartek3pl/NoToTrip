@@ -11,6 +11,8 @@ const NewestArticles: FunctionComponent = () => {
     (key) => articlesData[0].articles[key]
   );
 
+  const numberOfNewestArticles = 3;
+
   const allNewestArticles = articlesKeys.map((newestArticle) => (
     <NewestArticlesFigures
       title={articlesData[0].title}
@@ -21,6 +23,11 @@ const NewestArticles: FunctionComponent = () => {
     />
   ));
 
+  const firstNewestArticles = allNewestArticles.slice(
+    0,
+    numberOfNewestArticles
+  );
+
   const allMobileNewestArticles = articlesKeys.map((newestArticle) => (
     <MobileNewestArticlesFigures
       title={articlesData[0].title}
@@ -29,6 +36,11 @@ const NewestArticles: FunctionComponent = () => {
       key={newestArticle.subtitle}
     />
   ));
+
+  const firstMobileNewestArticles = allMobileNewestArticles.slice(
+    0,
+    numberOfNewestArticles
+  );
 
   return (
     <section role="article" className="newest-articles" id="najnowsze-artykuly">
@@ -40,9 +52,9 @@ const NewestArticles: FunctionComponent = () => {
       </header>
 
       <Container className="container-wrapper">
-        <Row className="justify-content-center">{allNewestArticles}</Row>
+        <Row className="justify-content-center">{firstNewestArticles}</Row>
 
-        {allMobileNewestArticles}
+        {firstMobileNewestArticles}
       </Container>
 
       <div role="img" className="img-article-overlay" aria-hidden="true" />

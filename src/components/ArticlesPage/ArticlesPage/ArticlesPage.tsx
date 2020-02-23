@@ -70,7 +70,9 @@ const ArticlesPage: FunctionComponent<IProps> = ({ index }) => {
 
   const showLayer = () => {
     const entryPage = getEntryPageSection();
-    entryPage.style.zIndex = '1';
+    if (entryPage) {
+      entryPage.style.zIndex = '1';
+    }
   };
 
   const getBackgroundImage = () => `url(${backgroundImg})`;
