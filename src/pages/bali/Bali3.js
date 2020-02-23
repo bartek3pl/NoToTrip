@@ -184,7 +184,7 @@ const Bali3 = () => {
       </Carousel>
 
       <P>
-        Z Munduk dojechaliśmy do portu Padang Bai i stamtąd popłynęliśmy na
+        Z Munduk dojechaliśmy do portu Padang Bai i stamtąd popłynęliśmy na{' '}
         <LinkToArticle to={articlesLinks.bali.gili}>
           wyspę Gili Meno
         </LinkToArticle>

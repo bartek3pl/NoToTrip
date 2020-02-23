@@ -16,7 +16,7 @@ import kuta5 from '../../assets/images/bali/kuta/kuta.4.1.jpg';
 import kuta6 from '../../assets/images/bali/kuta/kuta.4.2.jpg';
 import kuta7 from '../../assets/images/bali/kuta/kuta.4.3.jpg';
 import kuta8 from '../../assets/images/bali/kuta/kuta.4.4.jpg';
-import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticleFooter';
+import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticle';
 import { articlesLinks } from '../../data/ArticlesData';
 
 const Bali1 = () => {

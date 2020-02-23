@@ -22,7 +22,7 @@ import nusa12 from '../../assets/images/bali/nusa/penida.4.1.jpg';
 import nusa13 from '../../assets/images/bali/nusa/penida.4.2.jpg';
 import nusa14 from '../../assets/images/bali/nusa/penida.4.3.jpg';
 import nusa15 from '../../assets/images/bali/nusa/penida.4.4.jpg';
-import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticleFooter';
+import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticle';
 import { articlesLinks } from '../../data/ArticlesData';
 
 const Bali5 = () => {

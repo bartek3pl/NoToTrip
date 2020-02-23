@@ -45,7 +45,7 @@ export const articlesData = [
     articles: [
       {
         subtitle: '🌊 Kuta - zachwyca czy rozczarowuje?',
-        caption: 'Kuta i okoliczne plaże w Uluwatu',
+        caption: 'Kuta i okoliczne plaże',
         desc:
           'Kuta to jedna z najbardziej znanych miejscowości na Bali, położona na południowym zachodzie wyspy. Plaże Kuty uznane są za jedne z lepszych terenów do surfowania. Wielu turystów przyjeżdża tu również bawić się klubach, barach. Zatem czy warto zatrzymać się w Kucie? Jakie są moje wrażenia? Na te i wiele innych pytań odpowiem w tym wpisie.',
         img: kuta,

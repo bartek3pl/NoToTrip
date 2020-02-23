@@ -7,6 +7,7 @@ import Subheader from '../../components/ArticlesPage/ArticlesContainer/ArticlesA
 import P from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/P';
 import A from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/A';
 import Iframe from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/Iframe';
+import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticle';
 
 import gili1 from '../../assets/images/bali/gili/gili.1.1.jpg';
 import gili2 from '../../assets/images/bali/gili/gili.1.2.jpg';
@@ -19,8 +20,7 @@ import gili8 from '../../assets/images/bali/gili/gili.3.1.jpg';
 import gili9 from '../../assets/images/bali/gili/gili.3.2.jpg';
 import gili10 from '../../assets/images/bali/gili/gili.3.3.jpg';
 import gili11 from '../../assets/images/bali/gili/gili.3.4.jpg';
-import { Link } from '@reach/router';
-import LinkToArticle from '../../components/ArticlesPage/ArticlesContainer/ArticlesAtoms/LinkToArticleFooter';
+
 import { articlesLinks } from '../../data/ArticlesData';
 
 const Bali4 = () => {
@@ -67,7 +67,7 @@ const Bali4 = () => {
         mieszkaliśmy obok meczetu, to niestety często nas to budziło.
       </P>
 
-      <Carousel figcaption="Jedzonko na Gili Meno 🥘">
+      <Carousel figcaption="Całodniowy relaks na plażach Gili Meno 🌴">
         <Img src={gili4} alt="Gili Meno" />
         <Img src={gili5} alt="Gili Meno" />
         <Img src={gili6} alt="Gili Meno" />
