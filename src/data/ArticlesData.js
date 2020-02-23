@@ -23,7 +23,8 @@ import wierchy2 from '../assets/images/wierchy/min/rsz_wierchy-szlak.jpg';
 import backgroundCzechy from '../assets/images/harrachov/min/background-czechy.jpg';
 import czechy from '../assets/images/harrachov/min/rsz_benecko31.jpg';
 
-import bali from '../assets/images/bali/bali.jpg';
+import backgroundBali from '../assets/images/bali/bali.jpg';
+import bali from '../assets/images/min/rsz_bali.jpg';
 import kuta from '../assets/images/bali/min/rsz_kuta.jpg';
 import ubud from '../assets/images/bali/min/rsz_ubud.jpg';
 import munduk from '../assets/images/bali/min/rsz_munduk.jpg';
@@ -41,7 +42,7 @@ export const articlesData = [
     desc:
       'Trzy tygodnie na Bali i jej sąsiednich wyspach, czyli kolejne podróżnicze marzenie spełnione!',
     img: bali,
-    backgroundImg: bali,
+    backgroundImg: backgroundBali,
     articles: [
       {
         subtitle: '🌊 Kuta - zachwyca czy rozczarowuje?',
