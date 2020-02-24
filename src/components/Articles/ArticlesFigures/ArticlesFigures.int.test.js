@@ -13,11 +13,12 @@ it('calls handleMobileMenu when figure element is clicked', () => {
     'figure'
   );
 
-  const leftClick = { button: 0 };
-  fireEvent.click(articleFigure, leftClick);
-
   const home = appComponent.container.querySelector('#home');
   const homeClasses = home.classList;
+  homeClasses.add('nav-opened');
+
+  const leftClick = { button: 0 };
+  fireEvent.click(articleFigure, leftClick);
 
   expect(homeClasses).not.toContain('nav-opened');
 });
