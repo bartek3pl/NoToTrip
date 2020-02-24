@@ -24,7 +24,7 @@ import backgroundCzechy from '../assets/images/harrachov/min/background-czechy.j
 import czechy from '../assets/images/harrachov/min/rsz_benecko31.jpg';
 
 import backgroundBali from '../assets/images/bali/bali.jpg';
-import bali from '../assets/images/min/rsz_bali.jpg';
+import bali from '../assets/images/bali/min/rsz_bali.jpg';
 import kuta from '../assets/images/bali/min/rsz_kuta.jpg';
 import ubud from '../assets/images/bali/min/rsz_ubud.jpg';
 import munduk from '../assets/images/bali/min/rsz_munduk.jpg';
