@@ -36,9 +36,13 @@ const ArticlesFigures: FunctionComponent<IProps> = ({
         className="articles-figure"
         aria-label={subtitle}
         style={{ opacity: loaded ? '1' : '0' }}
-        onClick={() => closeMobileMenu()}
       >
-        <div role="img" className="img-overlay" aria-hidden="true">
+        <div
+          role="img"
+          className="img-overlay"
+          aria-hidden="true"
+          onClick={() => closeMobileMenu()}
+        >
           <img
             src={img}
             className="reg img-fluid rounded d-block m-1"

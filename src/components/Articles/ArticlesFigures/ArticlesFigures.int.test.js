@@ -10,7 +10,7 @@ it('calls handleMobileMenu when figure element is clicked', () => {
     <ArticlesFigures title={''} desc={''} img={''} subtitle={''} />
   );
   const articleFigure = articleFigureComponent.container.querySelector(
-    'figure'
+    'figure div'
   );
 
   const home = appComponent.container.querySelector('#home');
