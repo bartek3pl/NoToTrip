@@ -38,7 +38,7 @@ How to use application
  
 1. Download this repository.
 2. Run ```npm install``` command in project's root.
-3. Run ```npm start` and have fun!
+3. Run ```npm start``` and have fun!
  
 <!-- CONTACT -->
 ## Contact
