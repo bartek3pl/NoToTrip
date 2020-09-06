@@ -33,6 +33,10 @@ I have built this application using:
 ## Getting Started
  
 How to use application
+
+### Usage
+
+Just go to the website -> https://www.nototrip.pl/
  
 ### Installation and running on localhost
  
