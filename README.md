@@ -12,7 +12,7 @@
  
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-NoToTrip is a travel blog with reports from around the world, full of practical advices and useful travel plans. 
+NoToTrip is a travel blog with reports from around the world, full of practical advices and useful travel plans. You can visit this website here -> https://nototrip.pl
  
 ### Built With
 I have built this application using:
